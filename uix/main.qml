@@ -2,10 +2,9 @@ import QtQuick 2.15
 import QtQuick.Controls 2.15
 
 ApplicationWindow {
-    width: 640
-    height: 480
+    width: 400
+    height: 700
     visible: true
-    title: qsTr("Scroll")
 
     ScrollView {
         anchors.fill: parent
