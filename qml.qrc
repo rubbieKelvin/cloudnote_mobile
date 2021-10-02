@@ -357,5 +357,7 @@
         <file>uix/scripts/constants/fonts.mjs</file>
         <file>uix/screens/auth/login.qml</file>
         <file>uix/components/appbars/AppHeader.qml</file>
+        <file>uix/scripts/frozen/icon.js</file>
+        <file>uix/scripts/lib/svg.js</file>
     </qresource>
 </RCC>
