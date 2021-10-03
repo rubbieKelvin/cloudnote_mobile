@@ -3,6 +3,7 @@ import QtQuick.Controls 2.15
 import QtQuick.Layouts 1.3
 
 import "qrc:/uix/components/controls/" as AppControls
+import "qrc:/uix/scripts/constants/routes.js" as Routes
 import "qrc:/uix/components/containers/" as AppContainers
 import "qrc:/uix/scripts/constants/fonts.mjs" as FontConstants
 
@@ -45,13 +46,14 @@ AppContainers.Page{
             Layout.preferredHeight: 50
             foregroundColor: thememanager.accent
             backgroundColor: thememanager.accent15
+            onClicked: mainstack.push(Routes.LOGIN)
         }
 
         AppControls.Button{
             text: "SignUp"
             Layout.fillWidth: true
             Layout.preferredHeight: 50
-            foregroundColor: thememanager.text
+            foregroundColor: "#fff"
             backgroundColor: thememanager.accent
         }
     }

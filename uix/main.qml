@@ -1,9 +1,10 @@
 import QtQuick 2.15
 import QtQuick.Controls 2.15
 import Qt.labs.settings 1.0
-
+import StuffsByRubbie 0.1
+import "qrc:/uix/scripts/app/main.mjs" as App
 import "qrc:/uix/components/interface/" as AppInterface
-import "qrc:/uix/scripts/constants/routes.mjs" as Routes
+import "qrc:/uix/scripts/constants/routes.js" as Routes
 import "qrc:/uix/components/containers/" as AppContainers
 import "qrc:/uix/scripts/constants/fonts.mjs" as FontConstants
 
@@ -13,10 +14,15 @@ ApplicationWindow {
     height: 550
     visible: true
     flags: Qt.Window | Qt.MaximizeUsingFullscreenGeometryHint
-    font.family: fontmananger.fontRegular
+    font.family: fontmanager.fontRegular
     font.pixelSize: FontConstants.NORMAL
 
+    StatusBar{
+        id: statusbar
+    }
+
     Settings{
+        id: themesettings
         fileName: "set.ini"
         property int theme: thememanager.theme
     }
@@ -26,7 +32,7 @@ ApplicationWindow {
     }
 
     AppInterface.FontManager{
-        id: fontmananger
+        id: fontmanager
     }
 
     AppContainers.StackView {
@@ -37,5 +43,15 @@ ApplicationWindow {
     Component.onCompleted: {
         // just got to splash screen
         mainstack.push(Routes.AUTHSPLASH)
+    }
+
+    Connections{
+        target: application
+        function onClosing(event){
+            if (App.isMobileDevice()){
+                event.accepted = false
+                mainstack.handleBackPressed(event)
+            }
+        }
     }
 }

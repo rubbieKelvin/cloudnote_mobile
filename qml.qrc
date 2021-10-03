@@ -348,7 +348,7 @@
         <file>uix/scripts/constants/network.mjs</file>
         <file>uix/components/interface/ThemeManager.qml</file>
         <file>uix/screens/auth/signup.qml</file>
-        <file>uix/scripts/constants/routes.mjs</file>
+        <file>uix/scripts/constants/routes.js</file>
         <file>uix/scripts/app/main.mjs</file>
         <file>uix/scripts/api/auth.mjs</file>
         <file>uix/screens/auth/splash.qml</file>
@@ -359,5 +359,7 @@
         <file>uix/components/appbars/AppHeader.qml</file>
         <file>uix/scripts/frozen/icon.js</file>
         <file>uix/scripts/lib/svg.js</file>
+        <file>uix/components/controls/RippleArea.qml</file>
+        <file>uix/components/controls/TextField.qml</file>
     </qresource>
 </RCC>

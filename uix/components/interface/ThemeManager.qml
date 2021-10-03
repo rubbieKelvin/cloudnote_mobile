@@ -4,6 +4,7 @@ import "qrc:/uix/scripts/constants/color.mjs" as ColorConstants
 QtObject {
     id: root
     property int theme: ColorConstants.LIGHT
+    readonly property bool isdarkmode: theme !== 0
 
     readonly property string background: ColorConstants.BACKGROUND[theme]
     readonly property string text: ColorConstants.TEXT_NORMAL[theme]
