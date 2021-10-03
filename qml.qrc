@@ -361,5 +361,8 @@
         <file>uix/scripts/lib/svg.js</file>
         <file>uix/components/controls/RippleArea.qml</file>
         <file>uix/components/controls/TextField.qml</file>
+        <file>uix/screens/home/explore.qml</file>
+        <file>uix/components/controls/SearchField.qml</file>
+        <file>uix/components/containers/ResponsiveLayout.qml</file>
     </qresource>
 </RCC>

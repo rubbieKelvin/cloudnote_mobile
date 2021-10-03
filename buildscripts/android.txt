@@ -1,0 +1,1083 @@
+Initializing deployment to Android device/simulator
+Deploying to 
+16:09:55: Running steps for project cloudnote...
+16:09:55: Starting: "/home/rubbiekelvin/Qt/5.15.2/android/bin/qmake" /home/rubbiekelvin/Projects/CloudNote/mobile/cloudnote.pro -spec android-clang CONFIG+=debug CONFIG+=qml_debug ANDROID_ABIS=armeabi-v7a
+16:09:57: The process "/home/rubbiekelvin/Qt/5.15.2/android/bin/qmake" exited normally.
+16:09:57: Starting: "/home/rubbiekelvin/Android/Sdk/ndk/21.3.6528147/prebuilt/linux-x86_64/bin/make" -f /home/rubbiekelvin/Projects/CloudNote/mobile/build/Android_Qt_5_15_2_Clang_Multi_Abi-Debug/Makefile qmake_all
+make: Nothing to be done for 'qmake_all'.
+16:10:01: The process "/home/rubbiekelvin/Android/Sdk/ndk/21.3.6528147/prebuilt/linux-x86_64/bin/make" exited normally.
+16:10:01: Starting: "/home/rubbiekelvin/Android/Sdk/ndk/21.3.6528147/prebuilt/linux-x86_64/bin/make" -j4
+/home/rubbiekelvin/Qt/5.15.2/android/bin/rcc -name qml ../../qml.qrc -o armeabi-v7a/qrc_qml.cpp
+/home/rubbiekelvin/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ -c -target armv7a-linux-androideabi21 -fno-limit-debug-info -fPIC -fstack-protector-strong -DANDROID -g -marm -O0 -std=gnu++11 -Wall -W -D_REENTRANT -fPIC -DQT_QML_DEBUG -DQT_QUICKCONTROLS2_LIB -DQT_QUICK_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_QMLMODELS_LIB -DQT_QML_LIB -DQT_NETWORK_LIB -DQT_ANDROIDEXTRAS_LIB -DQT_CORE_LIB -I../../../mobile -I. -I../../lib/qtstatusbar/src -I/home/rubbiekelvin/Qt/5.15.2/android/include -I/home/rubbiekelvin/Qt/5.15.2/android/include/QtQuickControls2 -I/home/rubbiekelvin/Qt/5.15.2/android/include/QtQuick -I/home/rubbiekelvin/Qt/5.15.2/android/include/QtSvg -I/home/rubbiekelvin/Qt/5.15.2/android/include/QtWidgets -I/home/rubbiekelvin/Qt/5.15.2/android/include/QtGui -I/home/rubbiekelvin/Qt/5.15.2/android/include/QtQmlModels -I/home/rubbiekelvin/Qt/5.15.2/android/include/QtQml -I/home/rubbiekelvin/Qt/5.15.2/android/include/QtNetwork -I/home/rubbiekelvin/Qt/5.15.2/android/include/QtAndroidExtras -I/home/rubbiekelvin/Qt/5.15.2/android/include/QtCore -Iarmeabi-v7a -I/home/rubbiekelvin/Qt/5.15.2/android/mkspecs/android-clang -o armeabi-v7a/qrc_qml.o armeabi-v7a/qrc_qml.cpp
+/home/rubbiekelvin/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ -target armv7a-linux-androideabi21 -fno-limit-debug-info -Wl,-soname,libcloudnote_armeabi-v7a.so -Wl,-rpath-link=/home/rubbiekelvin/Qt/5.15.2/android/lib -Wl,--build-id=sha1 -Wl,--no-undefined -Wl,-z,noexecstack -shared -o libcloudnote_armeabi-v7a.so armeabi-v7a/statusbar.o armeabi-v7a/statusbar_android.o armeabi-v7a/main.o armeabi-v7a/qrc_qml.o armeabi-v7a/moc_statusbar.o   /home/rubbiekelvin/Qt/5.15.2/android/lib/libQt5QuickControls2_armeabi-v7a.so /home/rubbiekelvin/Qt/5.15.2/android/lib/libQt5Quick_armeabi-v7a.so /home/rubbiekelvin/Qt/5.15.2/android/lib/libQt5Svg_armeabi-v7a.so /home/rubbiekelvin/Qt/5.15.2/android/lib/libQt5Widgets_armeabi-v7a.so /home/rubbiekelvin/Qt/5.15.2/android/lib/libQt5Gui_armeabi-v7a.so /home/rubbiekelvin/Qt/5.15.2/android/lib/libQt5QmlModels_armeabi-v7a.so /home/rubbiekelvin/Qt/5.15.2/android/lib/libQt5Qml_armeabi-v7a.so /home/rubbiekelvin/Qt/5.15.2/android/lib/libQt5Network_armeabi-v7a.so /home/rubbiekelvin/Qt/5.15.2/android/lib/libQt5AndroidExtras_armeabi-v7a.so /home/rubbiekelvin/Qt/5.15.2/android/lib/libQt5Core_armeabi-v7a.so -lGLESv2   -llog -lz -lm -ldl -lc
+16:10:16: The process "/home/rubbiekelvin/Android/Sdk/ndk/21.3.6528147/prebuilt/linux-x86_64/bin/make" exited normally.
+16:10:16: Removing directory /home/rubbiekelvin/Projects/CloudNote/mobile/build/Android_Qt_5_15_2_Clang_Multi_Abi-Debug/android-build/assets
+16:10:16: Removing directory /home/rubbiekelvin/Projects/CloudNote/mobile/build/Android_Qt_5_15_2_Clang_Multi_Abi-Debug/android-build/libs
+16:10:16: Starting: "/home/rubbiekelvin/Android/Sdk/ndk/21.3.6528147/prebuilt/linux-x86_64/bin/make" INSTALL_ROOT=/home/rubbiekelvin/Projects/CloudNote/mobile/build/Android_Qt_5_15_2_Clang_Multi_Abi-Debug/android-build install
+/home/rubbiekelvin/Qt/5.15.2/android/bin/qmake -install qinstall -exe libcloudnote_armeabi-v7a.so /home/rubbiekelvin/Projects/CloudNote/mobile/build/Android_Qt_5_15_2_Clang_Multi_Abi-Debug/android-build/libs/armeabi-v7a/libcloudnote_armeabi-v7a.so
+16:10:17: The process "/home/rubbiekelvin/Android/Sdk/ndk/21.3.6528147/prebuilt/linux-x86_64/bin/make" exited normally.
+16:10:17: Starting: "/home/rubbiekelvin/Qt/5.15.2/android/bin/androiddeployqt" --input /home/rubbiekelvin/Projects/CloudNote/mobile/build/Android_Qt_5_15_2_Clang_Multi_Abi-Debug/android-cloudnote-deployment-settings.json --output /home/rubbiekelvin/Projects/CloudNote/mobile/build/Android_Qt_5_15_2_Clang_Multi_Abi-Debug/android-build --android-platform android-31 --jdk /usr/lib/jvm/java-8-openjdk-amd64 --gradle
+Generating Android Package
+  Input file: /home/rubbiekelvin/Projects/CloudNote/mobile/build/Android_Qt_5_15_2_Clang_Multi_Abi-Debug/android-cloudnote-deployment-settings.json
+  Output directory: /home/rubbiekelvin/Projects/CloudNote/mobile/build/Android_Qt_5_15_2_Clang_Multi_Abi-Debug/android-build/
+  Application binary: cloudnote
+  Android build platform: android-31
+  Install to device: No
+Warning: QML import could not be resolved in any of the import paths: StuffsByRubbie
+Warning: QML import could not be resolved in any of the import paths: StatusBar
+Starting a Gradle Daemon (subsequent builds will be faster)
+> Task :preBuild UP-TO-DATE
+> Task :preDebugBuild UP-TO-DATE
+> Task :compileDebugAidl UP-TO-DATE
+> Task :compileDebugRenderscript NO-SOURCE
+> Task :generateDebugBuildConfig UP-TO-DATE
+> Task :javaPreCompileDebug UP-TO-DATE
+> Task :mainApkListPersistenceDebug UP-TO-DATE
+> Task :generateDebugResValues UP-TO-DATE
+> Task :generateDebugResources UP-TO-DATE
+> Task :mergeDebugResources UP-TO-DATE
+> Task :createDebugCompatibleScreenManifests UP-TO-DATE
+> Task :extractDeepLinksDebug UP-TO-DATE
+> Task :processDebugManifest UP-TO-DATE
+> Task :processDebugResources UP-TO-DATE
+> Task :compileDebugJavaWithJavac UP-TO-DATE
+> Task :compileDebugSources UP-TO-DATE
+> Task :mergeDebugShaders UP-TO-DATE
+> Task :compileDebugShaders UP-TO-DATE
+> Task :generateDebugAssets UP-TO-DATE
+> Task :mergeDebugAssets
+> Task :processDebugJavaRes NO-SOURCE
+> Task :mergeDebugJavaResource UP-TO-DATE
+> Task :checkDebugDuplicateClasses UP-TO-DATE
+> Task :desugarDebugFileDependencies UP-TO-DATE
+> Task :mergeExtDexDebug UP-TO-DATE
+> Task :mergeLibDexDebug UP-TO-DATE
+> Task :dexBuilderDebug UP-TO-DATE
+> Task :mergeProjectDexDebug UP-TO-DATE
+> Task :mergeDebugJniLibFolders
+> Task :validateSigningDebug UP-TO-DATE
+> Task :mergeDebugNativeLibs
+> Task :stripDebugDebugSymbols
+> Task :packageDebug
+> Task :assembleDebug
+
+BUILD SUCCESSFUL in 1m 51s
+26 actionable tasks: 5 executed, 21 up-to-date
+Android package built successfully in 125.110 ms.
+  -- File: /home/rubbiekelvin/Projects/CloudNote/mobile/build/Android_Qt_5_15_2_Clang_Multi_Abi-Debug/android-build//build/outputs/apk/debug/android-build-debug.apk
+16:12:22: The process "/home/rubbiekelvin/Qt/5.15.2/android/bin/androiddeployqt" exited normally.
+16:13:03: Starting: "/home/rubbiekelvin/Qt/5.15.2/android/bin/androiddeployqt --verbose --output /home/rubbiekelvin/Projects/CloudNote/mobile/build/Android_Qt_5_15_2_Clang_Multi_Abi-Debug/android-build --no-build --input /home/rubbiekelvin/Projects/CloudNote/mobile/build/Android_Qt_5_15_2_Clang_Multi_Abi-Debug/android-cloudnote-deployment-settings.json --gradle --reinstall --device emulator-5554"
+Generating Android Package
+  Input file: /home/rubbiekelvin/Projects/CloudNote/mobile/build/Android_Qt_5_15_2_Clang_Multi_Abi-Debug/android-cloudnote-deployment-settings.json
+  Output directory: /home/rubbiekelvin/Projects/CloudNote/mobile/build/Android_Qt_5_15_2_Clang_Multi_Abi-Debug/android-build/
+  Application binary: cloudnote
+  Android build platform: android-31
+  Install to device: emulator-5554
+Detecting dependencies of application.
+Reading dependencies from /home/rubbiekelvin/Projects/CloudNote/mobile/build/Android_Qt_5_15_2_Clang_Multi_Abi-Debug/android-build//libs/armeabi-v7a/libcloudnote_armeabi-v7a.so
+      lib/libQt5AndroidExtras_armeabi-v7a.so
+      lib/libQt5Core_armeabi-v7a.so
+      lib/libQt5Gui_armeabi-v7a.so
+      lib/libQt5Network_armeabi-v7a.so
+      lib/libQt5QmlModels_armeabi-v7a.so
+      lib/libQt5Qml_armeabi-v7a.so
+      lib/libQt5QuickControls2_armeabi-v7a.so
+      lib/libQt5Quick_armeabi-v7a.so
+      lib/libQt5Svg_armeabi-v7a.so
+      lib/libQt5Widgets_armeabi-v7a.so
+Reading dependencies from /home/rubbiekelvin/Qt/5.15.2/android/lib/libQt5AndroidExtras_armeabi-v7a.so
+      lib/libQt5Core_armeabi-v7a.so
+Reading dependencies from /home/rubbiekelvin/Qt/5.15.2/android/lib/libQt5Core_armeabi-v7a.so
+Appending dependency: lib/libQt5Core_armeabi-v7a.so
+Reading Android dependencies for Qt5Core_armeabi-v7a
+Appending dependency: lib/libQt5AndroidExtras_armeabi-v7a.so
+Reading dependencies from /home/rubbiekelvin/Qt/5.15.2/android/lib/libQt5Gui_armeabi-v7a.so
+      lib/libQt5Core_armeabi-v7a.so
+Appending dependency: lib/libQt5Gui_armeabi-v7a.so
+Reading dependencies from /home/rubbiekelvin/Qt/5.15.2/android/lib/libQt5Network_armeabi-v7a.so
+      lib/libQt5Core_armeabi-v7a.so
+Appending dependency: lib/libQt5Network_armeabi-v7a.so
+Reading dependencies from /home/rubbiekelvin/Qt/5.15.2/android/lib/libQt5QmlModels_armeabi-v7a.so
+      lib/libQt5Core_armeabi-v7a.so
+      lib/libQt5Network_armeabi-v7a.so
+      lib/libQt5Qml_armeabi-v7a.so
+Reading dependencies from /home/rubbiekelvin/Qt/5.15.2/android/lib/libQt5Qml_armeabi-v7a.so
+      lib/libQt5Core_armeabi-v7a.so
+      lib/libQt5Network_armeabi-v7a.so
+Appending dependency: lib/libQt5Qml_armeabi-v7a.so
+Reading Android dependencies for Qt5Qml_armeabi-v7a
+Appending dependency from xml: plugins/qmltooling/libplugins_qmltooling_qmldbg_debugger_arm64-v8a.so
+Appending dependency from xml: plugins/qmltooling/libplugins_qmltooling_qmldbg_debugger_armeabi-v7a.so
+Appending dependency from xml: plugins/qmltooling/libplugins_qmltooling_qmldbg_debugger_x86.so
+Appending dependency from xml: plugins/qmltooling/libplugins_qmltooling_qmldbg_debugger_x86_64.so
+Appending dependency from xml: plugins/qmltooling/libplugins_qmltooling_qmldbg_inspector_arm64-v8a.so
+Appending dependency from xml: plugins/qmltooling/libplugins_qmltooling_qmldbg_inspector_armeabi-v7a.so
+Appending dependency from xml: plugins/qmltooling/libplugins_qmltooling_qmldbg_inspector_x86.so
+Appending dependency from xml: plugins/qmltooling/libplugins_qmltooling_qmldbg_inspector_x86_64.so
+Appending dependency from xml: plugins/qmltooling/libplugins_qmltooling_qmldbg_local_arm64-v8a.so
+Appending dependency from xml: plugins/qmltooling/libplugins_qmltooling_qmldbg_local_armeabi-v7a.so
+Appending dependency from xml: plugins/qmltooling/libplugins_qmltooling_qmldbg_local_x86.so
+Appending dependency from xml: plugins/qmltooling/libplugins_qmltooling_qmldbg_local_x86_64.so
+Appending dependency from xml: plugins/qmltooling/libplugins_qmltooling_qmldbg_messages_arm64-v8a.so
+Appending dependency from xml: plugins/qmltooling/libplugins_qmltooling_qmldbg_messages_armeabi-v7a.so
+Appending dependency from xml: plugins/qmltooling/libplugins_qmltooling_qmldbg_messages_x86.so
+Appending dependency from xml: plugins/qmltooling/libplugins_qmltooling_qmldbg_messages_x86_64.so
+Appending dependency from xml: plugins/qmltooling/libplugins_qmltooling_qmldbg_native_arm64-v8a.so
+Appending dependency from xml: plugins/qmltooling/libplugins_qmltooling_qmldbg_native_armeabi-v7a.so
+Appending dependency from xml: plugins/qmltooling/libplugins_qmltooling_qmldbg_native_x86.so
+Appending dependency from xml: plugins/qmltooling/libplugins_qmltooling_qmldbg_native_x86_64.so
+Appending dependency from xml: plugins/qmltooling/libplugins_qmltooling_qmldbg_nativedebugger_arm64-v8a.so
+Appending dependency from xml: plugins/qmltooling/libplugins_qmltooling_qmldbg_nativedebugger_armeabi-v7a.so
+Appending dependency from xml: plugins/qmltooling/libplugins_qmltooling_qmldbg_nativedebugger_x86.so
+Appending dependency from xml: plugins/qmltooling/libplugins_qmltooling_qmldbg_nativedebugger_x86_64.so
+Appending dependency from xml: plugins/qmltooling/libplugins_qmltooling_qmldbg_preview_arm64-v8a.so
+Appending dependency from xml: plugins/qmltooling/libplugins_qmltooling_qmldbg_preview_armeabi-v7a.so
+Appending dependency from xml: plugins/qmltooling/libplugins_qmltooling_qmldbg_preview_x86.so
+Appending dependency from xml: plugins/qmltooling/libplugins_qmltooling_qmldbg_preview_x86_64.so
+Appending dependency from xml: plugins/qmltooling/libplugins_qmltooling_qmldbg_profiler_arm64-v8a.so
+Appending dependency from xml: plugins/qmltooling/libplugins_qmltooling_qmldbg_profiler_armeabi-v7a.so
+Appending dependency from xml: plugins/qmltooling/libplugins_qmltooling_qmldbg_profiler_x86.so
+Appending dependency from xml: plugins/qmltooling/libplugins_qmltooling_qmldbg_profiler_x86_64.so
+Appending dependency from xml: plugins/qmltooling/libplugins_qmltooling_qmldbg_quickprofiler_arm64-v8a.so
+Appending dependency from xml: plugins/qmltooling/libplugins_qmltooling_qmldbg_quickprofiler_armeabi-v7a.so
+Appending dependency from xml: plugins/qmltooling/libplugins_qmltooling_qmldbg_quickprofiler_x86.so
+Appending dependency from xml: plugins/qmltooling/libplugins_qmltooling_qmldbg_quickprofiler_x86_64.so
+Appending dependency from xml: plugins/qmltooling/libplugins_qmltooling_qmldbg_server_arm64-v8a.so
+Appending dependency from xml: plugins/qmltooling/libplugins_qmltooling_qmldbg_server_armeabi-v7a.so
+Appending dependency from xml: plugins/qmltooling/libplugins_qmltooling_qmldbg_server_x86.so
+Appending dependency from xml: plugins/qmltooling/libplugins_qmltooling_qmldbg_server_x86_64.so
+Appending dependency from xml: plugins/qmltooling/libplugins_qmltooling_qmldbg_tcp_arm64-v8a.so
+Appending dependency from xml: plugins/qmltooling/libplugins_qmltooling_qmldbg_tcp_armeabi-v7a.so
+Appending dependency from xml: plugins/qmltooling/libplugins_qmltooling_qmldbg_tcp_x86.so
+Appending dependency from xml: plugins/qmltooling/libplugins_qmltooling_qmldbg_tcp_x86_64.so
+Appending dependency: lib/libQt5QmlModels_armeabi-v7a.so
+Reading dependencies from /home/rubbiekelvin/Qt/5.15.2/android/lib/libQt5QuickControls2_armeabi-v7a.so
+      lib/libQt5Core_armeabi-v7a.so
+      lib/libQt5Gui_armeabi-v7a.so
+      lib/libQt5Network_armeabi-v7a.so
+      lib/libQt5QmlModels_armeabi-v7a.so
+      lib/libQt5Qml_armeabi-v7a.so
+      lib/libQt5QuickTemplates2_armeabi-v7a.so
+      lib/libQt5Quick_armeabi-v7a.so
+Reading dependencies from /home/rubbiekelvin/Qt/5.15.2/android/lib/libQt5QuickTemplates2_armeabi-v7a.so
+      lib/libQt5Core_armeabi-v7a.so
+      lib/libQt5Gui_armeabi-v7a.so
+      lib/libQt5Network_armeabi-v7a.so
+      lib/libQt5QmlModels_armeabi-v7a.so
+      lib/libQt5Qml_armeabi-v7a.so
+      lib/libQt5Quick_armeabi-v7a.so
+Reading dependencies from /home/rubbiekelvin/Qt/5.15.2/android/lib/libQt5Quick_armeabi-v7a.so
+      lib/libQt5Core_armeabi-v7a.so
+      lib/libQt5Gui_armeabi-v7a.so
+      lib/libQt5Network_armeabi-v7a.so
+      lib/libQt5QmlModels_armeabi-v7a.so
+      lib/libQt5Qml_armeabi-v7a.so
+Appending dependency: lib/libQt5Quick_armeabi-v7a.so
+Reading Android dependencies for Qt5Quick_armeabi-v7a
+Appending dependency: lib/libQt5QuickTemplates2_armeabi-v7a.so
+No android dependencies for Qt5QuickTemplates2_armeabi-v7a
+Appending dependency: lib/libQt5QuickControls2_armeabi-v7a.so
+Reading dependencies from /home/rubbiekelvin/Qt/5.15.2/android/lib/libQt5Svg_armeabi-v7a.so
+      lib/libQt5Core_armeabi-v7a.so
+      lib/libQt5Gui_armeabi-v7a.so
+      lib/libQt5Widgets_armeabi-v7a.so
+Reading dependencies from /home/rubbiekelvin/Qt/5.15.2/android/lib/libQt5Widgets_armeabi-v7a.so
+      lib/libQt5Core_armeabi-v7a.so
+      lib/libQt5Gui_armeabi-v7a.so
+Appending dependency: lib/libQt5Widgets_armeabi-v7a.so
+Reading Android dependencies for Qt5Widgets_armeabi-v7a
+Appending dependency from xml: plugins/styles/libplugins_styles_qandroidstyle_arm64-v8a.so
+Appending dependency from xml: plugins/styles/libplugins_styles_qandroidstyle_armeabi-v7a.so
+Appending dependency from xml: plugins/styles/libplugins_styles_qandroidstyle_x86.so
+Appending dependency from xml: plugins/styles/libplugins_styles_qandroidstyle_x86_64.so
+Appending dependency: lib/libQt5Svg_armeabi-v7a.so
+Reading Android dependencies for Qt5AndroidExtras_armeabi-v7a
+Reading Android dependencies for Qt5Gui_armeabi-v7a
+Appending dependency from xml: plugins/platforms/libplugins_platforms_qtforandroid_arm64-v8a.so
+Appending dependency from xml: plugins/platforms/libplugins_platforms_qtforandroid_armeabi-v7a.so
+Appending dependency from xml: plugins/platforms/libplugins_platforms_qtforandroid_x86.so
+Appending dependency from xml: plugins/platforms/libplugins_platforms_qtforandroid_x86_64.so
+Appending dependency from xml: plugins/iconengines/libplugins_iconengines_qsvgicon_arm64-v8a.so
+Appending dependency from xml: plugins/iconengines/libplugins_iconengines_qsvgicon_armeabi-v7a.so
+Appending dependency from xml: plugins/iconengines/libplugins_iconengines_qsvgicon_x86.so
+Appending dependency from xml: plugins/iconengines/libplugins_iconengines_qsvgicon_x86_64.so
+Appending dependency from xml: plugins/imageformats/libplugins_imageformats_qgif_arm64-v8a.so
+Appending dependency from xml: plugins/imageformats/libplugins_imageformats_qgif_armeabi-v7a.so
+Appending dependency from xml: plugins/imageformats/libplugins_imageformats_qgif_x86.so
+Appending dependency from xml: plugins/imageformats/libplugins_imageformats_qgif_x86_64.so
+Appending dependency from xml: plugins/imageformats/libplugins_imageformats_qicns_arm64-v8a.so
+Appending dependency from xml: plugins/imageformats/libplugins_imageformats_qicns_armeabi-v7a.so
+Appending dependency from xml: plugins/imageformats/libplugins_imageformats_qicns_x86.so
+Appending dependency from xml: plugins/imageformats/libplugins_imageformats_qicns_x86_64.so
+Appending dependency from xml: plugins/imageformats/libplugins_imageformats_qico_arm64-v8a.so
+Appending dependency from xml: plugins/imageformats/libplugins_imageformats_qico_armeabi-v7a.so
+Appending dependency from xml: plugins/imageformats/libplugins_imageformats_qico_x86.so
+Appending dependency from xml: plugins/imageformats/libplugins_imageformats_qico_x86_64.so
+Appending dependency from xml: plugins/imageformats/libplugins_imageformats_qjpeg_arm64-v8a.so
+Appending dependency from xml: plugins/imageformats/libplugins_imageformats_qjpeg_armeabi-v7a.so
+Appending dependency from xml: plugins/imageformats/libplugins_imageformats_qjpeg_x86.so
+Appending dependency from xml: plugins/imageformats/libplugins_imageformats_qjpeg_x86_64.so
+Appending dependency from xml: plugins/imageformats/libplugins_imageformats_qsvg_arm64-v8a.so
+Appending dependency from xml: plugins/imageformats/libplugins_imageformats_qsvg_armeabi-v7a.so
+Appending dependency from xml: plugins/imageformats/libplugins_imageformats_qsvg_x86.so
+Appending dependency from xml: plugins/imageformats/libplugins_imageformats_qsvg_x86_64.so
+Appending dependency from xml: plugins/imageformats/libplugins_imageformats_qtga_arm64-v8a.so
+Appending dependency from xml: plugins/imageformats/libplugins_imageformats_qtga_armeabi-v7a.so
+Appending dependency from xml: plugins/imageformats/libplugins_imageformats_qtga_x86.so
+Appending dependency from xml: plugins/imageformats/libplugins_imageformats_qtga_x86_64.so
+Appending dependency from xml: plugins/imageformats/libplugins_imageformats_qtiff_arm64-v8a.so
+Appending dependency from xml: plugins/imageformats/libplugins_imageformats_qtiff_armeabi-v7a.so
+Appending dependency from xml: plugins/imageformats/libplugins_imageformats_qtiff_x86.so
+Appending dependency from xml: plugins/imageformats/libplugins_imageformats_qtiff_x86_64.so
+Appending dependency from xml: plugins/imageformats/libplugins_imageformats_qwbmp_arm64-v8a.so
+Appending dependency from xml: plugins/imageformats/libplugins_imageformats_qwbmp_armeabi-v7a.so
+Appending dependency from xml: plugins/imageformats/libplugins_imageformats_qwbmp_x86.so
+Appending dependency from xml: plugins/imageformats/libplugins_imageformats_qwbmp_x86_64.so
+Appending dependency from xml: plugins/imageformats/libplugins_imageformats_qwebp_arm64-v8a.so
+Appending dependency from xml: plugins/imageformats/libplugins_imageformats_qwebp_armeabi-v7a.so
+Appending dependency from xml: plugins/imageformats/libplugins_imageformats_qwebp_x86.so
+Appending dependency from xml: plugins/imageformats/libplugins_imageformats_qwebp_x86_64.so
+Reading Android dependencies for Qt5Network_armeabi-v7a
+Appending dependency from xml: plugins/bearer/libplugins_bearer_qandroidbearer_arm64-v8a.so
+Appending dependency from xml: plugins/bearer/libplugins_bearer_qandroidbearer_armeabi-v7a.so
+Appending dependency from xml: plugins/bearer/libplugins_bearer_qandroidbearer_x86.so
+Appending dependency from xml: plugins/bearer/libplugins_bearer_qandroidbearer_x86_64.so
+No android dependencies for Qt5QmlModels_armeabi-v7a
+No android dependencies for Qt5QuickControls2_armeabi-v7a
+No android dependencies for Qt5Svg_armeabi-v7a
+Reading dependencies from /home/rubbiekelvin/Qt/5.15.2/android/plugins/bearer/libplugins_bearer_qandroidbearer_armeabi-v7a.so
+      lib/libQt5Core_armeabi-v7a.so
+      lib/libQt5Network_armeabi-v7a.so
+Reading dependencies from /home/rubbiekelvin/Qt/5.15.2/android/plugins/platforms/libplugins_platforms_qtforandroid_armeabi-v7a.so
+      lib/libQt5Core_armeabi-v7a.so
+      lib/libQt5Gui_armeabi-v7a.so
+Scanning for QML imports.
+Running qmlimportscanner with the following command: /home/rubbiekelvin/Qt/5.15.2/android/bin/qmlimportscanner -qrcFiles /home/rubbiekelvin/Projects/CloudNote/mobile/qml.qrc -rootPath /home/rubbiekelvin/Projects/CloudNote/mobile/ -importPath /home/rubbiekelvin/Qt/5.15.2/android/qml /home/rubbiekelvin/Projects/CloudNote/mobile/ /home/rubbiekelvin/Projects/CloudNote/mobile /home/rubbiekelvin/Qt/5.15.2/android/qml
+  -- Adding '/home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick.2' as QML dependency
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick.2/libqml_QtQuick.2_qtquick2plugin_arm64-v8a.so
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick.2/libqml_QtQuick.2_qtquick2plugin_armeabi-v7a.so
+Reading dependencies from /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick.2/libqml_QtQuick.2_qtquick2plugin_armeabi-v7a.so
+      lib/libQt5Core_armeabi-v7a.so
+      lib/libQt5Gui_armeabi-v7a.so
+      lib/libQt5Network_armeabi-v7a.so
+      lib/libQt5QmlModels_armeabi-v7a.so
+      lib/libQt5QmlWorkerScript_armeabi-v7a.so
+      lib/libQt5Qml_armeabi-v7a.so
+      lib/libQt5Quick_armeabi-v7a.so
+Reading dependencies from /home/rubbiekelvin/Qt/5.15.2/android/lib/libQt5QmlWorkerScript_armeabi-v7a.so
+      lib/libQt5Core_armeabi-v7a.so
+      lib/libQt5Network_armeabi-v7a.so
+      lib/libQt5Qml_armeabi-v7a.so
+Appending dependency: lib/libQt5QmlWorkerScript_armeabi-v7a.so
+No android dependencies for Qt5QmlWorkerScript_armeabi-v7a
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick.2/libqml_QtQuick.2_qtquick2plugin_x86.so
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick.2/libqml_QtQuick.2_qtquick2plugin_x86_64.so
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick.2/plugins.qmltypes
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick.2/qmldir
+  -- Adding '/home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2' as QML dependency
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/AbstractButton.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Action.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/ActionGroup.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/ApplicationWindow.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/BusyIndicator.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Button.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/ButtonGroup.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/CheckBox.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/CheckDelegate.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/ComboBox.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Container.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Control.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/DelayButton.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/designer/AbstractButtonSection.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/designer/BusyIndicatorSpecifics.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/designer/ButtonSection.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/designer/ButtonSpecifics.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/designer/CheckBoxSpecifics.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/designer/CheckDelegateSpecifics.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/designer/CheckSection.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/designer/ComboBoxSpecifics.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/designer/ContainerSection.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/designer/ControlSection.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/designer/ControlSpecifics.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/designer/DelayButtonSpecifics.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/designer/DialSpecifics.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/designer/FrameSpecifics.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/designer/GroupBoxSpecifics.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/designer/images/busyindicator-icon.png
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/designer/images/busyindicator-icon16.png
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/designer/images/busyindicator-icon@2x.png
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/designer/images/button-icon.png
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/designer/images/button-icon16.png
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/designer/images/button-icon@2x.png
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/designer/images/checkbox-icon.png
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/designer/images/checkbox-icon16.png
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/designer/images/checkbox-icon@2x.png
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/designer/images/combobox-icon.png
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/designer/images/combobox-icon16.png
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/designer/images/combobox-icon@2x.png
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/designer/images/delaybutton-icon.png
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/designer/images/delaybutton-icon16.png
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/designer/images/delaybutton-icon@2x.png
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/designer/images/dial-icon.png
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/designer/images/dial-icon16.png
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/designer/images/dial-icon@2x.png
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/designer/images/frame-icon.png
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/designer/images/frame-icon16.png
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/designer/images/frame-icon@2x.png
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/designer/images/groupbox-icon.png
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/designer/images/groupbox-icon16.png
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/designer/images/groupbox-icon@2x.png
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/designer/images/itemdelegate-icon.png
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/designer/images/itemdelegate-icon16.png
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/designer/images/itemdelegate-icon@2x.png
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/designer/images/label-icon.png
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/designer/images/label-icon16.png
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/designer/images/label-icon@2x.png
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/designer/images/page-icon.png
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/designer/images/page-icon16.png
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/designer/images/page-icon@2x.png
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/designer/images/pageindicator-icon.png
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/designer/images/pageindicator-icon16.png
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/designer/images/pageindicator-icon@2x.png
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/designer/images/pane-icon.png
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/designer/images/pane-icon16.png
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/designer/images/pane-icon@2x.png
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/designer/images/progressbar-icon.png
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/designer/images/progressbar-icon16.png
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/designer/images/progressbar-icon@2x.png
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/designer/images/radiobutton-icon.png
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/designer/images/radiobutton-icon16.png
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/designer/images/radiobutton-icon@2x.png
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/designer/images/rangeslider-icon.png
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/designer/images/rangeslider-icon16.png
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/designer/images/rangeslider-icon@2x.png
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/designer/images/roundbutton-icon.png
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/designer/images/roundbutton-icon16.png
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/designer/images/roundbutton-icon@2x.png
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/designer/images/scrollview-icon.png
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/designer/images/scrollview-icon16.png
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/designer/images/scrollview-icon@2x.png
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/designer/images/slider-icon.png
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/designer/images/slider-icon16.png
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/designer/images/slider-icon@2x.png
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/designer/images/spinbox-icon.png
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/designer/images/spinbox-icon16.png
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/designer/images/spinbox-icon@2x.png
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/designer/images/stackview-icon.png
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/designer/images/stackview-icon16.png
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/designer/images/stackview-icon@2x.png
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/designer/images/swipeview-icon.png
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/designer/images/swipeview-icon16.png
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/designer/images/swipeview-icon@2x.png
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/designer/images/switch-icon.png
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/designer/images/switch-icon16.png
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/designer/images/switch-icon@2x.png
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/designer/images/textarea-icon.png
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/designer/images/textarea-icon16.png
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/designer/images/textarea-icon@2x.png
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/designer/images/textfield-icon.png
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/designer/images/textfield-icon16.png
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/designer/images/textfield-icon@2x.png
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/designer/images/toolbar-icon.png
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/designer/images/toolbar-icon16.png
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/designer/images/toolbar-icon@2x.png
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/designer/images/toolbutton-icon.png
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/designer/images/toolbutton-icon16.png
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/designer/images/toolbutton-icon@2x.png
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/designer/images/toolseparator-icon.png
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/designer/images/toolseparator-icon16.png
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/designer/images/toolseparator-icon@2x.png
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/designer/images/tumbler-icon.png
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/designer/images/tumbler-icon16.png
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/designer/images/tumbler-icon@2x.png
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/designer/InsetSection.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/designer/ItemDelegateSection.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/designer/ItemDelegateSpecifics.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/designer/LabelSpecifics.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/designer/PaddingSection.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/designer/PageIndicatorSpecifics.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/designer/PageSpecifics.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/designer/PaneSection.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/designer/PaneSpecifics.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/designer/ProgressBarSpecifics.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/designer/qtquickcontrols2.metainfo
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/designer/RadioButtonSpecifics.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/designer/RadioDelegateSpecifics.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/designer/RangeSliderSpecifics.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/designer/RoundButtonSpecifics.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/designer/ScrollViewSpecifics.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/designer/SliderSpecifics.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/designer/SpinBoxSpecifics.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/designer/StackViewSpecifics.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/designer/SwipeDelegateSpecifics.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/designer/SwipeViewSpecifics.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/designer/SwitchDelegateSpecifics.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/designer/SwitchSpecifics.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/designer/TabBarSpecifics.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/designer/TabButtonSpecifics.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/designer/TextAreaSpecifics.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/designer/TextFieldSpecifics.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/designer/ToolBarSpecifics.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/designer/ToolButtonSpecifics.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/designer/ToolSeparatorSpecifics.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/designer/TumblerSpecifics.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Dial.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Dialog.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/DialogButtonBox.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Drawer.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Frame.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Fusion/ApplicationWindow.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Fusion/BusyIndicator.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Fusion/Button.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Fusion/ButtonPanel.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Fusion/CheckBox.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Fusion/CheckDelegate.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Fusion/CheckIndicator.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Fusion/ComboBox.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Fusion/DelayButton.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Fusion/Dial.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Fusion/Dialog.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Fusion/DialogButtonBox.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Fusion/Drawer.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Fusion/Frame.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Fusion/GroupBox.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Fusion/HorizontalHeaderView.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Fusion/ItemDelegate.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Fusion/Label.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Fusion/libqml_QtQuick_Controls.2_Fusion_qtquickcontrols2fusionstyleplugin_arm64-v8a.so
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Fusion/libqml_QtQuick_Controls.2_Fusion_qtquickcontrols2fusionstyleplugin_armeabi-v7a.so
+Reading dependencies from /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Fusion/libqml_QtQuick_Controls.2_Fusion_qtquickcontrols2fusionstyleplugin_armeabi-v7a.so
+      lib/libQt5Core_armeabi-v7a.so
+      lib/libQt5Gui_armeabi-v7a.so
+      lib/libQt5Network_armeabi-v7a.so
+      lib/libQt5QmlModels_armeabi-v7a.so
+      lib/libQt5Qml_armeabi-v7a.so
+      lib/libQt5QuickControls2_armeabi-v7a.so
+      lib/libQt5QuickTemplates2_armeabi-v7a.so
+      lib/libQt5Quick_armeabi-v7a.so
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Fusion/libqml_QtQuick_Controls.2_Fusion_qtquickcontrols2fusionstyleplugin_x86.so
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Fusion/libqml_QtQuick_Controls.2_Fusion_qtquickcontrols2fusionstyleplugin_x86_64.so
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Fusion/Menu.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Fusion/MenuBar.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Fusion/MenuBarItem.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Fusion/MenuItem.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Fusion/MenuSeparator.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Fusion/Page.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Fusion/PageIndicator.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Fusion/Pane.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Fusion/plugins.qmltypes
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Fusion/Popup.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Fusion/ProgressBar.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Fusion/qmldir
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Fusion/RadioButton.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Fusion/RadioDelegate.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Fusion/RadioIndicator.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Fusion/RangeSlider.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Fusion/RoundButton.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Fusion/ScrollBar.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Fusion/ScrollIndicator.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Fusion/Slider.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Fusion/SliderGroove.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Fusion/SliderHandle.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Fusion/SpinBox.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Fusion/SplitView.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Fusion/SwipeDelegate.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Fusion/Switch.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Fusion/SwitchDelegate.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Fusion/SwitchIndicator.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Fusion/TabBar.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Fusion/TabButton.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Fusion/TextArea.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Fusion/TextField.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Fusion/ToolBar.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Fusion/ToolButton.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Fusion/ToolSeparator.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Fusion/ToolTip.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Fusion/Tumbler.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Fusion/VerticalHeaderView.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/GroupBox.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/HorizontalHeaderView.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Imagine/ApplicationWindow.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Imagine/BusyIndicator.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Imagine/Button.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Imagine/CheckBox.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Imagine/CheckDelegate.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Imagine/ComboBox.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Imagine/DelayButton.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Imagine/Dial.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Imagine/Dialog.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Imagine/DialogButtonBox.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Imagine/Drawer.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Imagine/Frame.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Imagine/GroupBox.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Imagine/HorizontalHeaderView.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Imagine/ItemDelegate.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Imagine/Label.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Imagine/libqml_QtQuick_Controls.2_Imagine_qtquickcontrols2imaginestyleplugin_arm64-v8a.so
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Imagine/libqml_QtQuick_Controls.2_Imagine_qtquickcontrols2imaginestyleplugin_armeabi-v7a.so
+Reading dependencies from /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Imagine/libqml_QtQuick_Controls.2_Imagine_qtquickcontrols2imaginestyleplugin_armeabi-v7a.so
+      lib/libQt5Core_armeabi-v7a.so
+      lib/libQt5Gui_armeabi-v7a.so
+      lib/libQt5Network_armeabi-v7a.so
+      lib/libQt5QmlModels_armeabi-v7a.so
+      lib/libQt5Qml_armeabi-v7a.so
+      lib/libQt5QuickControls2_armeabi-v7a.so
+      lib/libQt5QuickTemplates2_armeabi-v7a.so
+      lib/libQt5Quick_armeabi-v7a.so
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Imagine/libqml_QtQuick_Controls.2_Imagine_qtquickcontrols2imaginestyleplugin_x86.so
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Imagine/libqml_QtQuick_Controls.2_Imagine_qtquickcontrols2imaginestyleplugin_x86_64.so
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Imagine/Menu.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Imagine/MenuItem.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Imagine/MenuSeparator.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Imagine/Page.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Imagine/PageIndicator.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Imagine/Pane.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Imagine/plugins.qmltypes
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Imagine/Popup.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Imagine/ProgressBar.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Imagine/qmldir
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Imagine/RadioButton.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Imagine/RadioDelegate.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Imagine/RangeSlider.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Imagine/RoundButton.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Imagine/ScrollBar.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Imagine/ScrollIndicator.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Imagine/Slider.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Imagine/SpinBox.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Imagine/SplitView.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Imagine/StackView.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Imagine/SwipeDelegate.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Imagine/SwipeView.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Imagine/Switch.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Imagine/SwitchDelegate.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Imagine/TabBar.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Imagine/TabButton.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Imagine/TextArea.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Imagine/TextField.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Imagine/ToolBar.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Imagine/ToolButton.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Imagine/ToolSeparator.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Imagine/ToolTip.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Imagine/Tumbler.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Imagine/VerticalHeaderView.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/ItemDelegate.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Label.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/libqml_QtQuick_Controls.2_qtquickcontrols2plugin_arm64-v8a.so
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/libqml_QtQuick_Controls.2_qtquickcontrols2plugin_armeabi-v7a.so
+Reading dependencies from /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/libqml_QtQuick_Controls.2_qtquickcontrols2plugin_armeabi-v7a.so
+      lib/libQt5Core_armeabi-v7a.so
+      lib/libQt5Gui_armeabi-v7a.so
+      lib/libQt5Network_armeabi-v7a.so
+      lib/libQt5QmlModels_armeabi-v7a.so
+      lib/libQt5Qml_armeabi-v7a.so
+      lib/libQt5QuickControls2_armeabi-v7a.so
+      lib/libQt5QuickTemplates2_armeabi-v7a.so
+      lib/libQt5Quick_armeabi-v7a.so
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/libqml_QtQuick_Controls.2_qtquickcontrols2plugin_x86.so
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/libqml_QtQuick_Controls.2_qtquickcontrols2plugin_x86_64.so
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Material/ApplicationWindow.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Material/BoxShadow.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Material/BusyIndicator.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Material/Button.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Material/CheckBox.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Material/CheckDelegate.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Material/CheckIndicator.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Material/ComboBox.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Material/CursorDelegate.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Material/DelayButton.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Material/Dial.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Material/Dialog.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Material/DialogButtonBox.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Material/Drawer.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Material/ElevationEffect.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Material/Frame.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Material/GroupBox.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Material/HorizontalHeaderView.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Material/ItemDelegate.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Material/Label.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Material/libqml_QtQuick_Controls.2_Material_qtquickcontrols2materialstyleplugin_arm64-v8a.so
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Material/libqml_QtQuick_Controls.2_Material_qtquickcontrols2materialstyleplugin_armeabi-v7a.so
+Reading dependencies from /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Material/libqml_QtQuick_Controls.2_Material_qtquickcontrols2materialstyleplugin_armeabi-v7a.so
+      lib/libQt5Core_armeabi-v7a.so
+      lib/libQt5Gui_armeabi-v7a.so
+      lib/libQt5Network_armeabi-v7a.so
+      lib/libQt5QmlModels_armeabi-v7a.so
+      lib/libQt5Qml_armeabi-v7a.so
+      lib/libQt5QuickControls2_armeabi-v7a.so
+      lib/libQt5QuickTemplates2_armeabi-v7a.so
+      lib/libQt5Quick_armeabi-v7a.so
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Material/libqml_QtQuick_Controls.2_Material_qtquickcontrols2materialstyleplugin_x86.so
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Material/libqml_QtQuick_Controls.2_Material_qtquickcontrols2materialstyleplugin_x86_64.so
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Material/Menu.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Material/MenuBar.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Material/MenuBarItem.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Material/MenuItem.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Material/MenuSeparator.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Material/Page.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Material/PageIndicator.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Material/Pane.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Material/plugins.qmltypes
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Material/Popup.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Material/ProgressBar.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Material/qmldir
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Material/RadioButton.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Material/RadioDelegate.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Material/RadioIndicator.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Material/RangeSlider.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Material/RectangularGlow.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Material/RoundButton.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Material/ScrollBar.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Material/ScrollIndicator.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Material/Slider.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Material/SliderHandle.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Material/SpinBox.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Material/SplitView.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Material/StackView.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Material/SwipeDelegate.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Material/SwipeView.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Material/Switch.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Material/SwitchDelegate.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Material/SwitchIndicator.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Material/TabBar.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Material/TabButton.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Material/TextArea.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Material/TextField.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Material/ToolBar.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Material/ToolButton.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Material/ToolSeparator.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Material/ToolTip.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Material/Tumbler.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Material/VerticalHeaderView.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Menu.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/MenuBar.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/MenuBarItem.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/MenuItem.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/MenuSeparator.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Page.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/PageIndicator.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Pane.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/plugins.qmltypes
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Popup.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/ProgressBar.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/qmldir
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/RadioButton.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/RadioDelegate.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/RangeSlider.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/RoundButton.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/ScrollBar.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/ScrollIndicator.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/ScrollView.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Slider.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/SpinBox.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/SplitView.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/StackView.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/SwipeDelegate.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/SwipeView.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Switch.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/SwitchDelegate.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/TabBar.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/TabButton.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/TextArea.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/TextField.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/ToolBar.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/ToolButton.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/ToolSeparator.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/ToolTip.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Tumbler.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Universal/ApplicationWindow.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Universal/BusyIndicator.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Universal/Button.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Universal/CheckBox.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Universal/CheckDelegate.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Universal/CheckIndicator.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Universal/ComboBox.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Universal/DelayButton.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Universal/Dial.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Universal/Dialog.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Universal/DialogButtonBox.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Universal/Drawer.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Universal/Frame.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Universal/GroupBox.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Universal/HorizontalHeaderView.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Universal/ItemDelegate.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Universal/Label.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Universal/libqml_QtQuick_Controls.2_Universal_qtquickcontrols2universalstyleplugin_arm64-v8a.so
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Universal/libqml_QtQuick_Controls.2_Universal_qtquickcontrols2universalstyleplugin_armeabi-v7a.so
+Reading dependencies from /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Universal/libqml_QtQuick_Controls.2_Universal_qtquickcontrols2universalstyleplugin_armeabi-v7a.so
+      lib/libQt5Core_armeabi-v7a.so
+      lib/libQt5Gui_armeabi-v7a.so
+      lib/libQt5Network_armeabi-v7a.so
+      lib/libQt5QmlModels_armeabi-v7a.so
+      lib/libQt5Qml_armeabi-v7a.so
+      lib/libQt5QuickControls2_armeabi-v7a.so
+      lib/libQt5QuickTemplates2_armeabi-v7a.so
+      lib/libQt5Quick_armeabi-v7a.so
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Universal/libqml_QtQuick_Controls.2_Universal_qtquickcontrols2universalstyleplugin_x86.so
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Universal/libqml_QtQuick_Controls.2_Universal_qtquickcontrols2universalstyleplugin_x86_64.so
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Universal/Menu.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Universal/MenuBar.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Universal/MenuBarItem.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Universal/MenuItem.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Universal/MenuSeparator.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Universal/Page.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Universal/PageIndicator.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Universal/Pane.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Universal/plugins.qmltypes
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Universal/Popup.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Universal/ProgressBar.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Universal/qmldir
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Universal/RadioButton.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Universal/RadioDelegate.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Universal/RadioIndicator.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Universal/RangeSlider.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Universal/RoundButton.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Universal/ScrollBar.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Universal/ScrollIndicator.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Universal/Slider.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Universal/SpinBox.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Universal/SplitView.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Universal/StackView.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Universal/SwipeDelegate.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Universal/Switch.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Universal/SwitchDelegate.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Universal/SwitchIndicator.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Universal/TabBar.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Universal/TabButton.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Universal/TextArea.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Universal/TextField.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Universal/ToolBar.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Universal/ToolButton.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Universal/ToolSeparator.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Universal/ToolTip.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Universal/Tumbler.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Universal/VerticalHeaderView.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/VerticalHeaderView.qml
+  -- Adding '/home/rubbiekelvin/Qt/5.15.2/android/qml/Qt/labs/settings' as QML dependency
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/Qt/labs/settings/libqml_Qt_labs_settings_qmlsettingsplugin_arm64-v8a.so
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/Qt/labs/settings/libqml_Qt_labs_settings_qmlsettingsplugin_armeabi-v7a.so
+Reading dependencies from /home/rubbiekelvin/Qt/5.15.2/android/qml/Qt/labs/settings/libqml_Qt_labs_settings_qmlsettingsplugin_armeabi-v7a.so
+      lib/libQt5Core_armeabi-v7a.so
+      lib/libQt5Network_armeabi-v7a.so
+      lib/libQt5Qml_armeabi-v7a.so
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/Qt/labs/settings/libqml_Qt_labs_settings_qmlsettingsplugin_x86.so
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/Qt/labs/settings/libqml_Qt_labs_settings_qmlsettingsplugin_x86_64.so
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/Qt/labs/settings/plugins.qmltypes
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/Qt/labs/settings/qmldir
+Warning: QML import could not be resolved in any of the import paths: StuffsByRubbie
+  -- Adding '/home/rubbiekelvin/Projects/CloudNote/mobile/uix/main.qml/qrc:/uix/scripts/app/main.mjs' as QML dependency
+    -- Skipping because file does not exist.
+  -- Adding '/home/rubbiekelvin/Projects/CloudNote/mobile/uix/main.qml/qrc:/uix/components/interface' as QML dependency
+    -- Skipping because file does not exist.
+  -- Adding '/home/rubbiekelvin/Projects/CloudNote/mobile/uix/main.qml/qrc:/uix/scripts/constants/routes.js' as QML dependency
+    -- Skipping because file does not exist.
+  -- Adding '/home/rubbiekelvin/Projects/CloudNote/mobile/uix/main.qml/qrc:/uix/components/containers' as QML dependency
+    -- Skipping because file does not exist.
+  -- Adding '/home/rubbiekelvin/Projects/CloudNote/mobile/uix/main.qml/qrc:/uix/scripts/constants/fonts.mjs' as QML dependency
+    -- Skipping because file does not exist.
+  -- Adding '/home/rubbiekelvin/Qt/5.15.2/android/qml/QtQml' as QML dependency
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQml/libqml_QtQml_qmlplugin_arm64-v8a.so
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQml/libqml_QtQml_qmlplugin_armeabi-v7a.so
+Reading dependencies from /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQml/libqml_QtQml_qmlplugin_armeabi-v7a.so
+      lib/libQt5Core_armeabi-v7a.so
+      lib/libQt5Network_armeabi-v7a.so
+      lib/libQt5QmlModels_armeabi-v7a.so
+      lib/libQt5Qml_armeabi-v7a.so
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQml/libqml_QtQml_qmlplugin_x86.so
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQml/libqml_QtQml_qmlplugin_x86_64.so
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQml/Models.2/libqml_QtQml_Models.2_modelsplugin_arm64-v8a.so
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQml/Models.2/libqml_QtQml_Models.2_modelsplugin_armeabi-v7a.so
+Reading dependencies from /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQml/Models.2/libqml_QtQml_Models.2_modelsplugin_armeabi-v7a.so
+      lib/libQt5Core_armeabi-v7a.so
+      lib/libQt5Network_armeabi-v7a.so
+      lib/libQt5QmlModels_armeabi-v7a.so
+      lib/libQt5Qml_armeabi-v7a.so
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQml/Models.2/libqml_QtQml_Models.2_modelsplugin_x86.so
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQml/Models.2/libqml_QtQml_Models.2_modelsplugin_x86_64.so
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQml/Models.2/plugins.qmltypes
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQml/Models.2/qmldir
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQml/plugins.qmltypes
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQml/qmldir
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQml/RemoteObjects/libqml_QtQml_RemoteObjects_qtqmlremoteobjects_arm64-v8a.so
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQml/RemoteObjects/libqml_QtQml_RemoteObjects_qtqmlremoteobjects_armeabi-v7a.so
+Reading dependencies from /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQml/RemoteObjects/libqml_QtQml_RemoteObjects_qtqmlremoteobjects_armeabi-v7a.so
+      lib/libQt5Core_armeabi-v7a.so
+      lib/libQt5Gui_armeabi-v7a.so
+      lib/libQt5Network_armeabi-v7a.so
+      lib/libQt5Qml_armeabi-v7a.so
+      lib/libQt5RemoteObjects_armeabi-v7a.so
+Reading dependencies from /home/rubbiekelvin/Qt/5.15.2/android/lib/libQt5RemoteObjects_armeabi-v7a.so
+      lib/libQt5Core_armeabi-v7a.so
+      lib/libQt5Network_armeabi-v7a.so
+Appending dependency: lib/libQt5RemoteObjects_armeabi-v7a.so
+No android dependencies for Qt5RemoteObjects_armeabi-v7a
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQml/RemoteObjects/libqml_QtQml_RemoteObjects_qtqmlremoteobjects_x86.so
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQml/RemoteObjects/libqml_QtQml_RemoteObjects_qtqmlremoteobjects_x86_64.so
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQml/RemoteObjects/plugins.qmltypes
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQml/RemoteObjects/qmldir
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQml/StateMachine/libqml_QtQml_StateMachine_qtqmlstatemachine_arm64-v8a.so
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQml/StateMachine/libqml_QtQml_StateMachine_qtqmlstatemachine_armeabi-v7a.so
+Reading dependencies from /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQml/StateMachine/libqml_QtQml_StateMachine_qtqmlstatemachine_armeabi-v7a.so
+      lib/libQt5Core_armeabi-v7a.so
+      lib/libQt5Network_armeabi-v7a.so
+      lib/libQt5Qml_armeabi-v7a.so
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQml/StateMachine/libqml_QtQml_StateMachine_qtqmlstatemachine_x86.so
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQml/StateMachine/libqml_QtQml_StateMachine_qtqmlstatemachine_x86_64.so
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQml/StateMachine/plugins.qmltypes
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQml/StateMachine/qmldir
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQml/WorkerScript.2/libqml_QtQml_WorkerScript.2_workerscriptplugin_arm64-v8a.so
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQml/WorkerScript.2/libqml_QtQml_WorkerScript.2_workerscriptplugin_armeabi-v7a.so
+Reading dependencies from /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQml/WorkerScript.2/libqml_QtQml_WorkerScript.2_workerscriptplugin_armeabi-v7a.so
+      lib/libQt5Core_armeabi-v7a.so
+      lib/libQt5Network_armeabi-v7a.so
+      lib/libQt5QmlWorkerScript_armeabi-v7a.so
+      lib/libQt5Qml_armeabi-v7a.so
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQml/WorkerScript.2/libqml_QtQml_WorkerScript.2_workerscriptplugin_x86.so
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQml/WorkerScript.2/libqml_QtQml_WorkerScript.2_workerscriptplugin_x86_64.so
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQml/WorkerScript.2/plugins.qmltypes
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQml/WorkerScript.2/qmldir
+  -- Adding '/home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Templates.2' as QML dependency
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Templates.2/libqml_QtQuick_Templates.2_qtquicktemplates2plugin_arm64-v8a.so
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Templates.2/libqml_QtQuick_Templates.2_qtquicktemplates2plugin_armeabi-v7a.so
+Reading dependencies from /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Templates.2/libqml_QtQuick_Templates.2_qtquicktemplates2plugin_armeabi-v7a.so
+      lib/libQt5Core_armeabi-v7a.so
+      lib/libQt5Gui_armeabi-v7a.so
+      lib/libQt5Network_armeabi-v7a.so
+      lib/libQt5QmlModels_armeabi-v7a.so
+      lib/libQt5Qml_armeabi-v7a.so
+      lib/libQt5QuickTemplates2_armeabi-v7a.so
+      lib/libQt5Quick_armeabi-v7a.so
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Templates.2/libqml_QtQuick_Templates.2_qtquicktemplates2plugin_x86.so
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Templates.2/libqml_QtQuick_Templates.2_qtquicktemplates2plugin_x86_64.so
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Templates.2/plugins.qmltypes
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Templates.2/qmldir
+  -- Adding '/home/rubbiekelvin/Qt/5.15.2/android/qml/QtQml/Models.2' as QML dependency
+  -- Adding '/home/rubbiekelvin/Qt/5.15.2/android/qml/QtQml/WorkerScript.2' as QML dependency
+  -- Adding '/home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Window.2' as QML dependency
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Window.2/libqml_QtQuick_Window.2_windowplugin_arm64-v8a.so
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Window.2/libqml_QtQuick_Window.2_windowplugin_armeabi-v7a.so
+Reading dependencies from /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Window.2/libqml_QtQuick_Window.2_windowplugin_armeabi-v7a.so
+      lib/libQt5Core_armeabi-v7a.so
+      lib/libQt5Gui_armeabi-v7a.so
+      lib/libQt5Network_armeabi-v7a.so
+      lib/libQt5QmlModels_armeabi-v7a.so
+      lib/libQt5Qml_armeabi-v7a.so
+      lib/libQt5Quick_armeabi-v7a.so
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Window.2/libqml_QtQuick_Window.2_windowplugin_x86.so
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Window.2/libqml_QtQuick_Window.2_windowplugin_x86_64.so
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Window.2/plugins.qmltypes
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Window.2/qmldir
+  -- Adding '/home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick.2' as QML dependency
+  -- Adding '/home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Layouts' as QML dependency
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Layouts/libqml_QtQuick_Layouts_qquicklayoutsplugin_arm64-v8a.so
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Layouts/libqml_QtQuick_Layouts_qquicklayoutsplugin_armeabi-v7a.so
+Reading dependencies from /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Layouts/libqml_QtQuick_Layouts_qquicklayoutsplugin_armeabi-v7a.so
+      lib/libQt5Core_armeabi-v7a.so
+      lib/libQt5Gui_armeabi-v7a.so
+      lib/libQt5Network_armeabi-v7a.so
+      lib/libQt5QmlModels_armeabi-v7a.so
+      lib/libQt5Qml_armeabi-v7a.so
+      lib/libQt5Quick_armeabi-v7a.so
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Layouts/libqml_QtQuick_Layouts_qquicklayoutsplugin_x86.so
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Layouts/libqml_QtQuick_Layouts_qquicklayoutsplugin_x86_64.so
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Layouts/plugins.qmltypes
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Layouts/qmldir
+  -- Adding '/home/rubbiekelvin/Projects/CloudNote/mobile/uix/screens/auth/login.qml/qrc:/uix/components/appbars' as QML dependency
+    -- Skipping because file does not exist.
+  -- Adding '/home/rubbiekelvin/Projects/CloudNote/mobile/uix/screens/auth/login.qml/qrc:/uix/scripts/api/auth.mjs' as QML dependency
+    -- Skipping because file does not exist.
+  -- Adding '/home/rubbiekelvin/Projects/CloudNote/mobile/uix/screens/auth/login.qml/qrc:/uix/components/containers' as QML dependency
+    -- Skipping because file does not exist.
+  -- Adding '/home/rubbiekelvin/Projects/CloudNote/mobile/uix/screens/auth/login.qml/qrc:/uix/scripts/constants/fonts.mjs' as QML dependency
+    -- Skipping because file does not exist.
+  -- Adding '/home/rubbiekelvin/Projects/CloudNote/mobile/uix/screens/auth/login.qml/qrc:/uix/components/controls' as QML dependency
+    -- Skipping because file does not exist.
+  -- Adding '/home/rubbiekelvin/Projects/CloudNote/mobile/uix/screens/auth/login.qml/qrc:/uix/scripts/lib/svg.js' as QML dependency
+    -- Skipping because file does not exist.
+  -- Adding '/home/rubbiekelvin/Projects/CloudNote/mobile/uix/screens/auth/login.qml/qrc:/uix/scripts/constants/routes.js' as QML dependency
+    -- Skipping because file does not exist.
+  -- Adding '/home/rubbiekelvin/Projects/CloudNote/mobile/uix/screens/auth/login.qml/qrc:/uix/scripts/frozen/icon.js' as QML dependency
+    -- Skipping because file does not exist.
+  -- Adding '/home/rubbiekelvin/Projects/CloudNote/mobile/uix/screens/auth/signup.qml/qrc:/uix/components/appbars' as QML dependency
+    -- Skipping because file does not exist.
+  -- Adding '/home/rubbiekelvin/Projects/CloudNote/mobile/uix/screens/auth/signup.qml/qrc:/uix/scripts/api/auth.mjs' as QML dependency
+    -- Skipping because file does not exist.
+  -- Adding '/home/rubbiekelvin/Projects/CloudNote/mobile/uix/screens/auth/signup.qml/qrc:/uix/components/containers' as QML dependency
+    -- Skipping because file does not exist.
+  -- Adding '/home/rubbiekelvin/Projects/CloudNote/mobile/uix/screens/auth/signup.qml/qrc:/uix/scripts/constants/fonts.mjs' as QML dependency
+    -- Skipping because file does not exist.
+  -- Adding '/home/rubbiekelvin/Projects/CloudNote/mobile/uix/screens/auth/signup.qml/qrc:/uix/components/controls' as QML dependency
+    -- Skipping because file does not exist.
+  -- Adding '/home/rubbiekelvin/Projects/CloudNote/mobile/uix/screens/auth/signup.qml/qrc:/uix/scripts/lib/svg.js' as QML dependency
+    -- Skipping because file does not exist.
+  -- Adding '/home/rubbiekelvin/Projects/CloudNote/mobile/uix/screens/auth/signup.qml/qrc:/uix/scripts/constants/routes.js' as QML dependency
+    -- Skipping because file does not exist.
+  -- Adding '/home/rubbiekelvin/Projects/CloudNote/mobile/uix/screens/auth/signup.qml/qrc:/uix/scripts/frozen/icon.js' as QML dependency
+    -- Skipping because file does not exist.
+  -- Adding '/home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Layouts' as QML dependency
+  -- Adding '/home/rubbiekelvin/Projects/CloudNote/mobile/uix/screens/auth/splash.qml/qrc:/uix/components/controls' as QML dependency
+    -- Skipping because file does not exist.
+  -- Adding '/home/rubbiekelvin/Projects/CloudNote/mobile/uix/screens/auth/splash.qml/qrc:/uix/scripts/constants/routes.js' as QML dependency
+    -- Skipping because file does not exist.
+  -- Adding '/home/rubbiekelvin/Projects/CloudNote/mobile/uix/screens/auth/splash.qml/qrc:/uix/components/containers' as QML dependency
+    -- Skipping because file does not exist.
+  -- Adding '/home/rubbiekelvin/Projects/CloudNote/mobile/uix/screens/auth/splash.qml/qrc:/uix/scripts/constants/fonts.mjs' as QML dependency
+    -- Skipping because file does not exist.
+  -- Adding '/home/rubbiekelvin/Projects/CloudNote/mobile/uix/screens/home/explore.qml/qrc:/uix/components/appbars' as QML dependency
+    -- Skipping because file does not exist.
+  -- Adding '/home/rubbiekelvin/Projects/CloudNote/mobile/uix/screens/home/explore.qml/qrc:/uix/scripts/api/auth.mjs' as QML dependency
+    -- Skipping because file does not exist.
+  -- Adding '/home/rubbiekelvin/Projects/CloudNote/mobile/uix/screens/home/explore.qml/qrc:/uix/components/containers' as QML dependency
+    -- Skipping because file does not exist.
+  -- Adding '/home/rubbiekelvin/Projects/CloudNote/mobile/uix/screens/home/explore.qml/qrc:/uix/scripts/constants/fonts.mjs' as QML dependency
+    -- Skipping because file does not exist.
+  -- Adding '/home/rubbiekelvin/Projects/CloudNote/mobile/uix/screens/home/explore.qml/qrc:/uix/components/controls' as QML dependency
+    -- Skipping because file does not exist.
+  -- Adding '/home/rubbiekelvin/Projects/CloudNote/mobile/uix/screens/home/explore.qml/qrc:/uix/scripts/lib/svg.js' as QML dependency
+    -- Skipping because file does not exist.
+  -- Adding '/home/rubbiekelvin/Projects/CloudNote/mobile/uix/screens/home/explore.qml/qrc:/uix/scripts/frozen/icon.js' as QML dependency
+    -- Skipping because file does not exist.
+  -- Adding '/home/rubbiekelvin/Projects/CloudNote/mobile/uix/screens/home/explore.qml/qrc:/uix/scripts/constants/routes.js' as QML dependency
+    -- Skipping because file does not exist.
+  -- Adding '/home/rubbiekelvin/Qt/5.15.2/android/qml/QtGraphicalEffects' as QML dependency
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtGraphicalEffects/Blend.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtGraphicalEffects/BrightnessContrast.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtGraphicalEffects/Colorize.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtGraphicalEffects/ColorOverlay.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtGraphicalEffects/ConicalGradient.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtGraphicalEffects/Desaturate.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtGraphicalEffects/DirectionalBlur.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtGraphicalEffects/Displace.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtGraphicalEffects/DropShadow.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtGraphicalEffects/FastBlur.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtGraphicalEffects/GammaAdjust.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtGraphicalEffects/GaussianBlur.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtGraphicalEffects/Glow.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtGraphicalEffects/HueSaturation.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtGraphicalEffects/InnerShadow.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtGraphicalEffects/LevelAdjust.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtGraphicalEffects/libqml_QtGraphicalEffects_qtgraphicaleffectsplugin_arm64-v8a.so
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtGraphicalEffects/libqml_QtGraphicalEffects_qtgraphicaleffectsplugin_armeabi-v7a.so
+Reading dependencies from /home/rubbiekelvin/Qt/5.15.2/android/qml/QtGraphicalEffects/libqml_QtGraphicalEffects_qtgraphicaleffectsplugin_armeabi-v7a.so
+      lib/libQt5Core_armeabi-v7a.so
+      lib/libQt5Gui_armeabi-v7a.so
+      lib/libQt5Network_armeabi-v7a.so
+      lib/libQt5QmlModels_armeabi-v7a.so
+      lib/libQt5Qml_armeabi-v7a.so
+      lib/libQt5Quick_armeabi-v7a.so
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtGraphicalEffects/libqml_QtGraphicalEffects_qtgraphicaleffectsplugin_x86.so
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtGraphicalEffects/libqml_QtGraphicalEffects_qtgraphicaleffectsplugin_x86_64.so
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtGraphicalEffects/LinearGradient.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtGraphicalEffects/MaskedBlur.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtGraphicalEffects/OpacityMask.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtGraphicalEffects/plugins.qmltypes
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtGraphicalEffects/private/DropShadowBase.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtGraphicalEffects/private/DropShadowBase.qmlc
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtGraphicalEffects/private/FastGlow.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtGraphicalEffects/private/FastGlow.qmlc
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtGraphicalEffects/private/FastInnerShadow.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtGraphicalEffects/private/FastInnerShadow.qmlc
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtGraphicalEffects/private/FastMaskedBlur.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtGraphicalEffects/private/FastMaskedBlur.qmlc
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtGraphicalEffects/private/GaussianDirectionalBlur.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtGraphicalEffects/private/GaussianDirectionalBlur.qmlc
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtGraphicalEffects/private/GaussianGlow.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtGraphicalEffects/private/GaussianGlow.qmlc
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtGraphicalEffects/private/GaussianInnerShadow.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtGraphicalEffects/private/GaussianInnerShadow.qmlc
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtGraphicalEffects/private/GaussianMaskedBlur.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtGraphicalEffects/private/GaussianMaskedBlur.qmlc
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtGraphicalEffects/private/libqml_QtGraphicalEffects_private_qtgraphicaleffectsprivate_arm64-v8a.so
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtGraphicalEffects/private/libqml_QtGraphicalEffects_private_qtgraphicaleffectsprivate_armeabi-v7a.so
+Reading dependencies from /home/rubbiekelvin/Qt/5.15.2/android/qml/QtGraphicalEffects/private/libqml_QtGraphicalEffects_private_qtgraphicaleffectsprivate_armeabi-v7a.so
+      lib/libQt5Core_armeabi-v7a.so
+      lib/libQt5Gui_armeabi-v7a.so
+      lib/libQt5Network_armeabi-v7a.so
+      lib/libQt5QmlModels_armeabi-v7a.so
+      lib/libQt5Qml_armeabi-v7a.so
+      lib/libQt5Quick_armeabi-v7a.so
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtGraphicalEffects/private/libqml_QtGraphicalEffects_private_qtgraphicaleffectsprivate_x86.so
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtGraphicalEffects/private/libqml_QtGraphicalEffects_private_qtgraphicaleffectsprivate_x86_64.so
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtGraphicalEffects/private/qmldir
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtGraphicalEffects/qmldir
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtGraphicalEffects/RadialBlur.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtGraphicalEffects/RadialGradient.qml
+Warning: QML import could not be resolved in any of the import paths: StatusBar
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtGraphicalEffects/RectangularGlow.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtGraphicalEffects/RecursiveBlur.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtGraphicalEffects/ThresholdMask.qml
+    -- Appending dependency found by qmlimportscanner: /home/rubbiekelvin/Qt/5.15.2/android/qml/QtGraphicalEffects/ZoomBlur.qml
+  -- Adding '/home/rubbiekelvin/Qt/5.15.2/android/qml/QtGraphicalEffects/private' as QML dependency
+  -- Adding '/home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Window.2' as QML dependency
+  -- Adding '/home/rubbiekelvin/Projects/CloudNote/mobile/uix/components/controls/SearchField.qml/qrc:/uix/scripts/lib/svg.js' as QML dependency
+    -- Skipping because file does not exist.
+  -- Adding '/home/rubbiekelvin/Projects/CloudNote/mobile/uix/components/controls/SearchField.qml/qrc:/uix/scripts/frozen/icon.js' as QML dependency
+    -- Skipping because file does not exist.
+  -- Adding '/home/rubbiekelvin/Projects/CloudNote/mobile/uix/components/controls/SearchField.qml/qrc:/uix/scripts/constants/fonts.mjs' as QML dependency
+    -- Skipping because file does not exist.
+  -- Adding '/home/rubbiekelvin/Projects/CloudNote/mobile/uix/components/controls/TextField.qml/qrc:/uix/scripts/constants/fonts.mjs' as QML dependency
+    -- Skipping because file does not exist.
+  -- Adding '/home/rubbiekelvin/Projects/CloudNote/mobile/uix/components/appbars/AppHeader.qml/qrc:/uix/scripts/lib/svg.js' as QML dependency
+    -- Skipping because file does not exist.
+  -- Adding '/home/rubbiekelvin/Projects/CloudNote/mobile/uix/components/appbars/AppHeader.qml/qrc:/uix/scripts/frozen/icon.js' as QML dependency
+    -- Skipping because file does not exist.
+  -- Adding '/home/rubbiekelvin/Projects/CloudNote/mobile/uix/components/appbars/AppHeader.qml/qrc:/uix/scripts/constants/fonts.mjs' as QML dependency
+    -- Skipping because file does not exist.
+  -- Adding '/home/rubbiekelvin/Projects/CloudNote/mobile/uix/components/appbars/AppHeader.qml/qrc:/uix/components/controls' as QML dependency
+    -- Skipping because file does not exist.
+  -- Adding '/home/rubbiekelvin/Projects/CloudNote/mobile/uix/components/interface/ThemeManager.qml/qrc:/uix/scripts/constants/color.mjs' as QML dependency
+    -- Skipping because file does not exist.
+  -- Adding '/home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick.2' as QML dependency
+  -- Adding '/home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2' as QML dependency
+  -- Adding '/home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Material' as QML dependency
+  -- Adding '/home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2' as QML dependency
+  -- Adding '/home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick.2' as QML dependency
+  -- Adding '/home/rubbiekelvin/Qt/5.15.2/android/qml/QtGraphicalEffects/private' as QML dependency
+  -- Adding '/home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Window.2' as QML dependency
+  -- Adding '/home/rubbiekelvin/Qt/5.15.2/android/qml/QtGraphicalEffects' as QML dependency
+  -- Adding '/home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Templates.2' as QML dependency
+  -- Adding '/home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Material' as QML dependency
+  -- Adding '/home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2' as QML dependency
+  -- Adding '/home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Window.2' as QML dependency
+  -- Adding '/home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Templates.2' as QML dependency
+  -- Adding '/home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Material' as QML dependency
+  -- Adding '/home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick.2' as QML dependency
+  -- Adding '/home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Templates.2' as QML dependency
+  -- Adding '/home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2' as QML dependency
+  -- Adding '/home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Material' as QML dependency
+  -- Adding '/home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Universal' as QML dependency
+  -- Adding '/home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Universal' as QML dependency
+  -- Adding '/home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Universal' as QML dependency
+  -- Adding '/home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Imagine' as QML dependency
+  -- Adding '/home/rubbiekelvin/Qt/5.15.2/android/qml/QtGraphicalEffects' as QML dependency
+  -- Adding '/home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Imagine' as QML dependency
+  -- Adding '/home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Imagine' as QML dependency
+  -- Adding '/home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Fusion' as QML dependency
+  -- Adding '/home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Fusion' as QML dependency
+  -- Adding '/home/rubbiekelvin/Qt/5.15.2/android/qml/QtQuick/Controls.2/Fusion' as QML dependency
+Copying 1 dependencies from Qt into package.
+Copying 8 external libraries to package.
+  -- Skipping file /home/rubbiekelvin/Android/Sdk/android_openssl/no-asm/latest/arm/libcrypto_1_1.so. Same or newer file already in place.
+  -- Skipping file /home/rubbiekelvin/Android/Sdk/android_openssl/no-asm/latest/arm/libssl_1_1.so. Same or newer file already in place.
+Skipping "/home/rubbiekelvin/Android/Sdk/android_openssl/no-asm/latest/arm64/libcrypto_1_1.so", architecture mismatch.
+Skipping "/home/rubbiekelvin/Android/Sdk/android_openssl/no-asm/latest/arm64/libssl_1_1.so", architecture mismatch.
+Skipping "/home/rubbiekelvin/Android/Sdk/android_openssl/no-asm/latest/x86/libcrypto_1_1.so", architecture mismatch.
+Skipping "/home/rubbiekelvin/Android/Sdk/android_openssl/no-asm/latest/x86/libssl_1_1.so", architecture mismatch.
+Skipping "/home/rubbiekelvin/Android/Sdk/android_openssl/no-asm/latest/x86_64/libcrypto_1_1.so", architecture mismatch.
+Skipping "/home/rubbiekelvin/Android/Sdk/android_openssl/no-asm/latest/x86_64/libssl_1_1.so", architecture mismatch.
+Copying STL library
+  -- Skipping file /home/rubbiekelvin/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib//arm-linux-androideabi/libc++_shared.so. Same or newer file already in place.
+Skipping createRCC
+Installing Android package to device.
+Running command "/home/rubbiekelvin/Android/Sdk/platform-tools/adb -s emulator-5554  install -r /home/rubbiekelvin/Projects/CloudNote/mobile/build/Android_Qt_5_15_2_Clang_Multi_Abi-Debug/android-build//build/outputs/apk/debug/android-build-debug.apk"
+Performing Streamed Install
+Success
+Android package built successfully in 103.363 ms.
+  -- It can now be run from the selected device/emulator.
+  -- File: /home/rubbiekelvin/Projects/CloudNote/mobile/build/Android_Qt_5_15_2_Clang_Multi_Abi-Debug/android-build//build/outputs/apk/debug/android-build-debug.apk
+16:14:20: The process "/home/rubbiekelvin/Qt/5.15.2/android/bin/androiddeployqt" exited normally.
+16:14:20: Pulling files necessary for debugging.
+16:14:40: Package deploy: Running command "/home/rubbiekelvin/Android/Sdk/platform-tools/adb -s emulator-5554 pull /system/bin/app_process /home/rubbiekelvin/Projects/CloudNote/mobile/build/Android_Qt_5_15_2_Clang_Multi_Abi-Debug/app_process".
+16:14:40: Package deploy: Running command "/home/rubbiekelvin/Android/Sdk/platform-tools/adb -s emulator-5554 pull /system/bin/app_process32 /home/rubbiekelvin/Projects/CloudNote/mobile/build/Android_Qt_5_15_2_Clang_Multi_Abi-Debug/app_process".
+16:14:40: Package deploy: Running command "/home/rubbiekelvin/Android/Sdk/platform-tools/adb -s emulator-5554 pull /system/bin/linker /home/rubbiekelvin/Projects/CloudNote/mobile/build/Android_Qt_5_15_2_Clang_Multi_Abi-Debug/linker".
+16:14:40: Package deploy: Running command "/home/rubbiekelvin/Android/Sdk/platform-tools/adb -s emulator-5554 pull /system/lib/libc.so /home/rubbiekelvin/Projects/CloudNote/mobile/build/Android_Qt_5_15_2_Clang_Multi_Abi-Debug/libc.so".
+16:15:38: Elapsed time: 05:43.

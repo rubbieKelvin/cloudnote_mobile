@@ -5,6 +5,15 @@ import QtQuick.Layouts 1.3
 T.Button{
     id: root
     height: 50
+    width: {
+        if (t_label.visible){
+            return t_label.width + 10
+        }else if (t_icon.visible){
+            return t_icon.width + 10
+        }else{
+            return 70
+        }
+    }
     text: qsTr("Button")
     display: T.AbstractButton.TextOnly
 
@@ -25,6 +34,7 @@ T.Button{
             spacing: root.spacing
             
             Image{
+                id: t_icon
                 source: root.icon.source
                 height: root.icon.height
                 width: root.icon.width
@@ -32,6 +42,7 @@ T.Button{
             }
             
             T.Label{
+                id: t_label
                 visible: root.display === T.AbstractButton.TextOnly || root.display ===T.AbstractButton.TextBesideIcon || root.display === T.AbstractButton.TextUnderIcon
                 text: root.text
                 font: root.font

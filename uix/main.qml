@@ -10,12 +10,22 @@ import "qrc:/uix/scripts/constants/fonts.mjs" as FontConstants
 
 ApplicationWindow {
     id: application
+    
+    // portrait
     width: 300
     height: 550
+
+    // landscape
+    // width: 550
+    // height: 300
+
     visible: true
     flags: Qt.Window | Qt.MaximizeUsingFullscreenGeometryHint
     font.family: fontmanager.fontRegular
     font.pixelSize: FontConstants.NORMAL
+
+    readonly property bool portrait: height > width
+    readonly property bool landscape: height < width
 
     StatusBar{
         id: statusbar

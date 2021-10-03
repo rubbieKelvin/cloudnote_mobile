@@ -17,12 +17,15 @@ T.StackView {
     onCurrentItemChanged: {
         const page = currentItem
 
-        if (page.statusbarColor !== null || page.statusbarColor !== undefined){
-            statusbar.color = page.statusbarColor
-        }
+        if (page != null || page != undefined){
 
-        if (page.statusbarTheme !== null || page.statusbarTheme !== undefined){
-            statusbar.theme = page.statusbarTheme
+            if (page.statusbarColor !== null || page.statusbarColor !== undefined){
+                statusbar.color = page.statusbarColor
+            }
+
+            if (page.statusbarTheme !== null || page.statusbarTheme !== undefined){
+                statusbar.theme = page.statusbarTheme
+            }
         }
     }
 }

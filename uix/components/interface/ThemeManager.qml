@@ -11,4 +11,7 @@ QtObject {
     readonly property string textUnimportant: ColorConstants.TEXT_UNIMPORTANT[theme]
     readonly property string accent: ColorConstants.ACCENT[theme]
     readonly property string accent15: ColorConstants.ACCENT15[theme]
+    readonly property string link: ColorConstants.LINK[theme]
+    readonly property string stroke: ColorConstants.STROKE[theme]
+    readonly property string placeholder: ColorConstants.PLACEHOLDER[theme]
 }
