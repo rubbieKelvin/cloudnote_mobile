@@ -20,6 +20,7 @@ AppContainers.Page {
         anchors.fill: parent
         anchors.margins: 15
         clip: true
+        contentWidth: availableWidth
         
         ColumnLayout{
             width: root.width - 30

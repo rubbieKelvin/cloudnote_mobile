@@ -23,7 +23,6 @@ AppContainers.Page {
         clip: true
         contentWidth: availableWidth
 
-
         ColumnLayout{
             width: root.width - 30
             spacing: 20

@@ -24,8 +24,8 @@ T.TextField{
         Image{
             id: icon
             x: 10
-            width: 30
-            height: 30
+            width: 24
+            height: 24
             source: Svg.fromString(Icons.ICON_ICONLY_LIGHT_SEARCH, {
                 color: root.focus ? thememanager.accent : thememanager.text
             })

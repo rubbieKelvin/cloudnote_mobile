@@ -10,16 +10,20 @@ import "qrc:/uix/components/controls/" as AppControls
 import "qrc:/uix/scripts/lib/svg.js" as Svg
 import "qrc:/uix/scripts/frozen/icon.js" as Icons
 import "qrc:/uix/scripts/constants/routes.js" as Routes
+import "qrc:/uix/components/sections/" as AppSections
 
 AppContainers.Page {
     id: root
-    header: Rectangle{
-        height: 60
+    header: AppContainers.ResponsiveLayout{
+        columnSpacing: 2
+        rowSpacing: 15
 
         RowLayout{
             spacing: 10
-            anchors.fill: parent
-            anchors.margins: 15
+            Layout.leftMargin: 15
+            Layout.rightMargin: 15
+            Layout.topMargin: application.portrait ? 0 : 10
+            Layout.fillWidth: false
 
             Image {
                 source: Svg.fromString(Icons.ICON_ICONLY_BULK_ACTIVITY, {
@@ -34,20 +38,35 @@ AppContainers.Page {
                 Layout.fillWidth: true
             }
         }
+
+        AppControls.SearchField{
+            Layout.leftMargin: 15
+            Layout.rightMargin: 15
+            Layout.topMargin: application.portrait ? 0 : 10
+            Layout.fillWidth: true
+            Layout.preferredHeight: 50
+        }
     }
 
     function handleBackPressed(event){
         event.accepted = true
     }
 
-    RowLayout{
-        anchors.left: parent.left
-        anchors.right: parent.right
-        anchors.margins: 15
-
-        AppControls.SearchField{
-            Layout.fillWidth: true
-            Layout.preferredHeight: 50
+    ListView{
+        id: list
+        anchors.topMargin: 15
+        anchors.bottomMargin: 15
+        anchors.fill: parent
+        spacing: 20
+        clip: true
+        model: 6
+        delegate: AppSections.PlaylistCardScrollView{
+            height: 300
+            width: list.width
+        }
+        footer: Item{
+            height: 15
         }
     }
+
 }

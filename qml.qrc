@@ -364,5 +364,9 @@
         <file>uix/screens/home/explore.qml</file>
         <file>uix/components/controls/SearchField.qml</file>
         <file>uix/components/containers/ResponsiveLayout.qml</file>
+        <file>uix/components/delegates/PlayListCard.qml</file>
+        <file>uix/assets/images/dummy/dummy-1.png</file>
+        <file>uix/components/sections/PlaylistCardScrollView.qml</file>
+        <file>uix/assets/images/logo.png</file>
     </qresource>
 </RCC>
