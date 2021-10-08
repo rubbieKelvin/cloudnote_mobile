@@ -6,4 +6,6 @@ import QtQuick.Layouts 1.3
     property int portraitLayout: GridLayout.TopToBottom
     property int landscapeLayout: GridLayout.LeftToRight
     flow: application.height>application.width ? portraitLayout : landscapeLayout
+    columnSpacing: 5
+    rowSpacing: 5
 }

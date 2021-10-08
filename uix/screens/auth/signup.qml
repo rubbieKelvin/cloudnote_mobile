@@ -24,7 +24,7 @@ AppContainers.Page {
         
         ColumnLayout{
             width: root.width - 30
-            spacing: 20
+            spacing: 50
             Layout.alignment: Qt.AlignLeft | Qt.AlignTop
 
             ColumnLayout{
@@ -101,7 +101,7 @@ AppContainers.Page {
 
                     Label{
                         id: no_acc_label
-                        font.pixelSize: FontConstants.SUBTEXT
+                        font.pixelSize: FontConstants.NORMAL
                         color: thememanager.text
                         text: qsTr("Already have an account?")
                     }

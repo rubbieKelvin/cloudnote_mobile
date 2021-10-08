@@ -2,13 +2,17 @@ import QtQuick 2.15
 import QtQuick.Controls 2.15
 import QtQuick.Layouts 1.3
 import QtGraphicalEffects 1.13
+
+import "qrc:/uix/scripts/app/main.mjs" as AppMain
+import "qrc:/uix/components/controls/" as AppControls
 import "qrc:/uix/scripts/constants/fonts.mjs" as FontConstants
+
 
 Rectangle{
     id: root
-    radius: 12
-    width: 270
-    height: 270
+    radius: 8
+    width: 300
+    height: 300
     color: thememanager.background
     border.width: 1
     border.color: thememanager.stroke
@@ -27,10 +31,12 @@ Rectangle{
         }
     }
 
-    property string image: "qrc:/uix/assets/images/dummy/dummy-1.png"
+    property string image: AppMain.randomDummyImage()
     property string title: "Playlist Name"
     property string subtitle: "Artist Name"
     property string info: "x songs"
+
+    signal clicked
 
     ColumnLayout{
         id: col
@@ -40,7 +46,7 @@ Rectangle{
         Image{
             Layout.fillWidth: true
             Layout.fillHeight: true
-            Layout.preferredHeight: 220
+            Layout.preferredHeight: 250
             source: image
             fillMode: Image.PreserveAspectCrop
         }
@@ -55,6 +61,7 @@ Rectangle{
                 spacing: 4
 
                 ColumnLayout{
+                    spacing: 0
                     Layout.fillWidth: true
 
                     Label{
@@ -67,6 +74,7 @@ Rectangle{
                         text: root.subtitle
                         color: thememanager.text
                         font.pixelSize: FontConstants.SUBTEXT
+                        Layout.alignment: Qt.AlignLeft | Qt.AlignTop
                         Layout.fillWidth: true
                     }
                 }
@@ -80,5 +88,10 @@ Rectangle{
                 }
             }
         }
+    }
+
+    AppControls.RippleArea{
+        anchors.fill: parent
+        onClicked: root.clicked()
     }
 }

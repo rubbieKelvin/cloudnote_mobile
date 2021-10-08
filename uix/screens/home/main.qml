@@ -1,0 +1,211 @@
+import QtQuick 2.15
+import QtQuick.Controls 2.15
+import QtQuick.Layouts 1.3
+
+import "qrc:/uix/components/appbars/" as AppBars
+import "qrc:/uix/components/controls/" as AppControls
+import "qrc:/uix/components/containers/" as AppContainers
+import "qrc:/uix/scripts/constants/fonts.mjs" as FontConstants
+import "qrc:/uix/scripts/lib/svg.js" as Svg
+import "qrc:/uix/scripts/frozen/icon.js" as Icons
+import "qrc:/uix/screens/home/views" as HomeViews
+
+
+AppContainers.Page{
+    id: root
+    header: AppContainers.ResponsiveLayout{
+        columnSpacing: 5
+        rowSpacing: 18
+
+        RowLayout{
+            spacing: 5
+            Layout.leftMargin: 18
+            Layout.rightMargin: 18
+            Layout.topMargin: application.portrait ? 0 : 18
+            Layout.fillWidth: false
+
+            AppControls.Button{
+                borderRadius: 0
+                display: AbstractButton.IconOnly
+                icon.source: Svg.fromString(Icons.ICON_COOLICONS_ARROW_CHEVRON_LEFT, {
+                    color: thememanager.text
+                })
+                icon.width: 28
+                icon.height: 28
+                width: 50
+                height: 50
+                Layout.preferredWidth: width
+                Layout.preferredHeight: height
+                backgroundColor: "transparent"
+                visible: {
+                    if (metaHistory.length === 0) return false
+                    return (metaHistory[metaHistory.length-1].view !== homeview)
+                }
+            }
+
+            ColumnLayout{
+                spacing: 0
+                Layout.fillWidth: true
+                Layout.fillHeight: true
+
+                Label{
+                    color: thememanager.text
+                    font.pixelSize: FontConstants.XLARGE
+                    text: metaTitle
+                    Layout.fillWidth: true
+                    Layout.fillHeight: true
+                }
+
+                Label{
+                    color: thememanager.textUnimportant
+                    font.pixelSize: FontConstants.SUBTEXT
+                    verticalAlignment: Text.AlignTop
+                    text: metaSubTitle
+                    Layout.fillHeight: true
+                    Layout.fillWidth: true
+                    visible: metaSubTitle.length > 0
+                }
+            }
+        }
+
+        AppControls.SearchField{
+            Layout.leftMargin: 15
+            Layout.rightMargin: 15
+            Layout.topMargin: application.portrait ? 0 : 10
+            Layout.fillWidth: true
+            Layout.preferredHeight: 50
+            visible: metaShowSearch
+        }
+    }
+
+    function handleBackPressed(event){
+        event.accepted = !goBack()
+    }
+
+    function goBack(){
+        /** this is triggered when a back button is clicked.
+         */
+        if (metaHistory.length == 0){
+            return false    // just close
+        }
+        
+        const o = metaHistory.pop()
+
+        /*if we are on the first page and then we want to go back,
+        just quit*/
+        if (homeview.currentIndex===0 && o.target===0 && o.view===homeview) return false
+
+        if (typeof o.target === "number"){
+            o.view.currentIndex = o.target
+        }else{
+            o.view.push(o.target)
+        }
+        
+        return true
+    }
+
+
+    function addThrowBack(view, target){
+        /** thow backs are target that a view
+        can go back to when the back button is clicked.
+        before  we add a new pair, we need to check if the pair exists in the past.
+        if it exists, we remove it
+         */
+        let edited = false // has an object been deleted in the history
+
+        console.log(`adding ${target}`);
+        
+        // check for repetition
+        for (let i=0; i<metaHistory.length; i+=1){
+            let view_target_pair = metaHistory[i]
+            if (view_target_pair) {
+                if (view_target_pair.view === view && view_target_pair.target === target) {
+                    metaHistory[i] = null
+                    edited = true
+                    break
+                }
+            }
+        }
+
+        // remove redundant view_target_pair
+        if (edited){
+            metaHistory = metaHistory.filter(function(n){return Boolean(n)})
+        }
+        // push
+        metaHistory.push({
+            view: view,
+            target: target
+        })
+
+    }
+
+    property string metaTitle: (homeview.children[homeview.currentIndex] || {metaTitle : "<No-Title>"}).metaTitle || "<No-Title>"
+    property string metaSubTitle: (homeview.children[homeview.currentIndex] || {metaSubtitle : ""}).metaSubtitle || ""
+    property var metaHistory: [
+        /*
+        this list should contain a dictionary with the following keys
+            view: Qml_StackView | Qml_StackLayout | Qml_SwipeView
+            target: Qml_Page | number
+            
+        the view is the Widget we want to perform a reverse on.
+        the target is the previous item/index we were before we got to were we are
+        */
+    ]
+    property bool metaShowSearch: (homeview.children[homeview.currentIndex] || {metaUsesSearchBar : false}).metaUsesSearchBar || false // show the sesrchbar
+
+    StackLayout{
+        id: homeview
+        anchors.fill: parent
+
+        HomeViews.Explore{
+            onSetHistory: addThrowBack(view, target)
+        }
+
+        HomeViews.Library{
+            onSetHistory: addThrowBack(view, target)
+        }
+
+        HomeViews.Profile{
+            onSetHistory: addThrowBack(view, target)
+        }
+
+        onCurrentIndexChanged: {
+            navbar.currentIndex = currentIndex
+            if (currentIndex !== 0) {
+                addThrowBack(homeview, 0)
+            }
+        }
+    }
+
+
+    footer: ColumnLayout{
+        spacing: 0
+
+        Rectangle{
+            height: 1
+            Layout.fillWidth: true
+            color: thememanager.stroke
+        }
+
+        AppControls.MediaPlayerWidget{
+            Layout.fillWidth: true
+        }
+
+        Rectangle{
+            height: 1
+            Layout.fillWidth: true
+            color: thememanager.stroke
+        }
+
+        AppBars.NavBar{
+            id: navbar
+            width: parent.width
+            Layout.fillWidth: true
+            Layout.preferredHeight: 76
+
+            onClicked: {
+                homeview.currentIndex = index
+            }
+        }
+    }
+}

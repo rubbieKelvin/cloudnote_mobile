@@ -12,7 +12,7 @@ ColumnLayout{
         text: heading
         font.pixelSize: FontConstants.HEADING
         color: thememanager.text
-        font.family: fontmanager.fontBold
+        font.weight: Font.Medium
         Layout.fillWidth: true
         Layout.leftMargin: 15
         Layout.rightMargin: 15
@@ -20,6 +20,8 @@ ColumnLayout{
     }
 
     ListView{
+        boundsMovement: Flickable.StopAtBounds
+        boundsBehavior: Flickable.StopAtBounds
         model: 10
         spacing: 10
         Layout.preferredHeight: 270
@@ -28,8 +30,8 @@ ColumnLayout{
         Layout.fillWidth: true
         orientation: ListView.Horizontal
         delegate: AppDelegate.PlayListCard{
-            height: 270
-            width: 270
+            height: 300
+            width: 300
         }
         footer: Item{
             width: 15

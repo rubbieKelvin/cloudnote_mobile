@@ -12,8 +12,8 @@ ApplicationWindow {
     id: application
     
     // portrait
-    width: 300
-    height: 550
+    width: 340
+    height: 610
 
     // landscape
     // width: 550

@@ -54,7 +54,7 @@ MouseArea {
 
 		Rectangle{
 			id: overlay_
-			color: "#22000000"
+			color: "#15000000"
 			radius: width/2
 			width: 0
 			height: 0
@@ -96,7 +96,7 @@ MouseArea {
 
 	Timer{
 		id: timer
-		interval: Math.min(root.width*2, root.height*2)
+		interval: 80
 		onTriggered: {
 			overlay_2.width = 0
 			overlay_2.height = 0
@@ -113,7 +113,7 @@ MouseArea {
 			NumberAnimation {
 				target: overlay_2
 				property: "width"
-				duration: 200
+				duration: 160
 				from: 0
 				to: Math.max(root.width*2, root.height*2)
 			}
@@ -121,7 +121,7 @@ MouseArea {
 			NumberAnimation {
 				target: overlay_2
 				property: "height"
-				duration: 200
+				duration: 160
 				from: 0
 				to: Math.max(root.width*2, root.height*2)
 			}
@@ -130,7 +130,7 @@ MouseArea {
 		NumberAnimation {
 			target: overlay_2
 			property: "opacity"
-			duration: 150
+			duration: 100
 			from: 1
 			to: 0
 		}
