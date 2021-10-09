@@ -67,5 +67,7 @@
         <file>uix/screens/home/main-views/library-views/All.qml</file>
         <file>uix/screens/home/main-views/library-views/One.qml</file>
         <file>uix/screens/home/main-views/library-views/Base.qml</file>
+        <file>uix/components/controls/MediaPlayerControl.qml</file>
+        <file>uix/components/controls/SeekerControl.qml</file>
     </qresource>
 </RCC>

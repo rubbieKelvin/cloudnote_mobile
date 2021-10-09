@@ -6,7 +6,7 @@ import "qrc:/uix/scripts/constants/fonts.mjs" as FontConstants
 
 ColumnLayout{
     id: root
-    property string heading: "Heading"
+    property string heading: "Random Playlists"
 
     Label{
         text: heading

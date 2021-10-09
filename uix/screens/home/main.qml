@@ -25,22 +25,26 @@ AppContainers.Page{
             Layout.fillWidth: false
 
             AppControls.Button{
-                borderRadius: 0
+                id: virtual_back_btn
                 display: AbstractButton.IconOnly
                 icon.source: Svg.fromString(Icons.ICON_COOLICONS_ARROW_CHEVRON_LEFT, {
                     color: thememanager.text
                 })
                 icon.width: 28
                 icon.height: 28
-                width: 50
-                height: 50
+                width: 40
+                height: 40
+                borderRadius: 20
                 Layout.preferredWidth: width
                 Layout.preferredHeight: height
                 backgroundColor: "transparent"
-                visible: {
-                    if (metaHistory.length === 0) return false
-                    return (metaHistory[metaHistory.length-1].view !== homeview)
+                visible: false
+
+                function evaluateVisible(){
+                    visible = (metaHistory.length>0) && (metaHistory[metaHistory.length-1].view !== homeview)
                 }
+
+                onClicked: goBack()
             }
 
             ColumnLayout{
@@ -104,6 +108,7 @@ AppContainers.Page{
             o.view.push(o.target)
         }
         
+        virtual_back_btn.evaluateVisible()
         return true
     }
 
@@ -138,6 +143,7 @@ AppContainers.Page{
             target: target
         })
 
+        virtual_back_btn.evaluateVisible()
     }
 
     property string metaTitle: (homeview.children[homeview.currentIndex] || {metaTitle : "<No-Title>"}).metaTitle || "<No-Title>"
@@ -159,14 +165,17 @@ AppContainers.Page{
         anchors.fill: parent
 
         HomeViews.Explore{
+            enabled: homeview.currentIndex === 0
             onSetHistory: addThrowBack(view, target)
         }
 
         HomeViews.Library{
+            enabled: homeview.currentIndex === 1
             onSetHistory: addThrowBack(view, target)
         }
 
         HomeViews.Profile{
+            enabled: homeview.currentIndex === 2
             onSetHistory: addThrowBack(view, target)
         }
 

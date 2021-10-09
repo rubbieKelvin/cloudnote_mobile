@@ -7,6 +7,7 @@ import "qrc:/uix/scripts/frozen/icon.js" as Icons
 import "qrc:/uix/scripts/app/main.mjs" as AppMain
 import "qrc:/uix/components/controls" as AppControls
 import "qrc:/uix/scripts/constants/fonts.mjs" as FontConstants
+import "qrc:/uix/scripts/constants/routes.js" as Routes
 
 
 RowLayout {
@@ -18,6 +19,11 @@ RowLayout {
         fillMode: Image.PreserveAspectCrop
         Layout.preferredHeight: 56
         Layout.preferredWidth: 56
+
+        RippleArea{
+            anchors.fill: parent
+            onClicked: mainstack.push(Routes.NOW_PLAYING)
+        }
     }
 
     ColumnLayout{

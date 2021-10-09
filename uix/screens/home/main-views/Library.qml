@@ -5,6 +5,7 @@ import QtQuick.Layouts 1.15
 BaseView {
     id: library_screen
     metaTitle: "My Library"
+    metaSubtitle: library_stack.currentItem.title
 
     StackView{
         id: library_stack

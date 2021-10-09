@@ -20,6 +20,8 @@ T.Button{
     background: Rectangle{
         color: root.down ? backgroundDownColor : backgroundColor
         radius: borderRadius
+        border.width: borderWidth
+        border.color: borderColor
 
         RippleArea{
             anchors.fill: parent
@@ -60,4 +62,6 @@ T.Button{
     property string backgroundColor: "#bdbdbd"
     property string backgroundDownColor: backgroundColor
     property string foregroundDownColor: foregroundColor
+    property string borderColor: thememanager.stroke
+    property int borderWidth: 0
 }

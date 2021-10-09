@@ -10,7 +10,11 @@ import "qrc:/uix/components/controls/" as AppControls
 Rectangle{
     id: root
     height: 60
-    property string text: qsTr("StuffsbyRubbie")
+    property alias text: label.text
+    property alias font: label.font
+    property alias rightButton: rightButton
+
+    signal rightButtonClicked
 
     RowLayout{
         spacing: 20
@@ -19,8 +23,8 @@ Rectangle{
         anchors.rightMargin: 15
 
         AppControls.Button{
-            Layout.preferredWidth: 30
-            Layout.preferredHeight: 30
+            Layout.preferredWidth: 45
+            Layout.preferredHeight: 45
             display: AbstractButton.IconOnly
             backgroundColor: "#00000000"
             borderRadius: 15
@@ -38,10 +42,22 @@ Rectangle{
         }
 
         Label{
-            text: root.text
+            id: label
             color: thememanager.text
             font.pixelSize: FontConstant.HEADING
             Layout.fillWidth: true
+        }
+
+        AppControls.Button{
+            id: rightButton
+            Layout.preferredHeight: 45
+            Layout.preferredWidth: 45
+            backgroundColor: "transparent"
+            borderRadius: 15
+            text: "done"
+            visible: false
+            foregroundColor: thememanager.accent
+            onClicked: root.rightButtonClicked()
         }
     }
 }
