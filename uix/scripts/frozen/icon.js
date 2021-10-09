@@ -2677,3 +2677,1355 @@ var ICON_COOLICONS_MISC_DOT_04_L = `<svg width="24" height="24" viewBox="0 0 24 
 <path d="M17 12C17 14.7614 14.7614 17 12 17C9.23858 17 7 14.7614 7 12C7 9.23858 9.23858 7 12 7C14.7614 7 17 9.23858 17 12Z" fill="currentColor"/>
 </svg>
 `
+var ICON_DARESAY_EYEOFF_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18.5462 18.7353C18.9855 18.4005 19.0701 17.773 18.7353 17.3338C18.4005 16.8945 17.773 16.8099 17.3338 17.1447L18.5462 18.7353ZM12 20V21C12.0054 21 12.0109 21 12.0163 20.9999L12 20ZM1 12L0.118844 11.5272C-0.0347896 11.8135 -0.0397388 12.1566 0.105573 12.4472L1 12ZM6.6669 6.85477C7.10584 6.51959 7.18996 5.89204 6.85478 5.45309C6.5196 5.01415 5.89204 4.93004 5.4531 5.26522L6.6669 6.85477ZM9.67209 3.26631C9.13434 3.39219 8.80045 3.93016 8.92632 4.46791C9.05219 5.00566 9.59016 5.33955 10.1279 5.21368L9.67209 3.26631ZM12 3.99999L11.9976 4.99999H12V3.99999ZM23 12L23.8819 12.4714C24.0348 12.1853 24.0395 11.8429 23.8944 11.5528L23 12ZM20.0748 14.5462C19.7193 14.9687 19.7736 15.5996 20.1962 15.9552C20.6187 16.3107 21.2496 16.2564 21.6052 15.8338L20.0748 14.5462ZM14.8516 14.8017C15.2281 14.3977 15.2058 13.7649 14.8017 13.3884C14.3977 13.0119 13.7649 13.0342 13.3884 13.4383L14.8516 14.8017ZM10.5617 10.6116C10.9658 10.2351 10.9881 9.60233 10.6116 9.19827C10.2351 8.79422 9.60233 8.77188 9.19828 9.14838L10.5617 10.6116ZM17.3338 17.1447C15.7941 18.3183 13.9193 18.9685 11.9837 19.0001L12.0163 20.9999C14.3789 20.9612 16.6671 20.1677 18.5462 18.7353L17.3338 17.1447ZM12 19C8.89951 19 6.39552 17.2264 4.60454 15.3161C3.71817 14.3706 3.03543 13.4213 2.57441 12.7075C2.34452 12.3515 2.1714 12.0566 2.05712 11.8535C2.00002 11.752 1.95773 11.6736 1.93051 11.6221C1.9169 11.5964 1.90707 11.5774 1.90104 11.5657C1.89803 11.5599 1.89597 11.5558 1.89486 11.5536C1.89431 11.5525 1.894 11.5519 1.89392 11.5518C1.89389 11.5517 1.89391 11.5518 1.894 11.5519C1.89404 11.552 1.89415 11.5522 1.89417 11.5523C1.89429 11.5525 1.89443 11.5528 1 12C0.105573 12.4472 0.105741 12.4475 0.105925 12.4479C0.106007 12.4481 0.106206 12.4485 0.10637 12.4488C0.106698 12.4495 0.107087 12.4502 0.107539 12.4511C0.108442 12.4529 0.109592 12.4552 0.11099 12.458C0.113785 12.4635 0.117569 12.4709 0.122338 12.4802C0.131875 12.4987 0.145357 12.5247 0.162753 12.5576C0.19754 12.6233 0.248023 12.7168 0.313971 12.834C0.445792 13.0684 0.63985 13.3985 0.894336 13.7925C1.40207 14.5787 2.15683 15.6294 3.14546 16.6839C5.10448 18.7736 8.10049 21 12 21V19ZM1.88116 12.4728C3.05763 10.2804 4.68936 8.36484 6.6669 6.85477L5.4531 5.26522C3.24891 6.94836 1.43015 9.08342 0.118844 11.5272L1.88116 12.4728ZM10.1279 5.21368C10.7408 5.07022 11.3682 4.99851 11.9976 4.99999L12.0023 3C11.2179 2.99815 10.4359 3.08753 9.67209 3.26631L10.1279 5.21368ZM12 4.99999C15.1005 4.99999 17.6045 6.77355 19.3955 8.68394C20.2818 9.6294 20.9646 10.5787 21.4256 11.2925C21.6555 11.6485 21.8286 11.9434 21.9429 12.1465C22 12.248 22.0423 12.3264 22.0695 12.3779C22.0831 12.4036 22.0929 12.4225 22.099 12.4343C22.102 12.4401 22.104 12.4442 22.1051 12.4464C22.1057 12.4474 22.106 12.4481 22.1061 12.4482C22.1061 12.4483 22.1061 12.4482 22.106 12.4481C22.106 12.448 22.1059 12.4478 22.1058 12.4477C22.1057 12.4475 22.1056 12.4472 23 12C23.8944 11.5528 23.8943 11.5524 23.8941 11.5521C23.894 11.5519 23.8938 11.5515 23.8936 11.5512C23.8933 11.5505 23.8929 11.5498 23.8925 11.5489C23.8916 11.5471 23.8904 11.5448 23.889 11.542C23.8862 11.5365 23.8824 11.5291 23.8777 11.5198C23.8681 11.5013 23.8546 11.4753 23.8372 11.4424C23.8025 11.3767 23.752 11.2832 23.686 11.166C23.5542 10.9316 23.3601 10.6015 23.1057 10.2075C22.5979 9.42131 21.8432 8.37059 20.8545 7.31605C18.8955 5.22643 15.8995 2.99999 12 2.99999V4.99999ZM22.1181 11.5286C21.5439 12.6028 20.8591 13.6141 20.0748 14.5462L21.6052 15.8338C22.479 14.7953 23.2421 13.6684 23.8819 12.4714L22.1181 11.5286ZM13.3884 13.4383C12.8898 13.9733 12.1389 14.1936 11.4303 14.0126L10.9354 15.9504C12.3526 16.3124 13.8544 15.8719 14.8516 14.8017L13.3884 13.4383ZM11.4303 14.0126C10.7217 13.8317 10.1683 13.2783 9.98736 12.5697L8.04955 13.0646C8.41149 14.4818 9.51816 15.5885 10.9354 15.9504L11.4303 14.0126ZM9.98736 12.5697C9.80639 11.8611 10.0266 11.1102 10.5617 10.6116L9.19828 9.14838C8.12813 10.1456 7.68762 11.6473 8.04955 13.0646L9.98736 12.5697Z" fill="currentColor"/>
+<path d="M1 1L23 23" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_REPEAT_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M17 1L21 5L17 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M3 11V9C3 6.79086 4.79086 5 7 5H21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M7 23L3 19L7 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M21 13V15C21 17.2091 19.2091 19 17 19H3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_SHIELD_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M12 22C12 22 20 18 20 12V4L12 2L4 4V12C4 18 12 22 12 22Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_PHONEMISSED_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M22 2L16 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M16 2L22 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M21 17.92V20.92C21.0023 21.4831 20.767 22.0211 20.3521 22.4018C19.9371 22.7825 19.3809 22.9707 18.82 22.92C15.7428 22.5856 12.787 21.5341 10.19 19.85C7.77383 18.3146 5.72534 16.2661 4.19 13.85C2.49998 11.2412 1.44824 8.27097 1.12 5.17998C1.06947 4.62085 1.25627 4.06623 1.63477 3.6516C2.01326 3.23697 2.5486 3.0005 3.11 2.99998H6.11C7.11387 2.9901 7.9695 3.72594 8.11 4.71998C8.23662 5.68004 8.47145 6.6227 8.81 7.52998C9.08474 8.26085 8.90902 9.08478 8.36 9.63998L7.09 10.91C8.51356 13.4135 10.5865 15.4864 13.09 16.91L14.36 15.64C14.9152 15.091 15.7391 14.9152 16.47 15.19C17.3773 15.5285 18.3199 15.7634 19.28 15.89C20.2856 16.0318 21.0252 16.9048 21 17.92Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_SAVE_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M19 21H5C3.89543 21 3 20.1046 3 19V5C3 3.89543 3.89543 3 5 3H16L21 8V19C21 20.1046 20.1046 21 19 21Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M17 21V13H7V21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M7 3V8H15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_FEATHER_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M20.24 13.24C22.5844 10.8956 22.5844 7.09445 20.24 4.75001C17.8956 2.40556 14.0944 2.40556 11.75 4.75001L5 11.5V20H13.5L20.24 13.24Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M16 9L2 23" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M17 16H9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_SKIPFORWARD_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M4 4L14 12L4 20V4Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M18 5V19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_PAUSECIRCLE_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M10 15V9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M14 15V9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_FILE_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M13 2H6C4.89543 2 4 2.89543 4 4V20C4 21.1046 4.89543 22 6 22H18C19.1046 22 20 21.1046 20 20V9L13 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M13 2V9H20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_ALERTOCTAGON_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M7.86 2H16.14L22 7.86V16.14L16.14 22H7.86L2 16.14V7.86L7.86 2V2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M12 8V12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="12" cy="16" r="1" fill="currentColor"/>
+</svg>
+`
+var ICON_DARESAY_BARCHART2_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M10 3H14V21H10V3Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M18 8H22V21H18V8Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M2 13H6V21H2V13Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_CLOUDDRIZZLE_DEFAULT = `<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9 19V21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M9 13V15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M17 19V21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M17 13V15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M13 21V23" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M13 15V17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M21 16.58C23.1667 15.631 24.372 13.2936 23.8886 10.9782C23.4052 8.6627 21.3654 7.00277 19 6.99998H17.74C16.8696 3.62944 13.9195 1.20864 10.4439 1.01293C6.96829 0.817214 3.76507 2.89151 2.52177 6.14304C1.27847 9.39456 2.28053 13.0768 5.00003 15.25" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_LINK_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M10 13C10.869 14.1617 12.1996 14.8887 13.6466 14.9923C15.0937 15.096 16.5144 14.566 17.54 13.54L20.54 10.54C22.4349 8.5781 22.4078 5.45957 20.4791 3.5309C18.5504 1.60223 15.4319 1.57514 13.47 3.47L11.75 5.18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M14 11C13.1311 9.8383 11.8004 9.1113 10.3534 9.00766C8.90635 8.90403 7.48565 9.43399 6.46002 10.46L3.46002 13.46C1.56516 15.4219 1.59226 18.5404 3.52092 20.4691C5.44959 22.3978 8.56812 22.4249 10.53 20.53L12.24 18.82" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_MINUSSQUARE_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M3 5C3 3.89543 3.89543 3 5 3H19C20.1046 3 21 3.89543 21 5V19C21 20.1046 20.1046 21 19 21H5C3.89543 21 3 20.1046 3 19V5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M8 12H16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_EDIT_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M21 13.66V19C21 20.1046 20.1046 21 19 21H5C3.89543 21 3 20.1046 3 19V5C3 3.89543 3.89543 3 5 3H10.34" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M18 2L22 6L12 16H8V12L18 2V2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_CREDITCARD_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M1 6C1 4.89543 1.89543 4 3 4H21C22.1046 4 23 4.89543 23 6V18C23 19.1046 22.1046 20 21 20H3C1.89543 20 1 19.1046 1 18V6Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1 10H23" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_CROP_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6.13 1L6 16C6 17.1046 6.89543 18 8 18H23" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1 6.13L16 6C17.1046 6 18 6.89543 18 8V23" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_COMPASS_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M16.24 7.75999L14.12 14.12L7.76 16.24L9.88 9.87999L16.24 7.75999V7.75999Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_AWARD_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M12 15C15.866 15 19 11.866 19 8C19 4.13401 15.866 1 12 1C8.13401 1 5 4.13401 5 8C5 11.866 8.13401 15 12 15Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M8.21 13.89L7 23L12 20L17 23L15.79 13.88" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_MIC_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M12 1C10.3431 1 9 2.34315 9 4V12C9 13.6569 10.3431 15 12 15C13.6569 15 15 13.6569 15 12V4C15 2.34315 13.6569 1 12 1Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M19 10V12C19 15.866 15.866 19 12 19C8.13401 19 5 15.866 5 12V10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M12 19V23" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M8 23H16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_LOGOUT_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M10 22H5C3.89543 22 3 21.1046 3 20V4C3 2.89543 3.89543 2 5 2H10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M17 16L21 12L17 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M21 12H9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_LOADER_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 2V6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M12 18V22" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M4.93005 4.92999L7.76005 7.75999" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M16.24 16.24L19.07 19.07" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M2 12H6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M18 12H22" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M4.93005 19.07L7.76005 16.24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M16.24 7.75999L19.07 4.92999" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_ARROWLEFT_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M20 12H4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M10 18L4 12L10 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_PERCENT_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M19 5L5 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M6.5 9C7.88071 9 9 7.88071 9 6.5C9 5.11929 7.88071 4 6.5 4C5.11929 4 4 5.11929 4 6.5C4 7.88071 5.11929 9 6.5 9Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M17.5 20C18.8807 20 20 18.8807 20 17.5C20 16.1193 18.8807 15 17.5 15C16.1193 15 15 16.1193 15 17.5C15 18.8807 16.1193 20 17.5 20Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_CLOUDRAIN_DEFAULT = `<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M17 13V21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M9 13V21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M13 15V23" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M21 16.58C23.1667 15.631 24.372 13.2936 23.8886 10.9782C23.4052 8.6627 21.3654 7.00277 19 6.99998H17.74C16.8696 3.62944 13.9195 1.20864 10.4439 1.01293C6.96829 0.817214 3.76507 2.89151 2.52177 6.14304C1.27847 9.39456 2.28053 13.0768 5.00003 15.25" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_CHECK_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M20 7L9 18L4 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_MOVE_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5 9L2 12L5 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M9 5L12 2L15 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M15 19L12 22L9 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M19 9L22 12L19 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M2 12H22" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M12 2V22" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_GITLAB_DEFAULT = `<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M22.65 14.39L12 22.13L1.34996 14.39C1.05707 14.1746 0.935999 13.7952 1.04996 13.45L2.26996 9.66999L4.70996 2.15999C4.73362 2.0988 4.7713 2.044 4.81996 1.99999C4.98419 1.84998 5.23572 1.84998 5.39996 1.99999C5.45134 2.04966 5.4892 2.11161 5.50996 2.17999L7.94996 9.66999H16.05L18.49 2.15999C18.5136 2.0988 18.5513 2.044 18.6 1.99999C18.7642 1.84998 19.0157 1.84998 19.18 1.99999C19.2313 2.04966 19.2692 2.11161 19.29 2.17999L21.73 9.68999L23 13.45C23.1037 13.8062 22.9614 14.1883 22.65 14.39Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_TRENDINGUP_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M23 6L13.5 15.5L8.5 10.5L1 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M17 6H23V12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_TAG_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M20.59 13.41L13.42 20.58C13.0449 20.9556 12.5358 21.1666 12.005 21.1666C11.4742 21.1666 10.9651 20.9556 10.59 20.58L2 12V2H12L20.59 10.59C21.3654 11.3701 21.3654 12.6299 20.59 13.41Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="8.5" cy="8.5" r="1.5" fill="currentColor"/>
+</svg>
+`
+var ICON_DARESAY_WIND_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8.8808 3.88496C8.49144 4.27664 8.49331 4.9098 8.88499 5.29917C9.27667 5.68853 9.90983 5.68666 10.2992 5.29498L8.8808 3.88496ZM11 7.99997L11.0042 6.99997H11V7.99997ZM2 6.99997C1.44772 6.99997 1 7.44768 1 7.99997C1 8.55225 1.44772 8.99997 2 8.99997V6.99997ZM13.2992 18.705C12.9098 18.3133 12.2767 18.3114 11.885 18.7008C11.4933 19.0901 11.4914 19.7233 11.8808 20.115L13.2992 18.705ZM14 16V17L14.0042 17L14 16ZM2 15C1.44772 15 1 15.4477 1 16C1 16.5523 1.44772 17 2 17V15ZM17.0238 7.02197C16.6328 7.412 16.632 8.04516 17.022 8.43618C17.412 8.8272 18.0452 8.828 18.4362 8.43797L17.0238 7.02197ZM19.5 12V13L19.5018 13L19.5 12ZM2 11C1.44772 11 1 11.4477 1 12C1 12.5523 1.44772 13 2 13V11ZM10.2992 5.29498C10.6189 4.97336 11.115 4.90715 11.5079 5.13367L12.5069 3.40105C11.3283 2.72149 9.83995 2.92011 8.8808 3.88496L10.2992 5.29498ZM11.5079 5.13367C11.9008 5.36019 12.092 5.82273 11.9739 6.26056L13.9048 6.78169C14.2593 5.46821 13.6855 4.08061 12.5069 3.40105L11.5079 5.13367ZM11.9739 6.26056C11.8557 6.69838 11.4577 7.00188 11.0042 6.99998L10.9958 8.99996C12.3563 9.00567 13.5503 8.09518 13.9048 6.78169L11.9739 6.26056ZM11 6.99997H2V8.99997H11V6.99997ZM11.8808 20.115C12.84 21.0798 14.3283 21.2785 15.5069 20.5989L14.5079 18.8663C14.115 19.0928 13.6189 19.0266 13.2992 18.705L11.8808 20.115ZM15.5069 20.5989C16.6855 19.9193 17.2593 18.5317 16.9048 17.2182L14.9739 17.7394C15.092 18.1772 14.9008 18.6397 14.5079 18.8663L15.5069 20.5989ZM16.9048 17.2182C16.5503 15.9048 15.3563 14.9943 13.9958 15L14.0042 17C14.4577 16.9981 14.8557 17.3016 14.9739 17.7394L16.9048 17.2182ZM14 15H2V17H14V15ZM18.4362 8.43797C18.9165 7.95892 19.6585 7.86181 20.2458 8.20112L21.2463 6.46932C19.8757 5.67758 18.1444 5.90418 17.0238 7.02197L18.4362 8.43797ZM20.2458 8.20112C20.8332 8.54044 21.1198 9.23172 20.9447 9.88709L22.877 10.4032C23.2854 8.87406 22.6168 7.26106 21.2463 6.46932L20.2458 8.20112ZM20.9447 9.88709C20.7697 10.5424 20.1765 10.9988 19.4982 11L19.5018 13C21.0846 12.9971 22.4685 11.9324 22.877 10.4032L20.9447 9.88709ZM19.5 11H2V13H19.5V11Z" fill="currentColor"/>
+</svg>
+`
+var ICON_DARESAY_INFO_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M12 16V12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="12" cy="8" r="1" fill="currentColor"/>
+</svg>
+`
+var ICON_DARESAY_USERCHECK_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M16 21V19C16 16.7909 14.2091 15 12 15H5C2.79086 15 1 16.7909 1 19V21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M8.5 11C10.7091 11 12.5 9.20914 12.5 7C12.5 4.79086 10.7091 3 8.5 3C6.29086 3 4.5 4.79086 4.5 7C4.5 9.20914 6.29086 11 8.5 11Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M17 11L19 13L23 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_LOGIN_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M14 22H19C20.1046 22 21 21.1046 21 20V4C21 2.89543 20.1046 2 19 2H14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M11 16L15 12L11 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M15 12H3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_CPU_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M4 6C4 4.89543 4.89543 4 6 4H18C19.1046 4 20 4.89543 20 6V18C20 19.1046 19.1046 20 18 20H6C4.89543 20 4 19.1046 4 18V6Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M9 9H15V15H9V9Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M9 1V4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M15 1V4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M9 20V23" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M15 20V23" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M20 9H23" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M20 14H23" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1 9H4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1 14H4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_HASH_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M4 9H20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M4 15H20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M10 3L8 21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M16 3L14 21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_ALIGNCENTER_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18 10H6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M21 6H3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M21 14H3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M18 18H6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_CLIPBOARD_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M16 4H18C19.1046 4 20 4.89543 20 6V20C20 21.1046 19.1046 22 18 22H6C4.89543 22 4 21.1046 4 20V6C4 4.89543 4.89543 4 6 4H8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M8 3C8 2.44772 8.44772 2 9 2H15C15.5523 2 16 2.44772 16 3V5C16 5.55228 15.5523 6 15 6H9C8.44772 6 8 5.55228 8 5V3Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_EDIT3_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M14 2L18 6L7 17H3V13L14 2V2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M3 22H21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_EDIT2_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M16 3L21 8L8 21H3V16L16 3Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_GITHUB_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.28735 20.9578C9.81634 20.7991 10.1165 20.2416 9.95783 19.7127C9.79913 19.1837 9.24164 18.8835 8.71265 19.0422L9.28735 20.9578ZM2.24254 16.0299C1.70674 15.8959 1.16381 16.2217 1.02986 16.7575C0.895909 17.2933 1.22167 17.8362 1.75746 17.9701L2.24254 16.0299ZM15 23C15 23.5523 15.4477 24 16 24C16.5523 24 17 23.5523 17 23H15ZM16 19.13L15.0031 19.0516C15.001 19.0777 15 19.1038 15 19.13H16ZM15.06 16.52L14.9492 15.5262C14.57 15.5684 14.2479 15.8228 14.1189 16.1818C13.9899 16.5409 14.0764 16.9421 14.342 17.2161L15.06 16.52ZM21.5 9.52H22.5V9.51981L21.5 9.52ZM20 5.77L19.0631 5.42036C18.9293 5.77889 19.0119 6.18235 19.2757 6.45952L20 5.77ZM19.91 2L20.8291 1.60605C20.712 1.3328 20.4794 1.12582 20.1944 1.04128L19.91 2ZM16 3.48L15.7384 4.44518C16.0178 4.52091 16.3163 4.47183 16.5568 4.31064L16 3.48ZM9 3.48L8.44319 4.31064C8.68366 4.47183 8.98217 4.52091 9.26158 4.44518L9 3.48ZM5.09 2L4.80563 1.04128C4.52061 1.12582 4.28799 1.3328 4.17087 1.60605L5.09 2ZM5 5.77L5.72425 6.45954C5.98813 6.18237 6.07069 5.7789 5.93688 5.42036L5 5.77ZM3.5 9.55H4.50001L4.49999 9.54468L3.5 9.55ZM9.94 16.55L10.6586 17.2454C10.9223 16.973 11.0092 16.5749 10.8831 16.2173C10.7569 15.8598 10.4395 15.6044 10.0633 15.5576L9.94 16.55ZM9 19.13H10C10 19.1066 9.99918 19.0832 9.99754 19.0598L9 19.13ZM8 23C8 23.5523 8.44771 24 9 24C9.55228 24 10 23.5523 10 23H8ZM8.71265 19.0422C7.57636 19.3831 6.82286 19.3817 6.30601 19.2607C5.80203 19.1427 5.42857 18.8894 5.08211 18.5429C4.90325 18.364 4.73545 18.1642 4.5569 17.9406C4.39069 17.7324 4.18875 17.4689 3.99562 17.2422C3.60492 16.7835 3.05841 16.2338 2.24254 16.0299L1.75746 17.9701C1.94159 18.0162 2.14508 18.154 2.47313 18.5391C2.63937 18.7342 2.789 18.9317 2.99388 19.1883C3.18643 19.4295 3.40925 19.6985 3.66789 19.9571C4.19643 20.4856 4.88547 20.9823 5.85024 21.2081C6.80214 21.4308 7.92364 21.3669 9.28735 20.9578L8.71265 19.0422ZM17 23V19.13H15V23H17ZM16.9969 19.2084C17.0953 17.9576 16.6513 16.7248 15.778 15.8239L14.342 17.2161C14.8157 17.7046 15.0564 18.3732 15.0031 19.0516L16.9969 19.2084ZM15.1708 17.5138C16.797 17.3326 18.652 16.9201 20.1011 15.7016C21.5987 14.4423 22.5 12.4663 22.5 9.52H20.5C20.5 12.0337 19.7513 13.3827 18.8139 14.1709C17.828 14.9999 16.463 15.3574 14.9492 15.5262L15.1708 17.5138ZM22.5 9.51981C22.4997 7.86699 21.8639 6.27756 20.7243 5.08048L19.2757 6.45952C20.0615 7.28484 20.4998 8.38066 20.5 9.52018L22.5 9.51981ZM20.9369 6.11964C21.4827 4.65722 21.4441 3.04076 20.8291 1.60605L18.9909 2.39395C19.4032 3.35594 19.4291 4.43979 19.0631 5.42036L20.9369 6.11964ZM19.91 2C20.1944 1.04128 20.1934 1.041 20.1924 1.04071C20.1921 1.04061 20.1911 1.04033 20.1905 1.04013C20.1891 1.03975 20.1878 1.03936 20.1864 1.03896C20.1837 1.03818 20.1809 1.03739 20.178 1.03658C20.1723 1.03497 20.1662 1.03333 20.1598 1.03166C20.1471 1.02832 20.1331 1.02487 20.1178 1.0214C20.0873 1.01447 20.0519 1.00746 20.0115 1.00101C19.9305 0.98811 19.8304 0.977583 19.7105 0.974283C19.4702 0.967669 19.1553 0.990208 18.762 1.07752C17.9773 1.25174 16.8856 1.68244 15.4432 2.64936L16.5568 4.31064C17.8444 3.44756 18.7077 3.13826 19.1955 3.02998C19.4385 2.97604 19.5892 2.9717 19.6555 2.97353C19.6889 2.97445 19.7022 2.97697 19.6965 2.97605C19.6937 2.97561 19.6863 2.97433 19.6744 2.97162C19.6684 2.97027 19.6614 2.96857 19.6532 2.96644C19.6492 2.96538 19.6448 2.96421 19.6402 2.96292C19.6379 2.96228 19.6356 2.96161 19.6331 2.96091C19.6319 2.96056 19.6307 2.9602 19.6294 2.95983C19.6288 2.95965 19.6279 2.95937 19.6275 2.95928C19.6266 2.959 19.6256 2.95871 19.91 2ZM16.2616 2.51482C13.7983 1.84721 11.2017 1.84721 8.73842 2.51482L9.26158 4.44518C11.3823 3.87043 13.6177 3.87043 15.7384 4.44518L16.2616 2.51482ZM9.5568 2.64936C8.11435 1.68244 7.02274 1.25174 6.23798 1.07752C5.8447 0.990208 5.52982 0.967669 5.28952 0.974283C5.16963 0.977583 5.06945 0.98811 4.98854 1.00101C4.94814 1.00746 4.91271 1.01447 4.8822 1.0214C4.86695 1.02487 4.85294 1.02832 4.84018 1.03166C4.8338 1.03333 4.82773 1.03497 4.82197 1.03658C4.81909 1.03739 4.81629 1.03818 4.81357 1.03896C4.81221 1.03936 4.81087 1.03975 4.80954 1.04013C4.80888 1.04033 4.8079 1.04061 4.80757 1.04071C4.8066 1.041 4.80563 1.04128 5.09 2C5.37436 2.95871 5.37341 2.959 5.37245 2.95928C5.37214 2.95937 5.37119 2.95965 5.37056 2.95983C5.36931 2.9602 5.36808 2.96056 5.36686 2.96091C5.36443 2.96161 5.36206 2.96228 5.35976 2.96292C5.35516 2.96421 5.35082 2.96538 5.34676 2.96644C5.33862 2.96857 5.33158 2.97027 5.32564 2.97163C5.31374 2.97433 5.30633 2.97561 5.30353 2.97605C5.29781 2.97697 5.31115 2.97445 5.34454 2.97353C5.4108 2.9717 5.56155 2.97604 5.80452 3.02998C6.29226 3.13826 7.15565 3.44756 8.44319 4.31064L9.5568 2.64936ZM4.17087 1.60605C3.55594 3.04076 3.51735 4.65722 4.06312 6.11964L5.93688 5.42036C5.57094 4.43979 5.59681 3.35594 6.00913 2.39395L4.17087 1.60605ZM4.27575 5.08046C3.12759 6.28642 2.49116 7.89022 2.50001 9.55532L4.49999 9.54468C4.49388 8.3967 4.93266 7.29097 5.72425 6.45954L4.27575 5.08046ZM2.5 9.55C2.5 12.4795 3.40326 14.444 4.89892 15.7016C6.34442 16.9171 8.19555 17.341 9.81674 17.5424L10.0633 15.5576C8.54445 15.369 7.17558 15.0029 6.18608 14.1709C5.24674 13.381 4.5 12.0405 4.5 9.55H2.5ZM9.2214 15.8546C8.35857 16.7462 7.91542 17.9625 8.00246 19.2002L9.99754 19.0598C9.95033 18.3886 10.1907 17.729 10.6586 17.2454L9.2214 15.8546ZM8 19.13V23H10V19.13H8Z" fill="currentColor"/>
+</svg>
+`
+var ICON_DARESAY_BLUETOOTH_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6.5 6.5L17.5 17.5L12 23V1L17.5 6.5L6.5 17.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_MINIMIZE2_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M4 14H10V20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M20 10H14V4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M14 10L21 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M3 21L10 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_CORNERLEFTUP_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M14 9L9 4L4 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M20 20H13C10.7909 20 9 18.2091 9 16V4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_MOON_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M21 12.79C20.5623 17.5258 16.5155 21.1036 11.7617 20.9576C7.008 20.8115 3.18847 16.992 3.0424 12.2382C2.89634 7.48448 6.47416 3.43765 11.21 3C9.15033 5.78645 9.43923 9.66045 11.8894 12.1106C14.3395 14.5607 18.2135 14.8496 21 12.79V12.79Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_ALIGNJUSTIFY_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M21 10H3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M21 6H3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M21 14H3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M21 18H3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_VIDEO_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M23 7L16 12L23 17V7V7Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M1 7C1 5.89543 1.89543 5 3 5H14C15.1046 5 16 5.89543 16 7V17C16 18.1046 15.1046 19 14 19H3C1.89543 19 1 18.1046 1 17V7Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_TYPE_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M4 6V3H20V6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M9 19H15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M12 3V19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_WIFI_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M4.58008 13.5473C8.65867 10.1502 14.5815 10.1502 18.6601 13.5473" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1 9.99735C7.04648 4.66755 16.1135 4.66755 22.16 9.99735" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M8.11011 17.1073C10.1909 15.629 12.9793 15.629 15.0601 17.1073" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="12" cy="21" r="1" fill="currentColor"/>
+</svg>
+`
+var ICON_DARESAY_BRIEFCASE_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M2 9C2 7.89543 2.89543 7 4 7H20C21.1046 7 22 7.89543 22 9V19C22 20.1046 21.1046 21 20 21H4C2.89543 21 2 20.1046 2 19V9Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M16 21V5C16 3.89543 15.1046 3 14 3H10C8.89543 3 8 3.89543 8 5V21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_DELETE_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M21 4H8L1 12L8 20H21C22.1046 20 23 19.1046 23 18V6C23 4.89543 22.1046 4 21 4Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M18 9L12 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M12 9L18 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_MICOFF_DEFAULT = `<svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1 2L23 24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M10 10C10 9.44773 9.55228 9.00002 9 9.00002C8.44772 9.00002 8 9.44773 8 10H10ZM9 13H8L8 13.0009L9 13ZM14.8267 15.8276C15.2174 15.4373 15.2178 14.8041 14.8275 14.4133C14.4373 14.0226 13.8041 14.0222 13.4133 14.4125L14.8267 15.8276ZM14.0001 10.34C14.0001 10.8923 14.4478 11.34 15.0001 11.34C15.5523 11.34 16.0001 10.8923 16.0001 10.34H14.0001ZM15.0001 5.00001L14.0001 4.99901V5.00001H15.0001ZM8.08006 4.20102C7.97016 4.74226 8.31982 5.27011 8.86106 5.38001C9.4023 5.48992 9.93016 5.14025 10.0401 4.59901L8.08006 4.20102ZM8 10V13H10V10H8ZM8 13.0009C8.00142 14.6177 8.97597 16.0746 10.4697 16.6931L11.2349 14.8452C10.488 14.536 10.0007 13.8075 10 12.9991L8 13.0009ZM10.4697 16.6931C11.9635 17.3116 13.6827 16.9701 14.8267 15.8276L13.4133 14.4125C12.8414 14.9837 11.9818 15.1545 11.2349 14.8452L10.4697 16.6931ZM16.0001 10.34V5.00001H14.0001V10.34H16.0001ZM16.0001 5.00102C16.0021 2.94601 14.4467 1.22378 12.4021 1.01725L12.2011 3.00712C13.2234 3.11039 14.0011 3.9715 14.0001 4.99901L16.0001 5.00102ZM12.4021 1.01725C10.3574 0.810723 8.489 2.1871 8.08006 4.20102L10.0401 4.59901C10.2445 3.59205 11.1788 2.90386 12.2011 3.00712L12.4021 1.01725Z" fill="currentColor"/>
+<path d="M17.7143 18.6498C18.1008 18.2553 18.0943 17.6222 17.6998 17.2357C17.3053 16.8492 16.6721 16.8557 16.2856 17.2502L17.7143 18.6498ZM4.99994 13L5.99994 13.0073V13H4.99994ZM5.99994 11C5.99994 10.4477 5.55223 10 4.99994 10C4.44766 10 3.99994 10.4477 3.99994 11H5.99994ZM19.9999 11C19.9999 10.4477 19.5522 10 18.9999 10C18.4476 10 17.9999 10.4477 17.9999 11H19.9999ZM18.9999 13L19.9999 13.0009V13H18.9999ZM17.9056 14.0534C17.8081 14.597 18.1697 15.1168 18.7133 15.2143C19.2569 15.3118 19.7767 14.9502 19.8742 14.4066L17.9056 14.0534ZM16.2856 17.2502C14.5739 18.9974 11.9729 19.5306 9.71177 18.5978L8.94911 20.4467C11.964 21.6903 15.4319 20.9794 17.7143 18.6498L16.2856 17.2502ZM9.71177 18.5978C7.45063 17.6651 5.98202 15.4532 5.99992 13.0073L3.99997 12.9927C3.97611 16.2539 5.93426 19.2031 8.94911 20.4467L9.71177 18.5978ZM5.99994 13V11H3.99994V13H5.99994ZM17.9999 11V13H19.9999V11H17.9999ZM17.9999 12.9991C17.9996 13.3526 17.968 13.7055 17.9056 14.0534L19.8742 14.4066C19.9574 13.9426 19.9995 13.4722 19.9999 13.0009L17.9999 12.9991Z" fill="currentColor"/>
+<path d="M12 20V24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M8 24H16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_SIDEBAR_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M3 5C3 3.89543 3.89543 3 5 3H19C20.1046 3 21 3.89543 21 5V19C21 20.1046 20.1046 21 19 21H5C3.89543 21 3 20.1046 3 19V5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M9 3V21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_UNDERLINE_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6 2V9C6 12.3137 8.68629 15 12 15C15.3137 15 18 12.3137 18 9V2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M4 20H20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_CORNERUPRIGHT_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M15 14L20 9L15 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M4 20V13C4 10.7909 5.79086 9 8 9H20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_ROTATECW_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M22 4V10H16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M19.49 15C18.1547 18.7798 14.4803 21.2207 10.4784 20.9866C6.47655 20.7525 3.11192 17.8997 2.22639 13.99C1.34086 10.0803 3.14792 6.05626 6.65838 4.12062C10.1688 2.18499 14.5363 2.80448 17.37 5.63998L22 9.99998" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_ARROWDOWNRIGHT_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M9 18H18V9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_TOGGLERIGHT_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M1 12C1 8.13401 4.13401 5 8 5H16C19.866 5 23 8.13401 23 12V12C23 15.866 19.866 19 16 19H8C4.13401 19 1 15.866 1 12V12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M16 15C17.6569 15 19 13.6569 19 12C19 10.3431 17.6569 9 16 9C14.3431 9 13 10.3431 13 12C13 13.6569 14.3431 15 16 15Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_INSTAGRAM_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M2 7C2 4.23858 4.23858 2 7 2H17C19.7614 2 22 4.23858 22 7V17C22 19.7614 19.7614 22 17 22H7C4.23858 22 2 19.7614 2 17V7Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M16 11.37C16.2531 13.077 15.383 14.7538 13.8416 15.5297C12.3002 16.3055 10.435 16.0054 9.21483 14.7852C7.99462 13.5649 7.69449 11.6998 8.47032 10.1584C9.24615 8.61697 10.923 7.74687 12.63 7.99999C14.373 8.25846 15.7415 9.62702 16 11.37Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_STAR_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_UMBRELLA_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M23.0001 12V13C23.2818 13 23.5505 12.8811 23.74 12.6727C23.9295 12.4642 24.0223 12.1854 23.9955 11.905L23.0001 12ZM1.00006 12L0.00458592 11.905C-0.0221863 12.1854 0.0705988 12.4642 0.260121 12.6727C0.449643 12.8811 0.718316 13 1.00006 13V12ZM18.0001 19H19.0001C19.0001 18.7613 18.9147 18.5305 18.7593 18.3492L18.0001 19ZM12.0001 12L12.7593 11.3492C12.487 11.0315 12.0456 10.9169 11.6531 11.0621C11.2606 11.2073 11.0001 11.5815 11.0001 12H12.0001ZM23.9955 11.905C23.4053 5.7216 18.2115 1 12.0001 1V3C17.1806 3 21.5123 6.93793 22.0046 12.095L23.9955 11.905ZM12.0001 1C5.78858 1 0.594817 5.7216 0.00458592 11.905L1.99554 12.095C2.4878 6.93793 6.81953 3 12.0001 3V1ZM1.00006 13H23.0001V11H1.00006V13ZM17.0001 19C17.0001 20.1046 16.1046 21 15.0001 21V23C17.2092 23 19.0001 21.2091 19.0001 19H17.0001ZM15.0001 21C13.8955 21 13.0001 20.1046 13.0001 19H11.0001C11.0001 21.2091 12.7909 23 15.0001 23V21ZM13.0001 19V12H11.0001V19H13.0001ZM11.2408 12.6508L17.2408 19.6508L18.7593 18.3492L12.7593 11.3492L11.2408 12.6508Z" fill="currentColor"/>
+</svg>
+`
+var ICON_DARESAY_TRASH2_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3 6H5H21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M20 6C20 5.44772 19.5523 5 19 5C18.4477 5 18 5.44772 18 6H20ZM6 6C6 5.44772 5.55228 5 5 5C4.44772 5 4 5.44772 4 6H6ZM7 6C7 6.55228 7.44772 7 8 7C8.55228 7 9 6.55228 9 6H7ZM15 6C15 6.55228 15.4477 7 16 7C16.5523 7 17 6.55228 17 6H15ZM18 6V20H20V6H18ZM18 20C18 20.5523 17.5523 21 17 21V23C18.6569 23 20 21.6569 20 20H18ZM17 21H7V23H17V21ZM7 21C6.44772 21 6 20.5523 6 20H4C4 21.6569 5.34315 23 7 23V21ZM6 20V6H4V20H6ZM9 6V4H7V6H9ZM9 4C9 3.44772 9.44772 3 10 3V1C8.34315 1 7 2.34315 7 4H9ZM10 3H14V1H10V3ZM14 3C14.5523 3 15 3.44772 15 4H17C17 2.34315 15.6569 1 14 1V3ZM15 4V6H17V4H15Z" fill="currentColor"/>
+<path d="M10 11V17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M14 11V17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_FASTFORWARD_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M13 19L22 12L13 5V19V19Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M2 19L11 12L2 5V19V19Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_SCISSORS_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M6 9C7.65685 9 9 7.65685 9 6C9 4.34315 7.65685 3 6 3C4.34315 3 3 4.34315 3 6C3 7.65685 4.34315 9 6 9Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M6 21C7.65685 21 9 19.6569 9 18C9 16.3431 7.65685 15 6 15C4.34315 15 3 16.3431 3 18C3 19.6569 4.34315 21 6 21Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M20 4L8.12 15.88" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M14.47 14.48L20 20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M8.12 8.12L12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_MAIL_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M22 6L12 13L2 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_THUMBSUP_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M14 9H13C13 9.55228 13.4477 10 14 10V9ZM14 5H15H14ZM11 2V1C10.6048 1 10.2467 1.23273 10.0862 1.59386L11 2ZM7 11L6.08619 10.5939C6.02936 10.7217 6 10.8601 6 11H7ZM7 22H6C6 22.5523 6.44772 23 7 23V22ZM18.28 22L18.2913 21H18.28V22ZM20.28 20.3L19.2916 20.1484L19.2913 20.1501L20.28 20.3ZM21.66 11.3L22.6484 11.4516L22.6487 11.4501L21.66 11.3ZM19.66 9V10.0001L19.6713 9.99994L19.66 9ZM7 22V23C7.55228 23 8 22.5523 8 22H7ZM7 11H8C8 10.4477 7.55228 10 7 10V11ZM15 9V5H13V9H15ZM15 5C15 2.79086 13.2091 1 11 1V3C12.1046 3 13 3.89543 13 5H15ZM10.0862 1.59386L6.08619 10.5939L7.91381 11.4061L11.9138 2.40614L10.0862 1.59386ZM6 11V22H8V11H6ZM7 23H18.28V21H7V23ZM18.2687 22.9999C19.7646 23.0168 21.0444 21.929 21.2687 20.4499L19.2913 20.1501C19.2165 20.6431 18.7899 21.0057 18.2913 21.0001L18.2687 22.9999ZM21.2684 20.4516L22.6484 11.4516L20.6716 11.1484L19.2916 20.1484L21.2684 20.4516ZM22.6487 11.4501C22.7808 10.5798 22.524 9.69553 21.9465 9.03134L20.4373 10.3437C20.6298 10.5651 20.7154 10.8599 20.6713 11.1499L22.6487 11.4501ZM21.9465 9.03134C21.3689 8.36714 20.5288 7.9901 19.6487 8.00006L19.6713 9.99994C19.9647 9.99661 20.2447 10.1223 20.4373 10.3437L21.9465 9.03134ZM19.66 8H14V10H19.66V8ZM7 21H4V23H7V21ZM4 21C3.44772 21 3 20.5523 3 20H1C1 21.6569 2.34315 23 4 23V21ZM3 20V13H1V20H3ZM3 13C3 12.4477 3.44772 12 4 12V10C2.34315 10 1 11.3431 1 13H3ZM4 12H7V10H4V12ZM6 11V22H8V11H6Z" fill="currentColor"/>
+</svg>
+`
+var ICON_DARESAY_BOOKMARK_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M19 21L12 16L5 21V5C5 3.89543 5.89543 3 7 3H17C18.1046 3 19 3.89543 19 5V21Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_MINUS_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5 12H19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_ALIGNRIGHT_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M21 10H7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M21 6H3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M21 14H3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M21 18H7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_CLOUDOFF_DEFAULT = `<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M21.8189 16.56C21.6035 17.0686 21.8411 17.6554 22.3497 17.8708C22.8583 18.0862 23.4451 17.8486 23.6605 17.34L21.8189 16.56ZM18.1297 10V11L18.1309 11L18.1297 10ZM16.8697 10L15.9005 10.2461C16.0131 10.6895 16.4122 11 16.8697 11V10ZM9.90769 3.00388C9.35755 2.95528 8.87218 3.36187 8.82358 3.91201C8.77499 4.46215 9.18157 4.94753 9.73171 4.99612L9.90769 3.00388ZM5.61368 5.87513C6.097 5.60789 6.27217 4.99943 6.00493 4.51611C5.73768 4.03279 5.12923 3.85763 4.64591 4.12487L5.61368 5.87513ZM9.1298 20V19C9.12442 19 9.11905 19 9.11368 19.0001L9.1298 20ZM18.1298 20V21H18.131L18.1298 20ZM20.171 20.64C20.6901 20.4516 20.9582 19.878 20.7698 19.3588C20.5814 18.8397 20.0078 18.5716 19.4886 18.76L20.171 20.64ZM23.6605 17.34C24.4458 15.4859 24.2487 13.3614 23.1357 11.6834L21.469 12.7889C22.211 13.9076 22.3424 15.3239 21.8189 16.56L23.6605 17.34ZM23.1357 11.6834C22.0226 10.0054 20.1421 8.99761 18.1285 9L18.1309 11C19.4733 10.9984 20.727 11.6703 21.469 12.7889L23.1357 11.6834ZM18.1297 9H16.8697V11H18.1297V9ZM17.8389 9.75388C16.8977 6.04736 13.717 3.34036 9.90769 3.00388L9.73171 4.99612C12.6945 5.25783 15.1684 7.36328 15.9005 10.2461L17.8389 9.75388ZM4.64591 4.12487C1.03035 6.12403 -0.759733 10.3281 0.304787 14.32L2.23726 13.8047C1.4093 10.6998 2.80159 7.43003 5.61368 5.87513L4.64591 4.12487ZM0.304787 14.32C1.36931 18.312 5.01499 21.0664 9.14591 20.9999L9.11368 19.0001C5.90075 19.0519 3.06522 16.9095 2.23726 13.8047L0.304787 14.32ZM9.1298 21H18.1298V19H9.1298V21ZM18.131 21C18.8267 20.9992 19.517 20.8774 20.171 20.64L19.4886 18.76C19.0526 18.9182 18.5924 18.9995 18.1286 19L18.131 21Z" fill="currentColor"/>
+<path d="M1 1L23 23" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_MAP_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M1 6V22L8 18L16 22L23 18V2L16 6L8 2L1 6Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M8 2V18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M16 6V22" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_LIST_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8 6H21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M8 12H21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M8 18H21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M4 6H3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M4 12H3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M4 18H3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_TWITTER_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M23 3.00001C22.0424 3.67549 20.9821 4.19212 19.86 4.53001C18.6264 3.11155 16.6384 2.61412 14.8821 3.28446C13.1258 3.9548 11.9748 5.65031 12 7.53001V8.53001C8.43066 8.62256 5.05203 6.92198 3 4.00001C3 4.00001 -1 13 8 17C5.94053 18.398 3.48716 19.0989 1 19C10 24 21 19 21 7.50001C20.9991 7.22146 20.9723 6.9436 20.92 6.67001C21.9406 5.6635 22.6608 4.39272 23 3.00001Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_BOLD_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M5 4H13C15.2091 4 17 5.79086 17 8C17 10.2091 15.2091 12 13 12H5V4Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M5 12H14C16.2091 12 18 13.7909 18 16C18 18.2091 16.2091 20 14 20H5V12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_ARROWUP_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 20V4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M6 10L12 4L18 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_CROSSHAIR_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M22 12H18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M6 12H2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M12 6V2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M12 22V18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_FILETEXT_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M14 2H6C4.89543 2 4 2.89543 4 4V20C4 21.1046 4.89543 22 6 22H18C19.1046 22 20 21.1046 20 20V8L14 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M14 2V8H20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M16 13H8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M16 17H8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M10 9H9H8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_TV_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M2 9C2 7.89543 2.89543 7 4 7H20C21.1046 7 22 7.89543 22 9V20C22 21.1046 21.1046 22 20 22H4C2.89543 22 2 21.1046 2 20V9Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M17 2L12 7L7 2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_REFRESHCCW_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1 4V10H7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M23 20V14H17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M19.5473 9.3336C19.7316 9.85425 20.303 10.127 20.8236 9.94272C21.3443 9.75848 21.617 9.18705 21.4327 8.66641L19.5473 9.3336ZM5.64003 5.64L6.32481 6.36875C6.33242 6.3616 6.33993 6.35432 6.34731 6.34693L5.64003 5.64ZM0.315254 9.27125C-0.0872253 9.64944 -0.106914 10.2823 0.271277 10.6848C0.649469 11.0873 1.28233 11.1069 1.68481 10.7288L0.315254 9.27125ZM23.6848 14.7288C24.0873 14.3506 24.107 13.7177 23.7288 13.3152C23.3506 12.9127 22.7177 12.8931 22.3153 13.2712L23.6848 14.7288ZM18.36 18.36L17.6753 17.6312C17.6676 17.6384 17.6601 17.6457 17.6528 17.6531L18.36 18.36ZM4.45276 14.6664C4.26852 14.1458 3.69709 13.873 3.17644 14.0573C2.6558 14.2415 2.38308 14.813 2.56732 15.3336L4.45276 14.6664ZM21.4327 8.66641C20.2873 5.42953 17.5613 3.00665 14.2124 2.24891L13.7711 4.19961C16.4502 4.80579 18.631 6.7441 19.5473 9.3336L21.4327 8.66641ZM14.2124 2.24891C10.8635 1.49118 7.36003 2.50457 4.93275 4.93307L6.34731 6.34693C8.28914 4.40413 11.0919 3.59342 13.7711 4.19961L14.2124 2.24891ZM4.95525 4.91125L0.315254 9.27125L1.68481 10.7288L6.32481 6.36875L4.95525 4.91125ZM22.3153 13.2712L17.6753 17.6312L19.0448 19.0888L23.6848 14.7288L22.3153 13.2712ZM17.6528 17.6531C15.7109 19.5959 12.9081 20.4066 10.229 19.8004L9.78764 21.7511C13.1366 22.5088 16.64 21.4954 19.0673 19.0669L17.6528 17.6531ZM10.229 19.8004C7.54988 19.1942 5.3691 17.2559 4.45276 14.6664L2.56732 15.3336C3.71275 18.5705 6.43873 20.9934 9.78764 21.7511L10.229 19.8004Z" fill="currentColor"/>
+</svg>
+`
+var ICON_DARESAY_CHECKCIRCLE_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M21.0001 12.07V13C20.9975 17.4287 18.0824 21.3282 13.8354 22.5839C9.58847 23.8396 5.02145 22.1523 2.61101 18.4371C0.200573 14.7218 0.52092 9.86364 3.39833 6.49707C6.27574 3.13051 11.0248 2.05753 15.0701 3.86" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M22 4L11 15L8 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_THERMOMETER_DEFAULT = `<svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M14 14.76V3.5C14 2.11929 12.8807 1 11.5 1C10.1193 1 8.99998 2.11929 8.99998 3.5V14.76C7.35187 15.8612 6.61837 17.9111 7.19374 19.8079C7.76911 21.7047 9.51784 23.0017 11.5 23.0017C13.4821 23.0017 15.2309 21.7047 15.8062 19.8079C16.3816 17.9111 15.6481 15.8612 14 14.76V14.76Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_VIDEOOFF_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M17 16C17 15.4477 16.5523 15 16 15C15.4477 15 15 15.4477 15 16H17ZM1 17H0H1ZM5 6C5.55228 6 6 5.55228 6 5C6 4.44772 5.55228 4 5 4V6ZM10.66 4C10.1077 4 9.66 4.44772 9.66 5C9.66 5.55228 10.1077 6 10.66 6V4ZM16 10.34H15C15 10.6052 15.1054 10.8596 15.2929 11.0471L16 10.34ZM17 11.34L16.2929 12.0471C16.6402 12.3944 17.1882 12.4381 17.5861 12.1503L17 11.34ZM23 7H24C24 6.62434 23.7895 6.28037 23.4549 6.10947C23.1204 5.93857 22.7183 5.96958 22.4139 6.18975L23 7ZM22 17C22 17.5523 22.4477 18 23 18C23.5523 18 24 17.5523 24 17H22ZM15 16V17H17V16H15ZM15 17C15 17.5523 14.5523 18 14 18V20C15.6569 20 17 18.6569 17 17H15ZM14 18H3V20H14V18ZM3 18C2.44772 18 2 17.5523 2 17H0C0 18.6569 1.34315 20 3 20V18ZM2 17V7H0V17H2ZM2 7C2 6.44772 2.44772 6 3 6V4C1.34315 4 0 5.34315 0 7H2ZM3 6H5V4H3V6ZM10.66 6H14V4H10.66V6ZM14 6C14.5523 6 15 6.44772 15 7H17C17 5.34315 15.6569 4 14 4V6ZM15 7V10.34H17V7H15ZM15.2929 11.0471L16.2929 12.0471L17.7071 10.6329L16.7071 9.63289L15.2929 11.0471ZM17.5861 12.1503L23.5861 7.81025L22.4139 6.18975L16.4139 10.5297L17.5861 12.1503ZM22 7V17H24V7H22Z" fill="currentColor"/>
+<path d="M1 1L23 23" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_TRASH_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3 6H5H21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M20 6C20 5.44772 19.5523 5 19 5C18.4477 5 18 5.44772 18 6H20ZM6 6C6 5.44772 5.55228 5 5 5C4.44772 5 4 5.44772 4 6H6ZM7 6C7 6.55228 7.44772 7 8 7C8.55228 7 9 6.55228 9 6H7ZM15 6C15 6.55228 15.4477 7 16 7C16.5523 7 17 6.55228 17 6H15ZM18 6V20H20V6H18ZM18 20C18 20.5523 17.5523 21 17 21V23C18.6569 23 20 21.6569 20 20H18ZM17 21H7V23H17V21ZM7 21C6.44772 21 6 20.5523 6 20H4C4 21.6569 5.34315 23 7 23V21ZM6 20V6H4V20H6ZM9 6V4H7V6H9ZM9 4C9 3.44772 9.44772 3 10 3V1C8.34315 1 7 2.34315 7 4H9ZM10 3H14V1H10V3ZM14 3C14.5523 3 15 3.44772 15 4H17C17 2.34315 15.6569 1 14 1V3ZM15 4V6H17V4H15Z" fill="currentColor"/>
+</svg>
+`
+var ICON_DARESAY_LOCK_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M3 13C3 11.8954 3.89543 11 5 11H19C20.1046 11 21 11.8954 21 13V20C21 21.1046 20.1046 22 19 22H5C3.89543 22 3 21.1046 3 20V13Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M7 11V7C7 4.23858 9.23858 2 12 2C14.7614 2 17 4.23858 17 7V11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_SETTINGS_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M19.4 15C19.1277 15.6171 19.2583 16.3378 19.73 16.82L19.79 16.88C20.1656 17.2551 20.3766 17.7642 20.3766 18.295C20.3766 18.8258 20.1656 19.3349 19.79 19.71C19.4149 20.0856 18.9058 20.2966 18.375 20.2966C17.8442 20.2966 17.3351 20.0856 16.96 19.71L16.9 19.65C16.4178 19.1783 15.6971 19.0477 15.08 19.32C14.4755 19.5791 14.0826 20.1724 14.08 20.83V21C14.08 22.1046 13.1846 23 12.08 23C10.9754 23 10.08 22.1046 10.08 21V20.91C10.0642 20.2327 9.63587 19.6339 9 19.4C8.38291 19.1277 7.66219 19.2583 7.18 19.73L7.12 19.79C6.74486 20.1656 6.23582 20.3766 5.705 20.3766C5.17418 20.3766 4.66514 20.1656 4.29 19.79C3.91445 19.4149 3.70343 18.9058 3.70343 18.375C3.70343 17.8442 3.91445 17.3351 4.29 16.96L4.35 16.9C4.82167 16.4178 4.95235 15.6971 4.68 15.08C4.42093 14.4755 3.82764 14.0826 3.17 14.08H3C1.89543 14.08 1 13.1846 1 12.08C1 10.9754 1.89543 10.08 3 10.08H3.09C3.76733 10.0642 4.36613 9.63587 4.6 9C4.87235 8.38291 4.74167 7.66219 4.27 7.18L4.21 7.12C3.83445 6.74486 3.62343 6.23582 3.62343 5.705C3.62343 5.17418 3.83445 4.66514 4.21 4.29C4.58514 3.91445 5.09418 3.70343 5.625 3.70343C6.15582 3.70343 6.66486 3.91445 7.04 4.29L7.1 4.35C7.58219 4.82167 8.30291 4.95235 8.92 4.68H9C9.60447 4.42093 9.99738 3.82764 10 3.17V3C10 1.89543 10.8954 1 12 1C13.1046 1 14 1.89543 14 3V3.09C14.0026 3.74764 14.3955 4.34093 15 4.6C15.6171 4.87235 16.3378 4.74167 16.82 4.27L16.88 4.21C17.2551 3.83445 17.7642 3.62343 18.295 3.62343C18.8258 3.62343 19.3349 3.83445 19.71 4.21C20.0856 4.58514 20.2966 5.09418 20.2966 5.625C20.2966 6.15582 20.0856 6.66486 19.71 7.04L19.65 7.1C19.1783 7.58219 19.0477 8.30291 19.32 8.92V9C19.5791 9.60447 20.1724 9.99738 20.83 10H21C22.1046 10 23 10.8954 23 12C23 13.1046 22.1046 14 21 14H20.91C20.2524 14.0026 19.6591 14.3955 19.4 15Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_OCTAGON_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M7.86 2H16.14L22 7.86V16.14L16.14 22H7.86L2 16.14V7.86L7.86 2V2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_PRINTER_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6 9V2H18V9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M6 18H4C2.89543 18 2 17.1046 2 16V11C2 9.89543 2.89543 9 4 9H20C21.1046 9 22 9.89543 22 11V16C22 17.1046 21.1046 18 20 18H18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M6 14H18V22H6V14Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_SLASH_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M4.92999 4.92999L19.07 19.07" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_POWER_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18.36 6.64001C21.8739 10.155 21.8732 15.853 18.3586 19.3672C14.844 22.8815 9.14602 22.8815 5.63138 19.3672C2.11674 15.853 2.11612 10.155 5.63 6.64001" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M12 2V12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_BOOK_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M4 19.5C4 18.1193 5.11929 17 6.5 17H20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M6.5 2H20V22H6.5C5.11929 22 4 20.8807 4 19.5V4.5C4 3.11929 5.11929 2 6.5 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_RADIO_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M12 14C13.1046 14 14 13.1046 14 12C14 10.8954 13.1046 10 12 10C10.8954 10 10 10.8954 10 12C10 13.1046 10.8954 14 12 14Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M16.9467 7.05249C16.556 6.66219 15.9228 6.66254 15.5325 7.05328C15.1422 7.44402 15.1425 8.07719 15.5333 8.46749L16.9467 7.05249ZM15.5333 15.5425C15.1425 15.9328 15.1422 16.566 15.5325 16.9567C15.9228 17.3474 16.556 17.3478 16.9467 16.9575L15.5333 15.5425ZM7.05329 16.9475C7.44403 17.3378 8.07719 17.3374 8.4675 16.9467C8.85781 16.556 8.85746 15.9228 8.46671 15.5325L7.05329 16.9475ZM8.46671 8.45749C8.85746 8.06719 8.85781 7.43402 8.4675 7.04328C8.07719 6.65254 7.44403 6.65219 7.05329 7.04249L8.46671 8.45749ZM19.07 4.92999L19.7772 4.22299C19.4912 3.93693 19.0611 3.85132 18.6874 4.00608C18.3137 4.16085 18.07 4.5255 18.07 4.92999H19.07ZM19.07 19.07H18.07C18.07 19.4745 18.3137 19.8391 18.6874 19.9939C19.0611 20.1487 19.4912 20.0631 19.7772 19.777L19.07 19.07ZM4.93 19.07L4.22279 19.777C4.50876 20.0631 4.9389 20.1487 5.31261 19.9939C5.68633 19.8391 5.93 19.4745 5.93 19.07H4.93ZM4.93 4.92999H5.93C5.93 4.5255 5.68633 4.16085 5.31261 4.00608C4.9389 3.85132 4.50876 3.93693 4.22279 4.22299L4.93 4.92999ZM15.5333 8.46749C16.4722 9.40533 16.9997 10.6779 16.9997 12.005H18.9997C18.9997 10.1471 18.2612 8.36547 16.9467 7.05249L15.5333 8.46749ZM16.9997 12.005C16.9997 13.332 16.4722 14.6047 15.5333 15.5425L16.9467 16.9575C18.2612 15.6445 18.9997 13.8629 18.9997 12.005H16.9997ZM8.46671 15.5325C7.52783 14.5947 7.00028 13.322 7.00028 11.995H5.00028C5.00028 13.8529 5.73885 15.6345 7.05329 16.9475L8.46671 15.5325ZM7.00028 11.995C7.00028 10.6679 7.52783 9.39533 8.46671 8.45749L7.05329 7.04249C5.73885 8.35547 5.00028 10.1371 5.00028 11.995H7.00028ZM18.3628 5.63699C21.8762 9.15149 21.8762 14.8485 18.3628 18.363L19.7772 19.777C24.0714 15.4815 24.0714 8.51849 19.7772 4.22299L18.3628 5.63699ZM20.07 19.07V4.92999H18.07V19.07H20.07ZM5.63721 18.363C2.12378 14.8485 2.12378 9.15149 5.63721 5.63699L4.22279 4.22299C-0.071414 8.51849 -0.071414 15.4815 4.22279 19.777L5.63721 18.363ZM3.93 4.92999V19.07H5.93V4.92999H3.93Z" fill="currentColor"/>
+</svg>
+`
+var ICON_DARESAY_ZOOMOUT_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M21 21L16.65 16.65" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M8 11H14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_CHEVRONSLEFT_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M11 17L6 12L11 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M18 17L13 12L18 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_LINK2_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M15 6C14.4477 6 14 6.44772 14 7C14 7.55228 14.4477 8 15 8V6ZM18 7V6V7ZM15 16C14.4477 16 14 16.4477 14 17C14 17.5523 14.4477 18 15 18V16ZM9 18C9.55229 18 10 17.5523 10 17C10 16.4477 9.55229 16 9 16V18ZM9 8C9.55229 8 10 7.55228 10 7C10 6.44772 9.55229 6 9 6V8ZM15 8H18V6H15V8ZM18 8C19.0609 8 20.0783 8.42143 20.8284 9.17157L22.2426 7.75736C21.1174 6.63214 19.5913 6 18 6V8ZM20.8284 9.17157C21.5786 9.92172 22 10.9391 22 12H24C24 10.4087 23.3679 8.88258 22.2426 7.75736L20.8284 9.17157ZM22 12C22 14.2091 20.2091 16 18 16V18C21.3137 18 24 15.3137 24 12H22ZM18 16H15V18H18V16ZM9 16H6V18H9V16ZM6 16C4.93913 16 3.92172 15.5786 3.17157 14.8284L1.75736 16.2426C2.88258 17.3679 4.4087 18 6 18V16ZM3.17157 14.8284C2.42143 14.0783 2 13.0609 2 12H0C0 13.5913 0.632141 15.1174 1.75736 16.2426L3.17157 14.8284ZM2 12C2 9.79086 3.79086 8 6 8V6C2.68629 6 0 8.68629 0 12H2ZM6 8H9V6H6V8Z" fill="currentColor"/>
+<path d="M8 12H16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_CHEVRONUP_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18 15L12 9L6 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_ARROWUPLEFT_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18 18L6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M15 6H6V15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_PLUSSQUARE_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M3 5C3 3.89543 3.89543 3 5 3H19C20.1046 3 21 3.89543 21 5V19C21 20.1046 20.1046 21 19 21H5C3.89543 21 3 20.1046 3 19V5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M12 8V16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M8 12H16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_PLUSCIRCLE_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M12 8V16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M8 12H16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_TABLET_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M20 20C20 21.1046 19.1046 22 18 22H6C4.89543 22 4 21.1046 4 20L4 4C4 2.89543 4.89543 2 6 2H18C19.1046 2 20 2.89543 20 4L20 20Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="12" cy="18" r="1" fill="currentColor"/>
+</svg>
+`
+var ICON_DARESAY_CORNERRIGHTDOWN_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M10 15L15 20L20 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M4 4H11C13.2091 4 15 5.79086 15 8V20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_PLUS_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 5V19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M5 12H19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_MOREVERTICAL_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M12 14C13.1046 14 14 13.1046 14 12C14 10.8954 13.1046 10 12 10C10.8954 10 10 10.8954 10 12C10 13.1046 10.8954 14 12 14Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M12 6C13.1046 6 14 5.10457 14 4C14 2.89543 13.1046 2 12 2C10.8954 2 10 2.89543 10 4C10 5.10457 10.8954 6 12 6Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M12 22C13.1046 22 14 21.1046 14 20C14 18.8954 13.1046 18 12 18C10.8954 18 10 18.8954 10 20C10 21.1046 10.8954 22 12 22Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_CHROME_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M21.17 8H12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M3.95001 6.06L8.54001 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M10.88 21.94L15.46 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_SEARCH_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M10.5 18C14.6421 18 18 14.6421 18 10.5C18 6.35786 14.6421 3 10.5 3C6.35786 3 3 6.35786 3 10.5C3 14.6421 6.35786 18 10.5 18Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M21 21L15.8 15.8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_VOICEMAIL_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M5.5 16C7.98528 16 10 13.9853 10 11.5C10 9.01472 7.98528 7 5.5 7C3.01472 7 1 9.01472 1 11.5C1 13.9853 3.01472 16 5.5 16Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M18.5 16C20.9853 16 23 13.9853 23 11.5C23 9.01472 20.9853 7 18.5 7C16.0147 7 14 9.01472 14 11.5C14 13.9853 16.0147 16 18.5 16Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M5.5 16H18.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_ARROWDOWNLEFT_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M15 18H6V9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_COMMAND_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M18 3C16.3431 3 15 4.34315 15 6V18C15 19.6569 16.3431 21 18 21C19.6569 21 21 19.6569 21 18C21 16.3431 19.6569 15 18 15H6C4.34315 15 3 16.3431 3 18C3 19.6569 4.34315 21 6 21C7.65685 21 9 19.6569 9 18V6C9 4.34315 7.65685 3 6 3C4.34315 3 3 4.34315 3 6C3 7.65685 4.34315 9 6 9H18C19.6569 9 21 7.65685 21 6C21 4.34315 19.6569 3 18 3Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_ARROWRIGHT_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M4 12H20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M14 6L20 12L14 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_PHONECALL_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M14.05 6L14.2415 5.01851C13.8098 4.93429 13.3738 5.14198 13.1672 5.53022C12.9606 5.91847 13.0319 6.39612 13.3429 6.70711L14.05 6ZM18 9.95L17.2929 10.6571C17.6039 10.9681 18.0815 11.0394 18.4698 10.8328C18.858 10.6262 19.0657 10.1902 18.9815 9.75851L18 9.95ZM14.05 2L14.1604 1.00611C13.7382 0.959211 13.3325 1.18417 13.1486 1.5671C12.9647 1.95004 13.0428 2.40736 13.3433 2.70755L14.05 2ZM22 9.94L21.2933 10.6476C21.5939 10.9477 22.0513 11.0253 22.434 10.8409C22.8167 10.6565 23.0412 10.2505 22.9937 9.82834L22 9.94ZM21 20.92H20L20 20.9241L21 20.92ZM18.82 22.92L18.712 23.9142C18.718 23.9148 18.724 23.9154 18.73 23.9159L18.82 22.92ZM10.19 19.85L10.7341 19.0109L10.7263 19.006L10.19 19.85ZM4.19 13.85L5.03405 13.3137L5.02928 13.3063L4.19 13.85ZM1.12 5.18L0.124059 5.27C0.12453 5.2752 0.125041 5.2804 0.125593 5.2856L1.12 5.18ZM3.11 3V2L3.10906 2L3.11 3ZM6.11 3V4.00005L6.11984 3.99995L6.11 3ZM8.11 4.72L9.10146 4.58924L9.10016 4.58005L8.11 4.72ZM8.81 7.53L7.8731 7.87961L7.87395 7.88186L8.81 7.53ZM8.36 9.64L9.06712 10.3471L9.07105 10.3431L8.36 9.64ZM7.09 10.91L6.38289 10.2029C6.06458 10.5212 5.99819 11.013 6.22071 11.4043L7.09 10.91ZM13.09 16.91L12.5957 17.7793C12.987 18.0018 13.4788 17.9354 13.7971 17.6171L13.09 16.91ZM14.36 15.64L13.6569 14.9289L13.6529 14.9329L14.36 15.64ZM16.47 15.19L16.1181 16.1261L16.1204 16.1269L16.47 15.19ZM19.28 15.89L19.4197 14.8998L19.4108 14.8986L19.28 15.89ZM13.8585 6.98149C15.4569 7.29335 16.7067 8.5431 17.0185 10.1415L18.9815 9.75851C18.5137 7.36092 16.6391 5.48629 14.2415 5.01851L13.8585 6.98149ZM18.7071 9.24289L14.7571 5.29289L13.3429 6.70711L17.2929 10.6571L18.7071 9.24289ZM13.9396 2.99389C17.6547 3.40661 20.5889 6.33703 21.0063 10.0517L22.9937 9.82834C22.472 5.18505 18.8044 1.52202 14.1604 1.00611L13.9396 2.99389ZM22.7067 9.23245L14.7567 1.29245L13.3433 2.70755L21.2933 10.6476L22.7067 9.23245ZM20 17.92V20.92H22V17.92H20ZM20 20.9241C20.0012 21.2056 19.8835 21.4746 19.676 21.665L21.0281 23.1387C21.6506 22.5677 22.0034 21.7607 22 20.9159L20 20.9241ZM19.676 21.665C19.4686 21.8553 19.1904 21.9494 18.91 21.9241L18.73 23.9159C19.5713 23.992 20.4057 23.7098 21.0281 23.1387L19.676 21.665ZM18.928 21.9259C16.0063 21.6084 13.1999 20.61 10.7341 19.011L9.6459 20.689C12.3741 22.4583 15.4793 23.5629 18.712 23.9142L18.928 21.9259ZM10.7263 19.006C8.43406 17.5494 6.49062 15.6059 5.03401 13.3137L3.34599 14.3863C4.96006 16.9264 7.1136 19.0799 9.65368 20.694L10.7263 19.006ZM5.02928 13.3063C3.42466 10.8293 2.42607 8.00921 2.11441 5.0744L0.125593 5.2856C0.470422 8.53278 1.5753 11.6531 3.35072 14.3937L5.02928 13.3063ZM2.11594 5.09C2.09068 4.81044 2.18408 4.53313 2.37333 4.32581L0.896208 2.97743C0.328467 3.59938 0.0482694 4.43131 0.124059 5.27L2.11594 5.09ZM2.37333 4.32581C2.56257 4.11849 2.83024 4.00026 3.11094 4L3.10906 2C2.26695 2.00079 1.46395 2.35548 0.896208 2.97743L2.37333 4.32581ZM3.11 4H6.11V2H3.11V4ZM6.11984 3.99995C6.62177 3.99501 7.04959 4.36294 7.11984 4.85995L9.10016 4.58005C8.88941 3.089 7.60596 1.98523 6.10016 2.00005L6.11984 3.99995ZM7.11859 4.85076C7.25507 5.8856 7.50819 6.90167 7.8731 7.8796L9.7469 7.1804C9.43472 6.34378 9.21818 5.47454 9.10142 4.58924L7.11859 4.85076ZM7.87395 7.88186C8.01132 8.2473 7.92346 8.65926 7.64895 8.93686L9.07105 10.3431C9.89458 9.51035 10.1582 8.27445 9.74605 7.17814L7.87395 7.88186ZM7.65289 8.93289L6.38289 10.2029L7.79711 11.6171L9.06711 10.3471L7.65289 8.93289ZM6.22071 11.4043C7.73323 14.0643 9.93569 16.2668 12.5957 17.7793L13.5843 16.0407C11.2372 14.7061 9.29388 12.7628 7.9593 10.4157L6.22071 11.4043ZM13.7971 17.6171L15.0671 16.3471L13.6529 14.9329L12.3829 16.2029L13.7971 17.6171ZM15.0631 16.3511C15.3407 16.0765 15.7527 15.9887 16.1181 16.1261L16.8219 14.2539C15.7255 13.8418 14.4897 14.1054 13.6569 14.9289L15.0631 16.3511ZM16.1204 16.1269C17.0983 16.4918 18.1144 16.7449 19.1492 16.8814L19.4108 14.8986C18.5255 14.7818 17.6562 14.5653 16.8196 14.2531L16.1204 16.1269ZM19.1403 16.8802C19.6431 16.9511 20.0129 17.3876 20.0003 17.8952L21.9997 17.9448C22.0375 16.422 20.928 15.1126 19.4197 14.8998L19.1403 16.8802Z" fill="currentColor"/>
+</svg>
+`
+var ICON_DARESAY_CHECKSQUARE_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8 11L11 14L22 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M20 12V19C20 20.1046 19.1046 21 18 21H4C2.89543 21 2 20.1046 2 19V5C2 3.89543 2.89543 3 4 3H15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_MONITOR_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M2 5C2 3.89543 2.89543 3 4 3H20C21.1046 3 22 3.89543 22 5V15C22 16.1046 21.1046 17 20 17H4C2.89543 17 2 16.1046 2 15V5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M8 21H16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M12 17V21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_FILM_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M2 4.18C2 2.97602 2.97602 2 4.18 2H19.82C21.024 2 22 2.97602 22 4.18V19.82C22 21.024 21.024 22 19.82 22H4.18C2.97602 22 2 21.024 2 19.82V4.18Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M7 2V22" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M17 2V22" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M2 12H22" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M2 7H7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M2 17H7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M17 17H22" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M17 7H22" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_CORNERRIGHTUP_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M10 9L15 4L20 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M4 20H11C13.2091 20 15 18.2091 15 16V4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_VOLUMEX_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M10 5L5 9H1V15H5L10 19V5V5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M22 9L16 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M16 9L22 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_UNLOCK_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M3 13C3 11.8954 3.89543 11 5 11H19C20.1046 11 21 11.8954 21 13V20C21 21.1046 20.1046 22 19 22H5C3.89543 22 3 21.1046 3 20V13Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M7 11V7C6.99742 4.43124 8.94175 2.27845 11.4975 2.02029C14.0533 1.76213 16.3888 3.48261 16.9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_ALERTCIRCLE_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M12 8V12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="12" cy="16" r="1" fill="currentColor"/>
+</svg>
+`
+var ICON_DARESAY_INBOX_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M22 13H16L14 16H10L8 13H2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M5.47 5.19L2 13V18C2 19.1046 2.89543 20 4 20H20C21.1046 20 22 19.1046 22 18V13L18.53 5.19C18.2093 4.46607 17.4918 3.99946 16.7 4H7.3C6.50822 3.99946 5.79067 4.46607 5.47 5.19Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_MINUSCIRCLE_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M8 12H16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_DROPLET_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M11 2.69L16.66 8.35C18.9491 10.6376 19.6345 14.0789 18.3965 17.069C17.1586 20.059 14.2412 22.0087 11.005 22.0087C7.76882 22.0087 4.8514 20.059 3.61346 17.069C2.37552 14.0789 3.06092 10.6376 5.35 8.35L11 2.69Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_MAPPIN_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M21 10C21 17 12 23 12 23C12 23 3 17 3 10C3 5.02944 7.02944 1 12 1C16.9706 1 21 5.02944 21 10V10Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_PHONEOFF_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M11.3874 12.6032C10.9971 12.2125 10.3639 12.2122 9.97321 12.6026C9.58251 12.9929 9.58223 13.6261 9.97258 14.0168L11.3874 12.6032ZM14.09 15.91L13.5957 16.7793C13.987 17.0018 14.4788 16.9354 14.7971 16.6171L14.09 15.91ZM15.36 14.64L14.6569 13.9289L14.6529 13.9329L15.36 14.64ZM17.47 14.19L17.1181 15.126L17.1204 15.1269L17.47 14.19ZM20.28 14.89L20.42 13.8998L20.4108 13.8986L20.28 14.89ZM22 16.89L21 16.8801V16.89H22ZM22 19.89H21L21 19.894L22 19.89ZM19.82 21.89L19.712 22.8841C19.718 22.8848 19.724 22.8854 19.73 22.8859L19.82 21.89ZM11.19 18.82L11.7341 17.9809L11.726 17.9758L11.19 18.82ZM8.5675 15.4433C8.17719 15.0525 7.54403 15.0522 7.15329 15.4425C6.76255 15.8328 6.76219 16.4659 7.1525 16.8567L8.5675 15.4433ZM4.35098 13.3541C4.65148 13.8175 5.27072 13.9495 5.7341 13.649C6.19748 13.3485 6.32952 12.7293 6.02902 12.2659L4.35098 13.3541ZM2.12 4.17998L1.12406 4.26998C1.1246 4.27599 1.1252 4.282 1.12585 4.288L2.12 4.17998ZM4.11 1.99998V0.999976L4.10906 0.999977L4.11 1.99998ZM7.11 1.99998V3.00002L7.11984 2.99993L7.11 1.99998ZM9.11 3.71998L10.1015 3.58921L10.1002 3.58002L9.11 3.71998ZM9.81 6.52998L8.8731 6.87958L8.87395 6.88184L9.81 6.52998ZM9.36 8.63998L10.0671 9.34709L10.0711 9.34312L9.36 8.63998ZM7.38289 9.20287C6.99237 9.59339 6.99237 10.2266 7.38289 10.6171C7.77342 11.0076 8.40658 11.0076 8.79711 10.6171L7.38289 9.20287ZM9.97258 14.0168C11.0509 15.096 12.2695 16.0252 13.5957 16.7793L14.5843 15.0407C13.4141 14.3753 12.3388 13.5554 11.3874 12.6032L9.97258 14.0168ZM14.7971 16.6171L16.0671 15.3471L14.6529 13.9329L13.3829 15.2029L14.7971 16.6171ZM16.0631 15.351C16.3407 15.0765 16.7527 14.9887 17.1181 15.126L17.8219 13.2539C16.7255 12.8418 15.4897 13.1054 14.6569 13.9289L16.0631 15.351ZM17.1204 15.1269C18.0983 15.4918 19.1144 15.7449 20.1492 15.8814L20.4108 13.8986C19.5255 13.7818 18.6562 13.5653 17.8196 13.2531L17.1204 15.1269ZM20.14 15.8801C20.6371 15.9504 21.005 16.3782 21 16.8801L23 16.8998C23.0148 15.394 21.911 14.1106 20.42 13.8998L20.14 15.8801ZM21 16.89V19.89H23V16.89H21ZM21 19.894C21.0012 20.1756 20.8835 20.4446 20.676 20.635L22.0281 22.1087C22.6506 21.5377 23.0034 20.7306 23 19.8859L21 19.894ZM20.676 20.635C20.4686 20.8253 20.1904 20.9194 19.91 20.894L19.73 22.8859C20.5713 22.962 21.4057 22.6798 22.0281 22.1087L20.676 20.635ZM19.928 20.8958C17.0063 20.5784 14.1999 19.58 11.7341 17.981L10.6459 19.659C13.3741 21.4282 16.4793 22.5329 19.712 22.8841L19.928 20.8958ZM11.726 17.9758C10.5833 17.2502 9.5241 16.4009 8.5675 15.4433L7.1525 16.8567C8.21296 17.9183 9.38721 18.8598 10.654 19.6642L11.726 17.9758ZM6.02902 12.2659C4.42998 9.8001 3.43161 6.99363 3.11415 4.07195L1.12585 4.288C1.47711 7.52066 2.58174 10.6259 4.35098 13.3541L6.02902 12.2659ZM3.11594 4.08998C3.09068 3.81041 3.18408 3.5331 3.37333 3.32579L1.89621 1.97741C1.32847 2.59936 1.04827 3.43129 1.12406 4.26998L3.11594 4.08998ZM3.37333 3.32579C3.56257 3.11847 3.83024 3.00024 4.11094 2.99998L4.10906 0.999977C3.26695 1.00077 2.46395 1.35546 1.89621 1.97741L3.37333 3.32579ZM4.11 2.99998H7.11V0.999976H4.11V2.99998ZM7.11984 2.99993C7.62177 2.99499 8.04959 3.36291 8.11984 3.85993L10.1002 3.58002C9.88941 2.08898 8.60596 0.985204 7.10016 1.00002L7.11984 2.99993ZM8.11859 3.85073C8.25507 4.88557 8.50819 5.90165 8.8731 6.87958L10.7469 6.18037C10.4347 5.34376 10.2182 4.47451 10.1014 3.58922L8.11859 3.85073ZM8.87395 6.88184C9.01132 7.24727 8.92346 7.65924 8.64895 7.93684L10.0711 9.34312C10.8946 8.51032 11.1582 7.27443 10.7461 6.17812L8.87395 6.88184ZM8.65289 7.93287L7.38289 9.20287L8.79711 10.6171L10.0671 9.34708L8.65289 7.93287Z" fill="currentColor"/>
+<path d="M23 1L1 23" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_SLACK_DEFAULT = `<svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M22.08 10C19.81 2.41001 16.54 0.650006 9.00002 2.92001C1.46002 5.19001 -0.349983 8.46001 1.92002 16C4.19002 23.54 7.46002 25.35 15 23.08C22.54 20.81 24.35 17.54 22.08 10Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M12.5701 6.98999L16.1501 17.39" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M7.8501 8.60999L11.4301 19.01" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M16.39 8.84998L5.98999 12.43" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M18.01 13.57L7.60999 17.15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_XSQUARE_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M3 5C3 3.89543 3.89543 3 5 3H19C20.1046 3 21 3.89543 21 5V19C21 20.1046 20.1046 21 19 21H5C3.89543 21 3 20.1046 3 19V5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M9 9L15 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M15 9L9 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_TARGET_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M12 14C13.1046 14 14 13.1046 14 12C14 10.8954 13.1046 10 12 10C10.8954 10 10 10.8954 10 12C10 13.1046 10.8954 14 12 14Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_LAYOUT_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M3 5C3 3.89543 3.89543 3 5 3H19C20.1046 3 21 3.89543 21 5V19C21 20.1046 20.1046 21 19 21H5C3.89543 21 3 20.1046 3 19V5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M3 9H21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M9 21V9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_HEART_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M20.84 4.60999C19.8085 3.57799 18.4091 2.99817 16.95 2.99817C15.4909 2.99817 14.0915 3.57799 13.06 4.60999L12 5.66999L10.94 4.60999C8.79161 2.46161 5.30838 2.46161 3.16 4.60999C1.01161 6.75838 1.01161 10.2416 3.16 12.39L4.22 13.45L12 21.23L19.78 13.45L20.84 12.39C21.872 11.3585 22.4518 9.95913 22.4518 8.49999C22.4518 7.04086 21.872 5.64152 20.84 4.60999Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_CHEVRONDOUBLEDOWN_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M7 13L12 18L17 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M7 6L12 11L17 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_APERTURE_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M14.31 8L20.05 17.94" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M9.69 8H21.17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M7.38 12L13.12 2.06" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M9.69001 16L3.95001 6.06" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M14.31 16H2.83002" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M16.62 12L10.88 21.94" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_CHEVRONSRIGHT_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M13 17L18 12L13 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M6 17L11 12L6 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_MUSIC_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9 17H10C10 16.4477 9.55228 16 9 16V17ZM21 15H22C22 14.4477 21.5523 14 21 14V15ZM9 16H5V18H9V16ZM5 16C3.34315 16 2 17.3431 2 19H4C4 18.4477 4.44772 18 5 18V16ZM2 19C2 20.6569 3.34315 22 5 22V20C4.44772 20 4 19.5523 4 19H2ZM5 22H7V20H5V22ZM7 22C8.65685 22 10 20.6569 10 19H8C8 19.5523 7.55228 20 7 20V22ZM10 19V17H8V19H10ZM21 14H17V16H21V14ZM17 14C15.3431 14 14 15.3431 14 17H16C16 16.4477 16.4477 16 17 16V14ZM14 17C14 18.6569 15.3431 20 17 20V18C16.4477 18 16 17.5523 16 17H14ZM17 20H19V18H17V20ZM19 20C20.6569 20 22 18.6569 22 17H20C20 17.5523 19.5523 18 19 18V20ZM22 17V15H20V17H22Z" fill="currentColor"/>
+<path d="M9 17V5L21 3V15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_MAXIMIZE2_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M15 3H21V9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M9 21H3V15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M21 3L14 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M3 21L10 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_CLOUDSNOW_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M20.0064 19.5798C22.1731 18.6309 23.3784 16.2935 22.895 13.978C22.4116 11.6625 20.3718 10.0026 18.0064 9.9998H16.7464C15.876 6.62925 12.9259 4.20846 9.45025 4.01274C5.97464 3.81703 2.77142 5.89133 1.52812 9.14285C0.284821 12.3944 1.28687 16.0767 4.00637 18.2498" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_GLOBE_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M2 12H22" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C14.5013 4.73835 15.9228 8.29203 16 12C15.9228 15.708 14.5013 19.2616 12 22C9.49872 19.2616 8.07725 15.708 8 12C8.07725 8.29203 9.49872 4.73835 12 2V2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_WIFIOFF_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1 1L23 23" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="12" cy="20" r="1" fill="currentColor"/>
+<path d="M16.72 11.06C17.5391 11.4597 18.305 11.9603 19 12.55" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M5 12.55C6.48208 11.3108 8.26587 10.4862 10.17 10.16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M10.71 5.05002C15.0388 4.70122 19.3234 6.12702 22.58 9.00002" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1.41998 9C2.80715 7.77385 4.39768 6.79922 6.11998 6.12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M8.53003 16.11C10.6109 14.6317 13.3992 14.6317 15.48 16.11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_TOGGLELEFT_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M1 12C1 8.13401 4.13401 5 8 5H16C19.866 5 23 8.13401 23 12V12C23 15.866 19.866 19 16 19H8C4.13401 19 1 15.866 1 12V12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M8 15C9.65685 15 11 13.6569 11 12C11 10.3431 9.65685 9 8 9C6.34315 9 5 10.3431 5 12C5 13.6569 6.34315 15 8 15Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_USERPLUS_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M16 21V19C16 16.7909 14.2091 15 12 15H5C2.79086 15 1 16.7909 1 19V21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M8.5 11C10.7091 11 12.5 9.20914 12.5 7C12.5 4.79086 10.7091 3 8.5 3C6.29086 3 4.5 4.79086 4.5 7C4.5 9.20914 6.29086 11 8.5 11Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M20 8V14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M23 11H17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_WATCH_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M12 19C15.866 19 19 15.866 19 12C19 8.13401 15.866 5 12 5C8.13401 5 5 8.13401 5 12C5 15.866 8.13401 19 12 19Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M12 9V12L13.5 13.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M17.5058 17.441C17.5561 16.891 17.151 16.4044 16.601 16.3542C16.051 16.3039 15.5644 16.709 15.5141 17.259L17.5058 17.441ZM16.16 21.18L15.1641 21.089L15.164 21.09L16.16 21.18ZM14.16 23L14.164 22H14.16V23ZM9.82998 23V22L9.82592 22L9.82998 23ZM7.82998 21.18L8.82592 21.09L8.82583 21.089L7.82998 21.18ZM8.47583 17.259C8.42557 16.709 7.93897 16.3039 7.38898 16.3542C6.83898 16.4044 6.43387 16.891 6.48413 17.441L8.47583 17.259ZM6.49414 6.55901C6.44388 7.109 6.84899 7.59561 7.39899 7.64587C7.94898 7.69613 8.43558 7.29101 8.48584 6.74102L6.49414 6.55901ZM7.83999 2.82002L8.83584 2.91102L8.83593 2.91002L7.83999 2.82002ZM9.82999 1.00002V1.63317e-05L9.82905 1.71661e-05L9.82999 1.00002ZM14.18 1.00002V2.00003L14.184 2.00001L14.18 1.00002ZM16.18 2.82002L15.184 2.91001L15.1841 2.91102L16.18 2.82002ZM15.5341 6.74102C15.5844 7.29101 16.071 7.69613 16.621 7.64587C17.171 7.59561 17.5761 7.109 17.5258 6.55901L15.5341 6.74102ZM15.5141 17.259L15.1641 21.089L17.1558 21.271L17.5058 17.441L15.5141 17.259ZM15.164 21.09C15.1173 21.6069 14.683 22.0021 14.164 22L14.1559 24C15.7128 24.0063 17.0158 22.8206 17.1559 21.27L15.164 21.09ZM14.16 22H9.82998V24H14.16V22ZM9.82592 22C9.30696 22.0021 8.87263 21.6069 8.82592 21.09L6.83404 21.27C6.97415 22.8206 8.27714 24.0063 9.83404 24L9.82592 22ZM8.82583 21.089L8.47583 17.259L6.48413 17.441L6.83413 21.271L8.82583 21.089ZM8.48584 6.74102L8.83584 2.91102L6.84414 2.72901L6.49414 6.55901L8.48584 6.74102ZM8.83593 2.91002C8.88247 2.39507 9.31388 2.0005 9.83093 2.00002L9.82905 1.71661e-05C8.2779 0.00147808 6.98365 1.18517 6.84405 2.73002L8.83593 2.91002ZM9.82999 2.00002H14.18V1.67489e-05H9.82999V2.00002ZM14.184 2.00001C14.703 1.9979 15.1373 2.39314 15.184 2.91001L17.1759 2.73002C17.0358 1.17943 15.7328 -0.0062921 14.1759 2.49743e-05L14.184 2.00001ZM15.1841 2.91102L15.5341 6.74102L17.5258 6.55901L17.1758 2.72901L15.1841 2.91102Z" fill="currentColor"/>
+</svg>
+`
+var ICON_DARESAY_SLIDERS_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M4 21V14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M4 10V3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M12 21V12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M12 8V3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M20 21V16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M20 12V3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1 14H7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M9 8H15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M17 16H23" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_CLOCK_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M12 6V12L15 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_FOLDER_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M22 19C22 20.1046 21.1046 21 20 21H4C2.89543 21 2 20.1046 2 19V5C2 3.89543 2.89543 3 4 3H9L11 6H20C21.1046 6 22 6.89543 22 8V19Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_TRENDINGDOWN_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M23 18L13.5 8.5L8.5 13.5L1 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M17 18H23V12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_IMAGE_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M3 5C3 3.89543 3.89543 3 5 3H19C20.1046 3 21 3.89543 21 5V19C21 20.1046 20.1046 21 19 21H5C3.89543 21 3 20.1046 3 19V5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M8.5 10C9.32843 10 10 9.32843 10 8.5C10 7.67157 9.32843 7 8.5 7C7.67157 7 7 7.67157 7 8.5C7 9.32843 7.67157 10 8.5 10Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M21 15L16 10L5 21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_AIRPLAY_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5 16H4C2.89543 16 2 15.1046 2 14V4C2 2.89543 2.89543 2 4 2H20C21.1046 2 22 2.89543 22 4V14C22 15.1046 21.1046 16 20 16H19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M12 14L17 20H7L12 14V14Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_USERX_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M16 21V19C16 16.7909 14.2091 15 12 15H5C2.79086 15 1 16.7909 1 19V21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M8.5 11C10.7091 11 12.5 9.20914 12.5 7C12.5 4.79086 10.7091 3 8.5 3C6.29086 3 4.5 4.79086 4.5 7C4.5 9.20914 6.29086 11 8.5 11Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M18 8L23 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M23 8L18 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_CHEVRONLEFT_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_SUN_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M12 17C14.7614 17 17 14.7614 17 12C17 9.23858 14.7614 7 12 7C9.23858 7 7 9.23858 7 12C7 14.7614 9.23858 17 12 17Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M12 1V3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M12 21V23" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M4.21997 4.21997L5.63997 5.63997" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M18.36 18.36L19.78 19.78" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1 12H3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M21 12H23" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M4.21997 19.78L5.63997 18.36" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M18.36 5.63997L19.78 4.21997" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_PHONEOUTGOING_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M22 8V2H16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M15 9L22 2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M21 17.92V20.92C21.0023 21.4831 20.767 22.0211 20.3521 22.4018C19.9371 22.7825 19.3809 22.9707 18.82 22.92C15.7428 22.5856 12.787 21.5341 10.19 19.85C7.77383 18.3146 5.72534 16.2661 4.19 13.85C2.49998 11.2412 1.44824 8.27097 1.12 5.17998C1.06947 4.62085 1.25627 4.06623 1.63477 3.6516C2.01326 3.23697 2.5486 3.0005 3.11 2.99998H6.11C7.11387 2.9901 7.9695 3.72594 8.11 4.71998C8.23662 5.68004 8.47145 6.6227 8.81 7.52998C9.08474 8.26085 8.90902 9.08478 8.36 9.63998L7.09 10.91C8.51356 13.4135 10.5865 15.4864 13.09 16.91L14.36 15.64C14.9152 15.091 15.7391 14.9152 16.47 15.19C17.3773 15.5285 18.3199 15.7634 19.28 15.89C20.2856 16.0318 21.0252 16.9048 21 17.92Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_MAXIMIZE_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8 4C8.55228 4 9 3.55228 9 3C9 2.44772 8.55228 2 8 2V4ZM2 8C2 8.55228 2.44772 9 3 9C3.55228 9 4 8.55228 4 8H2ZM20 8C20 8.55228 20.4477 9 21 9C21.5523 9 22 8.55228 22 8H20ZM16 2C15.4477 2 15 2.44772 15 3C15 3.55228 15.4477 4 16 4V2ZM16 20C15.4477 20 15 20.4477 15 21C15 21.5523 15.4477 22 16 22V20ZM22 16C22 15.4477 21.5523 15 21 15C20.4477 15 20 15.4477 20 16H22ZM4 16C4 15.4477 3.55228 15 3 15C2.44772 15 2 15.4477 2 16H4ZM8 22C8.55228 22 9 21.5523 9 21C9 20.4477 8.55228 20 8 20V22ZM8 2H5V4H8V2ZM5 2C3.34315 2 2 3.34315 2 5H4C4 4.44772 4.44772 4 5 4V2ZM2 5V8H4V5H2ZM22 8V5H20V8H22ZM22 5C22 3.34315 20.6569 2 19 2V4C19.5523 4 20 4.44772 20 5H22ZM19 2H16V4H19V2ZM16 22H19V20H16V22ZM19 22C20.6569 22 22 20.6569 22 19H20C20 19.5523 19.5523 20 19 20V22ZM22 19V16H20V19H22ZM2 16V19H4V16H2ZM2 19C2 20.6569 3.34315 22 5 22V20C4.44772 20 4 19.5523 4 19H2ZM5 22H8V20H5V22Z" fill="currentColor"/>
+</svg>
+`
+var ICON_DARESAY_USERS_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M17 21V19C17 16.7909 15.2091 15 13 15H5C2.79086 15 1 16.7909 1 19V21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M9 11C11.2091 11 13 9.20914 13 7C13 4.79086 11.2091 3 9 3C6.79086 3 5 4.79086 5 7C5 9.20914 6.79086 11 9 11Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M23 21V19C22.9986 17.1771 21.765 15.5857 20 15.13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M16 3.13C17.7699 3.58317 19.0078 5.178 19.0078 7.005C19.0078 8.83201 17.7699 10.4268 16 10.88" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_X_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_NAVIGATION_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M2 12L21 3L12 22L10 14L2 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_SUNSET_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M17 17C17 14.2386 14.7614 12 12 12C9.23858 12 7 14.2386 7 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M12 8V1" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M4.21997 9.21997L5.63997 10.64" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1 17H3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M21 17H23" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M18.36 10.64L19.78 9.21997" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M23 21H1" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M16 4L12 8L8 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_SMARTPHONE_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M5 4C5 2.89543 5.89543 2 7 2H17C18.1046 2 19 2.89543 19 4V20C19 21.1046 18.1046 22 17 22H7C5.89543 22 5 21.1046 5 20V4Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="12" cy="18" r="1" fill="currentColor"/>
+</svg>
+`
+var ICON_DARESAY_MENU_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3 12H21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M3 6H21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M3 18H21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_DISC_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_ZAP_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M13 2L3 14H12L11 22L21 10H12L13 2V2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_POCKET_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M4 3H20C21.1046 3 22 3.89543 22 5V11C22 16.5228 17.5228 21 12 21C9.34784 21 6.8043 19.9464 4.92893 18.0711C3.05357 16.1957 2 13.6522 2 11V5C2 3.89543 2.89543 3 4 3Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M8 10L12 14L16 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_CIRCLE_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_ATSIGN_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M16 12V13C16 14.6569 17.3431 16 19 16C20.6568 16 22 14.6569 22 13V12C21.9997 7.3529 18.7981 3.31841 14.2726 2.2623C9.74712 1.20618 5.09046 3.40679 3.03324 7.57372C0.976012 11.7407 2.06043 16.7757 5.65061 19.7263C9.24079 22.6769 14.3905 22.7654 18.08 19.94" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_CALENDAR_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M3 6C3 4.89543 3.89543 4 5 4H19C20.1046 4 21 4.89543 21 6V20C21 21.1046 20.1046 22 19 22H5C3.89543 22 3 21.1046 3 20V6Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M16 2V6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M8 2V6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M3 10H21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_VOLUME_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M16 5L11 9H7V15H11L16 19V5V5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_ACTIVITY_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M22 11H18L15 20L9 2L6 11H2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_FILEMINUS_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M14 2H6C4.89543 2 4 2.89543 4 4V20C4 21.1046 4.89543 22 6 22H18C19.1046 22 20 21.1046 20 20V8L14 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M14 2V8H20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M9 15H15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_EXTERNALLINK_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18 13V19C18 20.1046 17.1046 21 16 21H5C3.89543 21 3 20.1046 3 19V8C3 6.89543 3.89543 6 5 6H11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M15 3H21V9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M10 14L21 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_PHONEINCOMING_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M15 3V9H21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M22 2L15 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M21 17.92V20.92C21.0023 21.4831 20.767 22.0211 20.3521 22.4018C19.9371 22.7825 19.3809 22.9707 18.82 22.92C15.7428 22.5856 12.787 21.5341 10.19 19.85C7.77383 18.3146 5.72534 16.2661 4.19 13.85C2.49998 11.2412 1.44824 8.27097 1.12 5.17998C1.06947 4.62085 1.25627 4.06623 1.63477 3.6516C2.01326 3.23697 2.5486 3.0005 3.11 2.99998H6.11C7.11387 2.9901 7.9695 3.72594 8.11 4.71998C8.23662 5.68004 8.47145 6.6227 8.81 7.52998C9.08474 8.26085 8.90902 9.08478 8.36 9.63998L7.09 10.91C8.51356 13.4135 10.5865 15.4864 13.09 16.91L14.36 15.64C14.9152 15.091 15.7391 14.9152 16.47 15.19C17.3773 15.5285 18.3199 15.7634 19.28 15.89C20.2856 16.0318 21.0252 16.9048 21 17.92Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_MOREHORIZONTAL_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M12 14C13.1046 14 14 13.1046 14 12C14 10.8954 13.1046 10 12 10C10.8954 10 10 10.8954 10 12C10 13.1046 10.8954 14 12 14Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M20 14C21.1046 14 22 13.1046 22 12C22 10.8954 21.1046 10 20 10C18.8954 10 18 10.8954 18 12C18 13.1046 18.8954 14 20 14Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M4 14C5.10457 14 6 13.1046 6 12C6 10.8954 5.10457 10 4 10C2.89543 10 2 10.8954 2 12C2 13.1046 2.89543 14 4 14Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_CODEPEN_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M12 2L22 8.5V15.5L12 22L2 15.5V8.5L12 2V2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M12 22V15.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M22 8.5L12 15.5L2 8.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M2 15.5L12 8.5L22 15.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M12 2V8.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_SHUFFLE_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M15 3H20V8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M3 20L20 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M20 16V21H15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M14 15L20 21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M3 4L8 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_CAST_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M2.19983 15.1202C1.65869 15.0098 1.13053 15.359 1.02017 15.9002C0.909806 16.4413 1.25902 16.9695 1.80017 17.0798L2.19983 15.1202ZM4.92017 20.1998C5.03053 20.741 5.55869 21.0902 6.09983 20.9798C6.64098 20.8695 6.99019 20.3413 6.87983 19.8002L4.92017 20.1998ZM2.11054 11.0561C1.56164 10.9951 1.06718 11.3906 1.00613 11.9395C0.945079 12.4884 1.34056 12.9828 1.88946 13.0439L2.11054 11.0561ZM8.95613 20.1105C9.01718 20.6594 9.51164 21.0549 10.0605 20.9939C10.6094 20.9328 11.0049 20.4384 10.9439 19.8895L8.95613 20.1105ZM1 8C1 8.55228 1.44772 9 2 9C2.55228 9 3 8.55228 3 8H1ZM14 19C13.4477 19 13 19.4477 13 20C13 20.5523 13.4477 21 14 21V19ZM1.80017 17.0798C3.3716 17.4003 4.59969 18.6284 4.92017 20.1998L6.87983 19.8002C6.39911 17.443 4.55698 15.6009 2.19983 15.1202L1.80017 17.0798ZM1.88946 13.0439C5.60756 13.4574 8.5426 16.3924 8.95613 20.1105L10.9439 19.8895C10.427 15.2418 6.75816 11.573 2.11054 11.0561L1.88946 13.0439ZM3 8V6H1V8H3ZM3 6C3 5.44772 3.44772 5 4 5V3C2.34315 3 1 4.34315 1 6H3ZM4 5H20V3H4V5ZM20 5C20.5523 5 21 5.44772 21 6H23C23 4.34315 21.6569 3 20 3V5ZM21 6V18H23V6H21ZM21 18C21 18.5523 20.5523 19 20 19V21C21.6569 21 23 19.6569 23 18H21ZM20 19H14V21H20V19Z" fill="currentColor"/>
+</svg>
+`
+var ICON_DARESAY_COPY_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M9 11C9 9.89543 9.89543 9 11 9H20C21.1046 9 22 9.89543 22 11V20C22 21.1046 21.1046 22 20 22H11C9.89543 22 9 21.1046 9 20V11Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M5 15H4C2.89543 15 2 14.1046 2 13V4C2 2.89543 2.89543 2 4 2H13C14.1046 2 15 2.89543 15 4V5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_CORNERLEFTDOWN_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M14 15L9 20L4 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M20 4H13C10.7909 4 9 5.79086 9 8V20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_ALERTTRIANGLE_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M10.29 4.86L1.81999 19C1.46463 19.6154 1.46251 20.3731 1.81442 20.9905C2.16632 21.6079 2.8194 21.9922 3.52999 22H20.47C21.1806 21.9922 21.8337 21.6079 22.1856 20.9905C22.5375 20.3731 22.5353 19.6154 22.18 19L13.71 4.86C13.3474 4.26228 12.6991 3.89725 12 3.89725C11.3009 3.89725 10.6526 4.26228 10.29 4.86Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M12 10V14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="12" cy="18" r="1" fill="currentColor"/>
+</svg>
+`
+var ICON_DARESAY_SHOPPINGCART_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M8 23C9.10457 23 10 22.1046 10 21C10 19.8954 9.10457 19 8 19C6.89543 19 6 19.8954 6 21C6 22.1046 6.89543 23 8 23Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M20 23C21.1046 23 22 22.1046 22 21C22 19.8954 21.1046 19 20 19C18.8954 19 18 19.8954 18 21C18 22.1046 18.8954 23 20 23Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M5.67 6H23L21.32 14.39C21.1313 15.3402 20.2886 16.0186 19.32 16H8.75C7.73948 16.0086 6.88134 15.262 6.75 14.26L5.23 2.74C5.09962 1.7456 4.25291 1.00152 3.25 1H1" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_CHEVRONDOWN_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_ANCHOR_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M12 8C13.6569 8 15 6.65685 15 5C15 3.34315 13.6569 2 12 2C10.3431 2 9 3.34315 9 5C9 6.65685 10.3431 8 12 8Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M12 22V8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M5 12H2C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12H19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_ARROWUPRIGHT_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6 18L18 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M9 6H18V15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_PAUSE_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M6 4H10V20H6V4Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M14 4H18V20H14V4Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_ARROWDOWN_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 4V20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M18 14L12 20L6 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_HOME_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M3 9L12 2L21 9V20C21 21.1046 20.1046 22 19 22H5C3.89543 22 3 21.1046 3 20V9Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M9 22V12H15V22" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_SPEAKER_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M4 4C4 2.89543 4.89543 2 6 2H18C19.1046 2 20 2.89543 20 4V20C20 21.1046 19.1046 22 18 22H6C4.89543 22 4 21.1046 4 20V4Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M12 18C14.2091 18 16 16.2091 16 14C16 11.7909 14.2091 10 12 10C9.79086 10 8 11.7909 8 14C8 16.2091 9.79086 18 12 18Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="12" cy="6" r="1" fill="currentColor"/>
+</svg>
+`
+var ICON_DARESAY_CAMERAOFF_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1 1L23 23" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M21 22C21.5523 22 22 21.5523 22 21C22 20.4477 21.5523 20 21 20V22ZM1 19H0H1ZM6 7C6.55228 7 7 6.55228 7 6C7 5.44772 6.55228 5 6 5V7ZM9 2C8.44772 2 8 2.44772 8 3C8 3.55228 8.44772 4 9 4V2ZM15 3L15.8321 2.4453C15.6466 2.1671 15.3344 2 15 2V3ZM17 6L16.1679 6.5547C16.3534 6.8329 16.6656 7 17 7V6ZM22 17.34C22 17.8923 22.4477 18.34 23 18.34C23.5523 18.34 24 17.8923 24 17.34H22ZM16.1053 15.8447C16.4172 15.3889 16.3005 14.7666 15.8447 14.4547C15.3889 14.1428 14.7666 14.2595 14.4547 14.7153L16.1053 15.8447ZM10.2847 10.5453C10.7405 10.2334 10.8572 9.61108 10.5453 9.15529C10.2334 8.69949 9.61108 8.58283 9.15529 8.89471L10.2847 10.5453ZM21 20H3V22H21V20ZM3 20C2.44772 20 2 19.5523 2 19H0C0 20.6569 1.34315 22 3 22V20ZM2 19V8H0V19H2ZM2 8C2 7.44772 2.44772 7 3 7V5C1.34315 5 0 6.34315 0 8H2ZM3 7H6V5H3V7ZM9 4H15V2H9V4ZM14.1679 3.5547L16.1679 6.5547L17.8321 5.4453L15.8321 2.4453L14.1679 3.5547ZM17 7H21V5H17V7ZM21 7C21.5523 7 22 7.44772 22 8H24C24 6.34315 22.6569 5 21 5V7ZM22 8V17.34H24V8H22ZM14.4547 14.7153C13.774 15.7101 12.5641 16.2008 11.3828 15.9613L10.9854 17.9215C12.9542 18.3206 14.9708 17.5027 16.1053 15.8447L14.4547 14.7153ZM11.3828 15.9613C10.2014 15.7218 9.27816 14.7986 9.03866 13.6172L7.07854 14.0146C7.47771 15.9835 9.01649 17.5223 10.9854 17.9215L11.3828 15.9613ZM9.03866 13.6172C8.79916 12.4359 9.28994 11.226 10.2847 10.5453L9.15529 8.89471C7.49734 10.0292 6.67937 12.0458 7.07854 14.0146L9.03866 13.6172Z" fill="currentColor"/>
+</svg>
+`
+var ICON_DARESAY_UPLOAD_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3 17V20C3 21.1046 3.89543 22 5 22H19C20.1046 22 21 21.1046 21 20V17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M16 6L12 2L8 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M12 2V16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_FILTER_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M22 3H2L10 12.46V19L14 21V12.46L22 3Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_MESSAGECIRCLE_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M21 11.5C21.0034 12.8199 20.6951 14.1219 20.1 15.3C18.661 18.1793 15.7189 19.9988 12.5 20C11.1801 20.0034 9.87812 19.6951 8.7 19.1L3 21L4.9 15.3C4.30493 14.1219 3.99656 12.8199 4 11.5C4.00125 8.28109 5.82067 5.33904 8.7 3.9C9.87812 3.30493 11.1801 2.99656 12.5 3H13C17.3158 3.2381 20.7619 6.68419 21 11V11.5V11.5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_CORNERDOWNRIGHT_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M15 10L20 15L15 20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M4 4V11C4 13.2091 5.79086 15 8 15H20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_PAPERCLIP_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M21.4383 11.6622L12.2483 20.8522C9.90386 23.1967 6.10275 23.1967 3.75831 20.8522C1.41386 18.5078 1.41386 14.7067 3.75831 12.3622L12.9483 3.17222C14.5113 1.60926 17.0453 1.60926 18.6083 3.17222C20.1713 4.73519 20.1713 7.26926 18.6083 8.83222L9.40831 18.0222C8.62682 18.8037 7.35979 18.8037 6.57831 18.0222C5.79682 17.2407 5.79682 15.9737 6.57831 15.1922L15.0683 6.71222" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_BELLOFF_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8.06857 2.02908C7.58758 2.30049 7.41767 2.91043 7.68908 3.39143C7.96049 3.87242 8.57043 4.04232 9.05143 3.77092L8.06857 2.02908ZM19 9L18 8.99949V9H19ZM18 13C18 13.5523 18.4477 14 19 14C19.5523 14 20 13.5523 20 13H18ZM17 18C17.5523 18 18 17.5523 18 17C18 16.4477 17.5523 16 17 16V18ZM2 16C1.44772 16 1 16.4477 1 17C1 17.5523 1.44772 18 2 18V16ZM5 9H6L6 8.99874L5 9ZM6.66857 6.23874C6.92193 5.74799 6.72948 5.14478 6.23874 4.89143C5.748 4.63807 5.14478 4.83051 4.89143 5.32126L6.66857 6.23874ZM14.595 21.5018C14.8721 21.024 14.7095 20.4121 14.2318 20.135C13.754 19.8579 13.1421 20.0205 12.865 20.4982L14.595 21.5018ZM11.135 20.4982C10.8579 20.0205 10.246 19.8579 9.76823 20.135C9.2905 20.4121 9.12788 21.024 9.405 21.5018L11.135 20.4982ZM9.05143 3.77092C10.9096 2.72242 13.1848 2.73955 15.0269 3.81591L16.0359 2.08907C13.5797 0.653928 10.5461 0.631085 8.06857 2.02908L9.05143 3.77092ZM15.0269 3.81591C16.8691 4.89227 18.0011 6.86592 18 8.99949L20 9.00051C20.0015 6.15575 18.4921 3.52422 16.0359 2.08907L15.0269 3.81591ZM18 9V13H20V9H18ZM17 16H2V18H17V16ZM2 18C4.20914 18 6 16.2091 6 14H4C4 15.1046 3.10457 16 2 16V18ZM6 14V9H4V14H6ZM6 8.99874C5.99879 8.03849 6.22807 7.09198 6.66857 6.23874L4.89143 5.32126C4.30409 6.45892 3.99839 7.72093 4 9.00126L6 8.99874ZM12.865 20.4982C12.6861 20.8066 12.3565 20.9965 12 20.9965V22.9965C13.0696 22.9965 14.0583 22.427 14.595 21.5018L12.865 20.4982ZM12 20.9965C11.6435 20.9965 11.3139 20.8066 11.135 20.4982L9.405 21.5018C9.9417 22.427 10.9304 22.9965 12 22.9965V20.9965Z" fill="currentColor"/>
+<path d="M1 1L23 23" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_CHEVRONRIGHT_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_MESSAGESQUARE_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M21 15C21 16.1046 20.1046 17 19 17H7L3 21V5C3 3.89543 3.89543 3 5 3H19C20.1046 3 21 3.89543 21 5V15Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_REWIND_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M11 19L2 12L11 5V19V19Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M22 19L13 12L22 5V19V19Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_FILEPLUS_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M14 2H6C4.89543 2 4 2.89543 4 4V20C4 21.1046 4.89543 22 6 22H18C19.1046 22 20 21.1046 20 20V8L14 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M14 2V8H20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M12 18V12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M9 15H15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_USER_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M20 21V19C20 16.7909 18.2091 15 16 15H8C5.79086 15 4 16.7909 4 19V21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M12 11C14.2091 11 16 9.20914 16 7C16 4.79086 14.2091 3 12 3C9.79086 3 8 4.79086 8 7C8 9.20914 9.79086 11 12 11Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_PHONE_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M20.9999 16.92V19.92C21.0022 20.4831 20.767 21.0211 20.352 21.4018C19.937 21.7825 19.3808 21.9707 18.8199 21.92C15.7428 21.5856 12.7869 20.5341 10.1899 18.85C7.77377 17.3146 5.72528 15.2661 4.18994 12.85C2.49992 10.2412 1.44818 7.27097 1.11994 4.17998C1.06941 3.62085 1.25621 3.06623 1.63471 2.6516C2.0132 2.23697 2.54853 2.0005 3.10994 1.99998H6.10994C7.1138 1.9901 7.96944 2.72594 8.10994 3.71998C8.23656 4.68004 8.47139 5.6227 8.80994 6.52998C9.08468 7.26085 8.90896 8.08478 8.35994 8.63998L7.08994 9.90998C8.5135 12.4135 10.5864 14.4864 13.0899 15.91L14.3599 14.64C14.9151 14.091 15.7391 13.9152 16.4699 14.19C17.3772 14.5285 18.3199 14.7634 19.2799 14.89C20.2855 15.0318 21.0251 15.9048 20.9999 16.92Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_LAYERS_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M12 2L2 7L12 12L22 7L12 2V2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_GRID_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M3 3H10V10H3V3Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M14 3H21V10H14V3Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M14 14H21V21H14V14Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M3 14H10V21H3V14Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_FLAG_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M4 15C4 15 5 14 8 14C11 14 13 16 16 16C19 16 20 15 20 15V3C20 3 19 4 16 4C13 4 11 2 8 2C5 2 4 3 4 3V15Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M4 22V15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_PLAYCIRCLE_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M10 8L16 12L10 16V8Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_UPLOADCLOUD_DEFAULT = `<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M17 16L13 12L9 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M13 12V21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M21.39 18.39C23.3963 17.2962 24.4058 14.9813 23.8422 12.7667C23.2785 10.5521 21.2851 9.00153 19 9.00002H17.74C16.911 5.79384 14.1924 3.4298 10.9022 3.05412C7.61193 2.67845 4.43035 4.36881 2.90003 7.30562C1.36971 10.2424 1.80703 13.8185 3.99995 16.3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M17 16L13 12L9 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_CLOUD_DEFAULT = `<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M19 10.001H17.74C16.7004 5.97489 12.7499 3.4164 8.65079 4.11456C4.55168 4.81273 1.67084 8.53475 2.02271 12.678C2.37458 16.8212 5.84185 20.0041 9.99998 20.001H19C21.7614 20.001 24 17.7624 24 15.001C24 12.2396 21.7614 10.001 19 10.001Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_SKIPBACK_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M19 20L9 12L19 4V20Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M5 19V5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_SHARE2_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M18 8C19.6569 8 21 6.65685 21 5C21 3.34315 19.6569 2 18 2C16.3431 2 15 3.34315 15 5C15 6.65685 16.3431 8 18 8Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M6 15C7.65685 15 9 13.6569 9 12C9 10.3431 7.65685 9 6 9C4.34315 9 3 10.3431 3 12C3 13.6569 4.34315 15 6 15Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M18 22C19.6569 22 21 20.6569 21 19C21 17.3431 19.6569 16 18 16C16.3431 16 15 17.3431 15 19C15 20.6569 16.3431 22 18 22Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M8.58997 13.51L15.42 17.49" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M15.41 6.51001L8.58997 10.49" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_VOLUME1_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M13 5L8 9H4V15H8L13 19V5V5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M17.54 8.46002C19.4919 10.4125 19.4919 13.5775 17.54 15.53" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_TRIANGLE_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M10.29 3.86002L1.82002 18C1.46466 18.6154 1.46254 19.3732 1.81445 19.9905C2.16635 20.6079 2.81943 20.9922 3.53002 21H20.47C21.1806 20.9922 21.8337 20.6079 22.1856 19.9905C22.5375 19.3732 22.5354 18.6154 22.18 18L13.71 3.86002C13.3475 3.2623 12.6991 2.89728 12 2.89728C11.3009 2.89728 10.6526 3.2623 10.29 3.86002Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_BATTERYCHARGING_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5.00005 19C5.55233 19 6.00005 18.5523 6.00005 18C6.00005 17.4477 5.55233 17 5.00005 17V19ZM1.00005 16H4.57764e-05H1.00005ZM6.19005 7C6.74233 7 7.19005 6.55228 7.19005 6C7.19005 5.44772 6.74233 5 6.19005 5V7ZM15.0001 5C14.4478 5 14.0001 5.44772 14.0001 6C14.0001 6.55228 14.4478 7 15.0001 7V5ZM13.8101 17C13.2578 17 12.8101 17.4477 12.8101 18C12.8101 18.5523 13.2578 19 13.8101 19V17ZM5.00005 17H3.00005V19H5.00005V17ZM3.00005 17C2.44776 17 2.00005 16.5523 2.00005 16H4.57764e-05C4.57764e-05 17.6569 1.34319 19 3.00005 19V17ZM2.00005 16V8H4.57764e-05V16H2.00005ZM2.00005 8C2.00005 7.44772 2.44776 7 3.00005 7V5C1.34319 5 4.57764e-05 6.34315 4.57764e-05 8H2.00005ZM3.00005 7H6.19005V5H3.00005V7ZM15.0001 7H17.0001V5H15.0001V7ZM17.0001 7C17.5524 7 18.0001 7.44772 18.0001 8H20.0001C20.0001 6.34315 18.657 5 17.0001 5V7ZM18.0001 8V16H20.0001V8H18.0001ZM18.0001 16C18.0001 16.5523 17.5524 17 17.0001 17V19C18.657 19 20.0001 17.6569 20.0001 16H18.0001ZM17.0001 17H13.8101V19H17.0001V17Z" fill="currentColor"/>
+<path d="M23 13V11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M11 6L7 12H13L9 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_ROTATECCW_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M2 4V10H8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M4.51 15C5.84201 18.7807 9.51384 21.2248 13.5157 20.9944C17.5176 20.7641 20.8848 17.9149 21.7742 14.0063C22.6637 10.0978 20.861 6.07208 17.3528 4.13274C13.8447 2.1934 9.47683 2.80794 6.64 5.63998L2 9.99998" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_HEADPHONES_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3 18V12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12V18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M21 14H22C22 13.4477 21.5523 13 21 13V14ZM3 14V13C2.44772 13 2 13.4477 2 14H3ZM20 19C20 19.5523 19.5523 20 19 20V22C20.6569 22 22 20.6569 22 19H20ZM19 20H18V22H19V20ZM18 20C17.4477 20 17 19.5523 17 19H15C15 20.6569 16.3431 22 18 22V20ZM17 19V16H15V19H17ZM17 16C17 15.4477 17.4477 15 18 15V13C16.3431 13 15 14.3431 15 16H17ZM18 15H21V13H18V15ZM20 14V19H22V14H20ZM2 19C2 20.6569 3.34315 22 5 22V20C4.44772 20 4 19.5523 4 19H2ZM5 22H6V20H5V22ZM6 22C7.65685 22 9 20.6569 9 19H7C7 19.5523 6.55228 20 6 20V22ZM9 19V16H7V19H9ZM9 16C9 14.3431 7.65685 13 6 13V15C6.55228 15 7 15.4477 7 16H9ZM6 13H3V15H6V13ZM2 14V19H4V14H2Z" fill="currentColor"/>
+</svg>
+`
+var ICON_DARESAY_BOX_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M12.89 1.45L20.89 5.45C21.5696 5.78773 21.9996 6.48105 22 7.24V16.77C21.9996 17.5289 21.5696 18.2223 20.89 18.56L12.89 22.56C12.3266 22.8419 11.6634 22.8419 11.1 22.56L3.09999 18.56C2.42098 18.2179 1.9947 17.5203 1.99999 16.76V7.24C2.00039 6.48105 2.43033 5.78773 3.10999 5.45L11.11 1.45C11.6706 1.17141 12.3294 1.17141 12.89 1.45Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M2.32001 6.16L12 11L21.68 6.16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M12 22.76V11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_MINIMIZE_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9 3C9 2.44772 8.55228 2 8 2C7.44772 2 7 2.44772 7 3H9ZM3 7C2.44772 7 2 7.44772 2 8C2 8.55228 2.44772 9 3 9V7ZM21 9C21.5523 9 22 8.55228 22 8C22 7.44772 21.5523 7 21 7V9ZM17 3C17 2.44772 16.5523 2 16 2C15.4477 2 15 2.44772 15 3H17ZM15 21C15 21.5523 15.4477 22 16 22C16.5523 22 17 21.5523 17 21H15ZM21 17C21.5523 17 22 16.5523 22 16C22 15.4477 21.5523 15 21 15V17ZM3 15C2.44772 15 2 15.4477 2 16C2 16.5523 2.44772 17 3 17V15ZM7 21C7 21.5523 7.44772 22 8 22C8.55228 22 9 21.5523 9 21H7ZM7 3V6H9V3H7ZM7 6C7 6.55228 6.55228 7 6 7V9C7.65685 9 9 7.65685 9 6H7ZM6 7H3V9H6V7ZM21 7H18V9H21V7ZM18 7C17.4477 7 17 6.55228 17 6H15C15 7.65685 16.3431 9 18 9V7ZM17 6V3H15V6H17ZM17 21V18H15V21H17ZM17 18C17 17.4477 17.4477 17 18 17V15C16.3431 15 15 16.3431 15 18H17ZM18 17H21V15H18V17ZM3 17H6V15H3V17ZM6 17C6.55228 17 7 17.4477 7 18H9C9 16.3431 7.65685 15 6 15V17ZM7 18V21H9V18H7Z" fill="currentColor"/>
+</svg>
+`
+var ICON_DARESAY_USERMINUS_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M16 21V19C16 16.7909 14.2091 15 12 15H5C2.79086 15 1 16.7909 1 19V21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M8.5 11C10.7091 11 12.5 9.20914 12.5 7C12.5 4.79086 10.7091 3 8.5 3C6.29086 3 4.5 4.79086 4.5 7C4.5 9.20914 6.29086 11 8.5 11Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M23 11H17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_ITALIC_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M19 4H10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M14 20H5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M15 4L9 20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_CHEVRONSUP_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M17 11L12 6L7 11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M17 18L12 13L7 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_CORNERUPLEFT_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9 14L4 9L9 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M20 20V13C20 10.7909 18.2091 9 16 9H4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_NAVIGATION2_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M12 3L19 22L12 18L5 22L12 3Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_EYE_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M1 12C1 12 5 4 12 4C19 4 23 12 23 12C23 12 19 20 12 20C5 20 1 12 1 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_CLOUDLIGHTNING_DEFAULT = `<svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M19.9999 16.9C22.5173 16.3888 24.2378 14.0533 23.9797 11.4975C23.7215 8.94174 21.5687 6.99741 18.9999 6.99999H17.7399C16.8277 3.46818 13.6419 1.00067 9.99415 1.00067C6.34643 1.00067 3.1606 3.46818 2.24836 6.99999C1.33612 10.5318 2.92849 14.2335 6.11995 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M14 11L10 17H16L12 23" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_LIFEBUOY_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M4.92999 4.92999L9.16999 9.16999" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M14.83 14.83L19.07 19.07" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M14.83 9.16999L19.07 4.92999" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M14.83 9.17001L18.36 5.64001" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M4.92999 19.07L9.16999 14.83" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_BELL_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M22 18C22.5523 18 23 17.5523 23 17C23 16.4477 22.5523 16 22 16V18ZM2 16C1.44772 16 1 16.4477 1 17C1 17.5523 1.44772 18 2 18V16ZM13.73 21L14.595 21.5018C14.7744 21.1924 14.775 20.8108 14.5965 20.5009C14.418 20.191 14.0876 20 13.73 20V21ZM10.27 21V20C9.91237 20 9.58196 20.191 9.40346 20.5009C9.22497 20.8108 9.22555 21.1924 9.405 21.5018L10.27 21ZM22 16H2V18H22V16ZM2 18C4.20914 18 6 16.2091 6 14H4C4 15.1046 3.10457 16 2 16V18ZM6 14V9H4V14H6ZM6 9C6 5.68629 8.68629 3 12 3V1C7.58172 1 4 4.58172 4 9H6ZM12 3C15.3137 3 18 5.68629 18 9H20C20 4.58172 16.4183 1 12 1V3ZM18 9V14H20V9H18ZM18 14C18 16.2091 19.7909 18 22 18V16C20.8954 16 20 15.1046 20 14H18ZM12.865 20.4982C12.6861 20.8066 12.3565 20.9965 12 20.9965V22.9965C13.0696 22.9965 14.0583 22.427 14.595 21.5018L12.865 20.4982ZM12 20.9965C11.6435 20.9965 11.3139 20.8066 11.135 20.4982L9.405 21.5018C9.9417 22.427 10.9304 22.9965 12 22.9965V20.9965ZM10.27 22H13.73V20H10.27V22Z" fill="currentColor"/>
+</svg>
+`
+var ICON_DARESAY_XCIRCLE_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M15 9L9 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M9 9L15 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_SHARE_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M4 12V20C4 21.1046 4.89543 22 6 22H18C19.1046 22 20 21.1046 20 20V12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M16 6L12 2L8 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M12 2V15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_PLAY_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M5 3L19 12L5 21V3Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_DOWNLOAD_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3 17V20C3 21.1046 3.89543 22 5 22H19C20.1046 22 21 21.1046 21 20V17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M8 12L12 16L16 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M12 2V16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_CORNERDOWNLEFT_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9 10L4 15L9 20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M20 4V11C20 13.2091 18.2091 15 16 15H4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_STOPCIRCLE_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M9 9H15V15H9V9Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_HELPCIRCLE_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.09 8.99999C9.57543 7.62004 10.9854 6.7914 12.4272 7.0387C13.869 7.28601 14.9222 8.53714 14.92 9.99999C14.92 12 11.92 13 11.92 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="12" cy="17" r="1" fill="currentColor"/>
+</svg>
+`
+var ICON_DARESAY_PIECHART_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M21.21 15.89C19.4598 20.0289 15.1638 22.4921 10.7077 21.9116C6.25168 21.331 2.7301 17.8495 2.09874 13.4003C1.46738 8.95119 3.88133 4.62732 7.99995 2.83002" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M22 12C22 9.34784 20.9464 6.8043 19.0711 4.92893C17.1957 3.05357 14.6522 2 12 2V12H22Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_SUNRISE_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M17 17C17 14.2386 14.7614 12 12 12C9.23858 12 7 14.2386 7 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M12 1V8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M4.21997 9.21997L5.63997 10.64" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1 17H3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M21 17H23" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M18.36 10.64L19.78 9.21997" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M23 21H1" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M8 5L12 1L16 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_PHONEFORWARDED_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18 2L22 6L18 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M14 6H22" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M21 17.92V20.92C21.0023 21.4831 20.767 22.0211 20.3521 22.4018C19.9371 22.7825 19.3809 22.9707 18.82 22.92C15.7428 22.5856 12.787 21.5341 10.19 19.85C7.77383 18.3146 5.72534 16.2661 4.19 13.85C2.49998 11.2412 1.44824 8.27097 1.12 5.17998C1.06947 4.62085 1.25627 4.06623 1.63477 3.6516C2.01326 3.23697 2.5486 3.0005 3.11 2.99998H6.11C7.11387 2.9901 7.9695 3.72594 8.11 4.71998C8.23662 5.68004 8.47145 6.6227 8.81 7.52998C9.08474 8.26085 8.90902 9.08478 8.36 9.63998L7.09 10.91C8.51356 13.4135 10.5865 15.4864 13.09 16.91L14.36 15.64C14.9152 15.091 15.7391 14.9152 16.47 15.19C17.3773 15.5285 18.3199 15.7634 19.28 15.89C20.2856 16.0318 21.0252 16.9048 21 17.92Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_DOWNLOADCLOUD_DEFAULT = `<svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9 18L13 22L17 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M13 13V22" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M21.88 19.09C23.6642 17.8354 24.4292 15.5691 23.7704 13.4898C23.1117 11.4106 21.1811 9.9983 19 10H17.74C16.9164 6.78995 14.1987 4.42009 10.9065 4.0409C7.61417 3.6617 4.42894 5.35168 2.89705 8.29043C1.36516 11.2292 1.80381 14.8082 4.00005 17.29" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_THUMBSDOWN_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M10 15H11C11 14.4477 10.5523 14 10 14V15ZM13 22V23C13.3952 23 13.7533 22.7673 13.9138 22.4061L13 22ZM17 13L17.9138 13.4061C17.9706 13.2783 18 13.1399 18 13H17ZM17 2H18C18 1.44772 17.5523 1 17 1V2ZM5.72 2L5.70869 3H5.72V2ZM3.72 3.7L4.70845 3.85156L4.70869 3.84994L3.72 3.7ZM2.34 12.7L1.35155 12.5484L1.35132 12.5499L2.34 12.7ZM4.34 15V13.9999L4.32868 14.0001L4.34 15ZM17 2V1C16.4477 1 16 1.44772 16 2H17ZM19.67 2V3C19.6759 3 19.6818 2.99995 19.6877 2.99984L19.67 2ZM22 4H23C23 3.95517 22.997 3.91039 22.991 3.86596L22 4ZM22 11L22.991 11.134C22.997 11.0896 23 11.0448 23 11H22ZM19.67 13L19.6877 12.0002C19.6818 12.0001 19.6759 12 19.67 12V13ZM17 13H16C16 13.5523 16.4477 14 17 14V13ZM9 15V19H11V15H9ZM9 19C9 21.2091 10.7909 23 13 23V21C11.8954 21 11 20.1046 11 19H9ZM13.9138 22.4061L17.9138 13.4061L16.0862 12.5939L12.0862 21.5939L13.9138 22.4061ZM18 13V2H16V13H18ZM17 1H5.72V3H17V1ZM5.7313 1.00006C4.23537 0.983153 2.95561 2.07095 2.7313 3.55006L4.70869 3.84994C4.78346 3.3569 5.21005 2.9943 5.70869 2.99994L5.7313 1.00006ZM2.73155 3.54844L1.35155 12.5484L3.32845 12.8516L4.70845 3.85156L2.73155 3.54844ZM1.35132 12.5499C1.21924 13.4202 1.47598 14.3045 2.05353 14.9687L3.56275 13.6563C3.37023 13.4349 3.28465 13.1401 3.32868 12.8501L1.35132 12.5499ZM2.05353 14.9687C2.63109 15.6329 3.4712 16.0099 4.35132 15.9999L4.32868 14.0001C4.0353 14.0034 3.75527 13.8777 3.56275 13.6563L2.05353 14.9687ZM4.34 16H10V14H4.34V16ZM17 3H19.67V1H17V3ZM19.6877 2.99984C20.352 2.98809 20.92 3.47558 21.009 4.13404L22.991 3.86596C22.7659 2.20222 21.3309 0.97047 19.6523 1.00016L19.6877 2.99984ZM21 4V11H23V4H21ZM21.009 10.866C20.92 11.5244 20.352 12.0119 19.6877 12.0002L19.6523 13.9998C21.3309 14.0295 22.7659 12.7978 22.991 11.134L21.009 10.866ZM19.67 12H17V14H19.67V12ZM18 13V2H16V13H18Z" fill="currentColor"/>
+</svg>
+`
+var ICON_DARESAY_FACEBOOK_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M17 2H14C11.2386 2 9 4.23858 9 7V10H6V14H9V22H13V14H16L17 10H13V7C13 6.44772 13.4477 6 14 6H17V2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_CAMERA_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M23 19C23 20.1046 22.1046 21 21 21H3C1.89543 21 1 20.1046 1 19V8C1 6.89543 1.89543 6 3 6H7L9 3H15L17 6H21C22.1046 6 23 6.89543 23 8V19Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M12 17C14.2091 17 16 15.2091 16 13C16 10.7909 14.2091 9 12 9C9.79086 9 8 10.7909 8 13C8 15.2091 9.79086 17 12 17Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_VOLUME2_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M11 5L6 9H2V15H6L11 19V5V5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M19.7772 4.22299C19.3867 3.83241 18.7536 3.83231 18.363 4.22278C17.9724 4.61324 17.9723 5.24641 18.3628 5.63699L19.7772 4.22299ZM18.3628 18.363C17.9723 18.7536 17.9724 19.3867 18.363 19.7772C18.7536 20.1677 19.3867 20.1676 19.7772 19.777L18.3628 18.363ZM16.2472 7.75299C15.8567 7.36241 15.2236 7.36231 14.833 7.75278C14.4424 8.14324 14.4423 8.77641 14.8328 9.16699L16.2472 7.75299ZM14.8328 14.823C14.4423 15.2136 14.4424 15.8467 14.833 16.2372C15.2236 16.6277 15.8567 16.6276 16.2472 16.237L14.8328 14.823ZM18.3628 5.63699C21.8762 9.15149 21.8762 14.8485 18.3628 18.363L19.7772 19.777C24.0714 15.4815 24.0714 8.51849 19.7772 4.22299L18.3628 5.63699ZM14.8328 9.16699C16.3943 10.729 16.3943 13.261 14.8328 14.823L16.2472 16.237C18.5895 13.894 18.5895 10.096 16.2472 7.75299L14.8328 9.16699Z" fill="currentColor"/>
+</svg>
+`
+var ICON_DARESAY_SQUARE_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M3 5C3 3.89543 3.89543 3 5 3H19C20.1046 3 21 3.89543 21 5V19C21 20.1046 20.1046 21 19 21H5C3.89543 21 3 20.1046 3 19V5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_SERVER_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M2 4C2 2.89543 2.89543 2 4 2H20C21.1046 2 22 2.89543 22 4V8C22 9.10457 21.1046 10 20 10H4C2.89543 10 2 9.10457 2 8V4Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M2 16C2 14.8954 2.89543 14 4 14H20C21.1046 14 22 14.8954 22 16V20C22 21.1046 21.1046 22 20 22H4C2.89543 22 2 21.1046 2 20V16Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="6" cy="6" r="1" fill="currentColor"/>
+<circle cx="6" cy="18" r="1" fill="currentColor"/>
+</svg>
+`
+var ICON_DARESAY_ZOOMIN_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M21 21L16.65 16.65" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M11 8V14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M8 11H14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_ALIGNLEFT_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M17 10H3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M21 6H3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M21 14H3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M17 18H3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_REFRESHCW_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M23 4V10H17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1 20V14H7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M2.56735 8.66641C2.38311 9.18705 2.65583 9.75848 3.17647 9.94272C3.69712 10.127 4.26855 9.85425 4.45279 9.3336L2.56735 8.66641ZM18.3601 5.64L17.6528 6.34693C17.6602 6.35432 17.6677 6.3616 17.6753 6.36875L18.3601 5.64ZM22.3153 10.7288C22.7178 11.1069 23.3506 11.0873 23.7288 10.6848C24.107 10.2823 24.0873 9.64944 23.6848 9.27125L22.3153 10.7288ZM1.68484 13.2712C1.28236 12.8931 0.6495 12.9127 0.271308 13.3152C-0.106884 13.7177 -0.0871948 14.3506 0.315284 14.7288L1.68484 13.2712ZM5.64006 18.36L6.34734 17.6531C6.33996 17.6457 6.33245 17.6384 6.32484 17.6312L5.64006 18.36ZM21.4328 15.3336C21.617 14.813 21.3443 14.2415 20.8237 14.0573C20.303 13.873 19.7316 14.1458 19.5473 14.6664L21.4328 15.3336ZM4.45279 9.3336C5.36913 6.7441 7.54991 4.80579 10.229 4.19961L9.78767 2.24891C6.43876 3.00665 3.71278 5.42953 2.56735 8.66641L4.45279 9.3336ZM10.229 4.19961C12.9082 3.59342 15.711 4.40413 17.6528 6.34693L19.0674 4.93307C16.6401 2.50457 13.1366 1.49118 9.78767 2.24891L10.229 4.19961ZM17.6753 6.36875L22.3153 10.7288L23.6848 9.27125L19.0448 4.91125L17.6753 6.36875ZM0.315284 14.7288L4.95528 19.0888L6.32484 17.6312L1.68484 13.2712L0.315284 14.7288ZM4.93278 19.0669C7.36006 21.4954 10.8635 22.5088 14.2125 21.7511L13.7711 19.8004C11.092 20.4066 8.28918 19.5959 6.34734 17.6531L4.93278 19.0669ZM14.2125 21.7511C17.5614 20.9934 20.2874 18.5705 21.4328 15.3336L19.5473 14.6664C18.631 17.2559 16.4502 19.1942 13.7711 19.8004L14.2125 21.7511Z" fill="currentColor"/>
+</svg>
+`
+var ICON_DARESAY_BARCHART_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M18 3H22V21H18V3Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M10 8H14V21H10V8Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M2 13H6V21H2V13Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_BATTERY_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M1 8C1 6.89543 1.89543 6 3 6H17C18.1046 6 19 6.89543 19 8V16C19 17.1046 18.1046 18 17 18H3C1.89543 18 1 17.1046 1 16V8Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M23 13V11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+var ICON_DARESAY_PACKAGE_DEFAULT = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M12.89 1.45003L20.89 5.45003C21.5696 5.78776 21.9996 6.48108 22 7.24003V16.77C21.9996 17.529 21.5696 18.2223 20.89 18.56L12.89 22.56C12.3266 22.8419 11.6634 22.8419 11.1 22.56L3.09999 18.56C2.42098 18.2179 1.9947 17.5203 1.99999 16.76V7.24003C2.00039 6.48108 2.43033 5.78776 3.10999 5.45003L11.11 1.45003C11.6706 1.17144 12.3294 1.17144 12.89 1.45003Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M2.32001 6.15997L12 11L21.68 6.15997" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M12 22.76V11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M7 3.5L17 8.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`

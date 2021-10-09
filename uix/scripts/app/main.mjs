@@ -1,6 +1,5 @@
 export function isMobileDevice(){
-    return true
-    return (Qt.platform.os === "android")
+    return (Qt.platform.os === "android" || Qt.platform.os === "ios")
 }
 
 function getRandomIntInclusive(min, max) {

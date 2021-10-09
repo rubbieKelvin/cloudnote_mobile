@@ -8,7 +8,7 @@ import "qrc:/uix/components/containers/" as AppContainers
 import "qrc:/uix/scripts/constants/fonts.mjs" as FontConstants
 import "qrc:/uix/scripts/lib/svg.js" as Svg
 import "qrc:/uix/scripts/frozen/icon.js" as Icons
-import "qrc:/uix/screens/home/views" as HomeViews
+import "qrc:/uix/screens/home/main-views" as HomeViews
 
 
 AppContainers.Page{
@@ -54,6 +54,7 @@ AppContainers.Page{
                     text: metaTitle
                     Layout.fillWidth: true
                     Layout.fillHeight: true
+                    verticalAlignment: Text.AlignVCenter
                 }
 
                 Label{
@@ -95,7 +96,9 @@ AppContainers.Page{
         just quit*/
         if (homeview.currentIndex===0 && o.target===0 && o.view===homeview) return false
 
-        if (typeof o.target === "number"){
+        if (o.target === null){
+            o.view.pop()
+        }else if (typeof o.target === "number"){
             o.view.currentIndex = o.target
         }else{
             o.view.push(o.target)
@@ -112,8 +115,6 @@ AppContainers.Page{
         if it exists, we remove it
          */
         let edited = false // has an object been deleted in the history
-
-        console.log(`adding ${target}`);
         
         // check for repetition
         for (let i=0; i<metaHistory.length; i+=1){
@@ -172,6 +173,25 @@ AppContainers.Page{
         onCurrentIndexChanged: {
             navbar.currentIndex = currentIndex
             if (currentIndex !== 0) {
+                /**
+                 If the last page at the history list is not from homeview,
+                 we should remove the page. because if i switch a page in library,
+                 and i move directly to another page, going back will close the page we're are not seeing.
+                */
+                if (metaHistory.length>0 && metaHistory[metaHistory.length-1].view !== homeview){
+                    const o = metaHistory.pop()
+
+                    if (o.target === null){
+                        o.view.pop()
+                    }else if (typeof o.target === "number"){
+                        o.view.currentIndex = o.target
+                    }else{
+                        // we're most likley not pushing anything since we're going back
+                        // o.view.push(o.target)
+                    }
+                }
+
+                // now we can add a throw back
                 addThrowBack(homeview, 0)
             }
         }
@@ -204,6 +224,7 @@ AppContainers.Page{
             Layout.preferredHeight: 76
 
             onClicked: {
+                if (homeview.currentIndex === index) return
                 homeview.currentIndex = index
             }
         }

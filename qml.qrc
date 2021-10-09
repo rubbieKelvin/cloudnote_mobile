@@ -41,7 +41,6 @@
         <file>uix/scripts/lib/svg.js</file>
         <file>uix/components/controls/RippleArea.qml</file>
         <file>uix/components/controls/TextField.qml</file>
-        <file>uix/screens/home/views/Explore.qml</file>
         <file>uix/components/controls/SearchField.qml</file>
         <file>uix/components/containers/ResponsiveLayout.qml</file>
         <file>uix/components/delegates/PlayListCard.qml</file>
@@ -57,9 +56,16 @@
         <file>uix/components/controls/MediaPlayerWidget.qml</file>
         <file>uix/components/appbars/NavBar.qml</file>
         <file>uix/screens/home/main.qml</file>
-        <file>uix/screens/home/views/Library.qml</file>
-        <file>uix/screens/home/views/Profile.qml</file>
-        <file>uix/screens/home/views/BaseView.qml</file>
+        <file>uix/screens/home/main-views/Explore.qml</file>
+        <file>uix/screens/home/main-views/Library.qml</file>
+        <file>uix/screens/home/main-views/Profile.qml</file>
+        <file>uix/screens/home/main-views/BaseView.qml</file>
         <file>uix/components/delegates/AlbumItemDelegate.qml</file>
+        <file>uix/screens/home/now-playing.qml</file>
+        <file>uix/components/controls/RoundImage.qml</file>
+        <file>uix/components/delegates/PlayListItemDelegate.qml</file>
+        <file>uix/screens/home/main-views/library-views/All.qml</file>
+        <file>uix/screens/home/main-views/library-views/One.qml</file>
+        <file>uix/screens/home/main-views/library-views/Base.qml</file>
     </qresource>
 </RCC>
