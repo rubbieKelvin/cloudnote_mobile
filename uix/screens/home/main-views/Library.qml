@@ -5,11 +5,21 @@ import QtQuick.Layouts 1.15
 BaseView {
     id: library_screen
     metaTitle: "My Library"
-    metaSubtitle: library_stack.currentItem.title
+    metaSubtitle: (library_stack.currentItem || {title: ''}).title
 
     StackView{
         id: library_stack
         anchors.fill: parent
-        initialItem: "qrc:/uix/screens/home/main-views/library-views/All.qml"
+
+        onVisibleChanged: {
+            if (visible) {
+                if (sm.navigation.clickedPlaylistResource.length===0){
+                    library_stack.push("qrc:/uix/screens/home/main-views/library-views/All.qml")
+                }else{
+                    library_stack.push("qrc:/uix/screens/home/main-views/library-views/One.qml")
+                    sm.navigation.clickedPlaylistResource=""
+                }
+            }
+        }
     }
 }

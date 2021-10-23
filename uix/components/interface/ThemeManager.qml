@@ -3,7 +3,7 @@ import "qrc:/uix/scripts/constants/color.mjs" as ColorConstants
 
 QtObject {
     id: root
-    property int theme: ColorConstants.LIGHT
+    property int theme: sm.uisettings.theme
     readonly property bool isdarkmode: theme !== 0
 
     readonly property string background: ColorConstants.BACKGROUND[theme]
@@ -14,4 +14,7 @@ QtObject {
     readonly property string link: ColorConstants.LINK[theme]
     readonly property string stroke: ColorConstants.STROKE[theme]
     readonly property string placeholder: ColorConstants.PLACEHOLDER[theme]
+    readonly property string handles: ColorConstants.PLACEHOLDER[theme]
+    readonly property string shadow: ColorConstants.SHADOW[theme]
+    readonly property string red: ColorConstants.RED[theme]
 }

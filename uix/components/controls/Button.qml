@@ -24,8 +24,18 @@ T.Button{
         border.color: borderColor
 
         RippleArea{
+            id: ripplearea
+            focus: true
             anchors.fill: parent
-            onClicked: root.clicked()
+
+            onPressed: {
+                root.focus = true
+            }
+
+            onClicked: {
+                root.clicked()
+                root.focus = true
+            }
             clipRadius: parent.radius
         }
     }
@@ -57,6 +67,7 @@ T.Button{
         }
     }
 
+    property alias mouse: ripplearea
     property int borderRadius: 8
     property string foregroundColor: "#000000"
     property string backgroundColor: "#bdbdbd"

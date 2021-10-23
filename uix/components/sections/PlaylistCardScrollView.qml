@@ -32,6 +32,11 @@ ColumnLayout{
         delegate: AppDelegate.PlayListCard{
             height: 300
             width: 300
+            onClicked: {
+                // go to library...
+                sm.navigation.clickedPlaylistResource = "<resource-id>"
+                homeview.currentIndex = 1
+            }
         }
         footer: Item{
             width: 15

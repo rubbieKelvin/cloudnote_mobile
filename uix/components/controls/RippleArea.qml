@@ -54,7 +54,7 @@ MouseArea {
 
 		Rectangle{
 			id: overlay_
-			color: "#15000000"
+            color: thememanager.isdarkmode ? "#10ffffff":"#15000000"
 			radius: width/2
 			width: 0
 			height: 0

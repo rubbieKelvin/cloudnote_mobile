@@ -5,4 +5,8 @@ import QtQuick.Layouts 1.3
 Page {
     id: root
     title: ""
+
+    background: Rectangle{
+        color: thememanager.background
+    }
 }

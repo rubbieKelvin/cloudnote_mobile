@@ -9,7 +9,7 @@ import "qrc:/uix/components/controls/" as AppControls
 import "qrc:/uix/scripts/constants/fonts.mjs" as FontConstants
 import "qrc:/uix/scripts/lib/svg.js" as Svg
 import "qrc:/uix/scripts/frozen/icon.js" as Icons
-
+import "qrc:/uix/components/popup/" as AppPopups
 
 AppContainers.Page{
     id: root
@@ -22,8 +22,12 @@ AppContainers.Page{
             color: thememanager.textUnimportant
         })
 
+        leftButtonSource: Svg.fromString(Icons.ICON_COOLICONS_ARROW_CHEVRON_LEFT, {
+            color: thememanager.text
+        })
+
         onRightButtonClicked: {
-            console.log("more button clicked")
+            bottomsheet.open()
         }
     }
 
@@ -62,6 +66,57 @@ AppContainers.Page{
                 Layout.fillWidth: true
                 Layout.fillHeight: (rl.flow === rl.portraitLayout) ? false : true
                 Layout.maximumWidth: Math.min(application.height, application.width)
+            }
+        }
+    }
+
+    AppPopups.BottomSheet{
+        id: bottomsheet
+        title: "Now Playing"
+        width: parent.width
+        sheetContent: Component{
+            ColumnLayout{
+                spacing: 1
+
+                Repeater{
+                    model: [
+                        {text: "Audio Information", iconSource: Icons.ICON_COOLICONS_ATTENTION_INFO_CIRCLE_OUTLINE},
+                        {text: "Queue Manager", iconSource: Icons.ICON_COOLICONS_EDIT_LIST_OL},
+                        {text: "Add to Playlist", iconSource: Icons.ICON_COOLICONS_EDIT_LIST_PLUS},
+                        {text: "Download to device", iconSource: Icons.ICON_COOLICONS_BASIC_DOWNLOAD},
+                        {text: "Share", iconSource: Icons.ICON_COOLICONS_BASIC_SHARE}
+                    ]
+
+                    Rectangle{
+                        color: thememanager.background
+                        Layout.preferredHeight: 50
+                        Layout.fillWidth: true
+
+                        RowLayout{
+                            anchors.fill: parent
+                            spacing: 25
+
+                            Image{
+                                source: Svg.fromString(modelData.iconSource, {
+                                    color: thememanager.text
+                                })
+                                Layout.alignment: Qt.AlignVCenter | Qt.AlignRight
+                            }
+
+                            Label{
+                                Layout.fillHeight: true
+                                Layout.fillWidth: true
+                                text: modelData.text
+                                color: thememanager.text
+                                verticalAlignment: Text.AlignVCenter
+                            }
+                        }
+
+                        AppControls.RippleArea{
+                            anchors.fill: parent
+                        }
+                    }
+                }
             }
         }
     }

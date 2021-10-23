@@ -35,6 +35,7 @@ ColumnLayout{
         spacing: 5
 
         SeekerControl{
+            Layout.preferredHeight: 28
             Layout.fillWidth: true
         }
 

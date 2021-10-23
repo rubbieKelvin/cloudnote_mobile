@@ -28,4 +28,22 @@ T.StackView {
             }
         }
     }
+
+    Connections{
+        target: sm.uisettings
+        function onThemeChanged(){
+            const page = root.currentItem
+
+            if (page != null || page != undefined){
+
+                if (page.statusbarColor !== null || page.statusbarColor !== undefined){
+                    statusbar.color = page.statusbarColor
+                }
+
+                if (page.statusbarTheme !== null || page.statusbarTheme !== undefined){
+                    statusbar.theme = page.statusbarTheme
+                }
+            }
+        }
+    }
 }

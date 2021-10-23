@@ -43,7 +43,7 @@ Rectangle {
                     Image{
                         Layout.alignment: Qt.AlignHCenter | Qt.AlignVCenter
                         source: Svg.fromString(modelData.icon, {
-                            color: (index == currentIndex) ? thememanager.accent : thememanager.text
+                            color: (index === currentIndex) ? thememanager.accent : thememanager.text
                         })
                         width: 30
                         height: 30
@@ -61,3 +61,9 @@ Rectangle {
         }
     }
 }
+
+/*##^##
+Designer {
+    D{i:0;autoSize:true;height:480;width:640}
+}
+##^##*/

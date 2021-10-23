@@ -69,5 +69,15 @@
         <file>uix/screens/home/main-views/library-views/Base.qml</file>
         <file>uix/components/controls/MediaPlayerControl.qml</file>
         <file>uix/components/controls/SeekerControl.qml</file>
+        <file>uix/components/controls/SettingsMenuItem.qml</file>
+        <file>uix/components/controls/CSwitch.qml</file>
+        <file>uix/components/popup/BottomSheet.qml</file>
+        <file>uix/screens/home/search.qml</file>
+        <file>uix/components/popup/ContentPopup.qml</file>
+        <file>uix/components/core/StateManager.qml</file>
+        <file>uix/components/appbars/SnackBar.qml</file>
+        <file>uix/screens/home/offlinesync.qml</file>
+        <file>uix/components/delegates/SyncedDeviceListItem.qml</file>
+        <file>uix/screens/home/download_manager.qml</file>
     </qresource>
 </RCC>

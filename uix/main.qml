@@ -1,4 +1,5 @@
 import QtQuick 2.15
+import QtQuick.Layouts 1.12
 import QtQuick.Controls 2.15
 import Qt.labs.settings 1.0
 import StuffsByRubbie 0.1
@@ -7,6 +8,9 @@ import "qrc:/uix/components/interface/" as AppInterface
 import "qrc:/uix/scripts/constants/routes.js" as Routes
 import "qrc:/uix/components/containers/" as AppContainers
 import "qrc:/uix/scripts/constants/fonts.mjs" as FontConstants
+import "qrc:/uix/components/core/" as AppCore
+import "qrc:/uix/components/appbars/" as AppBars
+
 
 ApplicationWindow {
     id: application
@@ -27,14 +31,12 @@ ApplicationWindow {
     readonly property bool portrait: height > width
     readonly property bool landscape: height < width
 
-    StatusBar{
-        id: statusbar
+    function makeSnackBar(){
+
     }
 
-    Settings{
-        id: themesettings
-        fileName: "set.ini"
-        property int theme: thememanager.theme
+    StatusBar{
+        id: statusbar
     }
 
     AppInterface.ThemeManager {
@@ -50,9 +52,15 @@ ApplicationWindow {
         anchors.fill: parent
     }
 
+    AppCore.StateManager{
+        id: sm
+    }
+
     Component.onCompleted: {
         // just got to splash screen
-        mainstack.push(Routes.AUTHSPLASH)
+        mainstack.push(
+            (sm.runtime.debug && sm.runtime.initialScreen.length>0) ? sm.runtime.initialScreen : Routes.AUTHSPLASH
+        )
     }
 
     Connections{

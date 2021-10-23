@@ -8,8 +8,8 @@ T.Page {
         color: thememanager.background
     }
 
-    property string statusbarColor: "white"
-    property int statusbarTheme: StatusBar.Light
+    property string statusbarColor: thememanager.background
+    property int statusbarTheme: thememanager.isdarkmode ? StatusBar.Dark : StatusBar.Light
 
     function handleBackPressed(event){
         if (mainstack.depth > 1){

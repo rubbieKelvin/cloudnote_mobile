@@ -9,6 +9,7 @@ import "qrc:/uix/scripts/constants/fonts.mjs" as FontConstants
 import "qrc:/uix/scripts/lib/svg.js" as Svg
 import "qrc:/uix/scripts/frozen/icon.js" as Icons
 import "qrc:/uix/screens/home/main-views" as HomeViews
+import "qrc:/uix/scripts/constants/routes.js" as Routes
 
 
 AppContainers.Page{
@@ -22,7 +23,7 @@ AppContainers.Page{
             Layout.leftMargin: 18
             Layout.rightMargin: 18
             Layout.topMargin: application.portrait ? 0 : 18
-            Layout.fillWidth: false
+            Layout.fillWidth: application.portrait
 
             AppControls.Button{
                 id: virtual_back_btn
@@ -35,6 +36,7 @@ AppContainers.Page{
                 width: 40
                 height: 40
                 borderRadius: 20
+                Layout.fillWidth: false
                 Layout.preferredWidth: width
                 Layout.preferredHeight: height
                 backgroundColor: "transparent"
@@ -74,12 +76,16 @@ AppContainers.Page{
         }
 
         AppControls.SearchField{
+            id: search_field
             Layout.leftMargin: 15
             Layout.rightMargin: 15
             Layout.topMargin: application.portrait ? 0 : 10
             Layout.fillWidth: true
             Layout.preferredHeight: 50
             visible: metaShowSearch
+            enabled: visible
+
+            onAccepted: mainstack.push(Routes.HOME_SEARCH)
         }
     }
 
@@ -233,6 +239,7 @@ AppContainers.Page{
             Layout.preferredHeight: 76
 
             onClicked: {
+                search_field.focus = false
                 if (homeview.currentIndex === index) return
                 homeview.currentIndex = index
             }

@@ -13,6 +13,8 @@ Rectangle{
     property alias text: label.text
     property alias font: label.font
     property alias rightButton: rightButton
+    property alias leftButtonSource: left_button.icon.source
+    color: thememanager.background
 
     signal rightButtonClicked
 
@@ -23,6 +25,7 @@ Rectangle{
         anchors.rightMargin: 15
 
         AppControls.Button{
+            id: left_button
             Layout.preferredWidth: 45
             Layout.preferredHeight: 45
             display: AbstractButton.IconOnly

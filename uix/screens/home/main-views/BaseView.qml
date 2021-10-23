@@ -9,4 +9,8 @@ Page {
     property string metaSubtitle: ""
     
     signal setHistory(var view, var target)
+
+    background: Rectangle{
+        color: thememanager.background
+    }
 }

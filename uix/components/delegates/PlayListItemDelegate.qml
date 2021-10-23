@@ -7,12 +7,22 @@ import "qrc:/uix/components/controls" as AppControls
 import "qrc:/uix/scripts/frozen/icon.js" as Icons
 import "qrc:/uix/scripts/lib/svg.js" as Svg
 import "qrc:/uix/scripts/constants/fonts.mjs" as FontConstants
+import "qrc:/uix/components/popup/" as AppPopups
 
 Rectangle{
     id: root
     width: 345
     height: col.height + 2
+    color: thememanager.background
 
+    property var model: [
+        {text: "Export"},
+        {text: "Rename"},
+        {text: "Duplicate"},
+        {text: "Download"},
+        {text: "Turn off Sync"},
+        {text: "Delete", color: thememanager.red},
+    ]
     property alias bottomStroke: bottomStroke
     property string imageSource: AppMain.randomDummyImage()
 
@@ -77,6 +87,48 @@ Rectangle{
                     backgroundColor: "transparent"
                     width: 40
                     height: 40
+
+                    onClicked: {
+                        // popup.x = x+mouse.mouseX
+                        // popup.y = y+(mouse.mouseY-popup.height)
+                        popup.open()
+                    }
+
+                    AppPopups.ContentPopup{
+                        id: popup
+                        x: (parent.x+(parent.width/2)) - width
+                        width: 140
+
+                        popupContent: Component{
+                            ColumnLayout{
+                                width: popup.width
+                                spacing: 1
+
+                                Repeater{
+                                    model: root.model
+
+                                    Rectangle{
+                                        color: thememanager.background
+                                        Layout.preferredHeight: 40
+                                        Layout.fillWidth: true
+                                        
+                                        Label{
+                                            anchors.fill: parent
+                                            anchors.leftMargin: 20
+                                            anchors.rightMargin: 20
+                                            text: modelData.text
+                                            color: modelData.color || thememanager.text
+                                            verticalAlignment: Text.AlignVCenter
+                                        }
+
+                                        AppControls.RippleArea{
+                                            anchors.fill: parent
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
