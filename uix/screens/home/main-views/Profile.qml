@@ -11,7 +11,7 @@ import "qrc:/uix/scripts/constants/routes.js" as Routes
 BaseView {
     id: root
     metaTitle: "Me"
-    metaSubtitle: "signed in as test.rubbie@gmail.com"
+    metaSubtitle: `signed in as ${sm.user.email}`
 
     Rectangle{
         y: 5

@@ -1,4 +1,6 @@
+#include <QDir>
 #include <QQmlContext>
+#include <QStandardPaths>
 #include <QGuiApplication>
 #include <QQmlApplicationEngine>
 
@@ -7,6 +9,7 @@
 # endif
 
 // my lib
+#include "lib/cxx/cxx.h"
 #include "lib/qtstatusbar/src/statusbar.h"
 
 
@@ -32,6 +35,15 @@ int main(int argc, char *argv[]){
     app.setOrganizationDomain("com.stuffsbyrubbie.cloudenote");
 
 	QQmlApplicationEngine engine;
+	Cxx cxx;
+
+	cxx.key = 13;
+	cxx.root = QStandardPaths::writableLocation(QStandardPaths::AppDataLocation);
+
+	if (!QDir().exists(cxx.root)){
+		QDir().mkdir(cxx.root);
+	}
+
 	const QUrl url(QStringLiteral("qrc:/uix/main.qml"));
 
     qmlRegisterType<StatusBar>("StuffsByRubbie", 0, 1, "StatusBar");
@@ -46,6 +58,8 @@ int main(int argc, char *argv[]){
 			}
 		},
 		Qt::QueuedConnection);
+
+	engine.rootContext()->setContextProperty("cxx", &cxx);
 
 	engine.load(url);
 	return app.exec();

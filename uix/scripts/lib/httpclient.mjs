@@ -11,6 +11,7 @@ export class JsonRequest{
         // 	_url.searchParams.set(kv[0], kv[1])
         // })
         this.url = url
+        this._finally_func = () => {}
 		
         // request method
         this.method = options.method || "GET"
@@ -35,7 +36,7 @@ export class JsonRequest{
         this.xhr.withCredentials = true
 
         // set headers
-        Object.entries(this.headers).forEach(function(kv){
+        Object.entries(this.headers).forEach((kv) => {
             _xhr.setRequestHeader(kv[0], kv[1]);
         })
 
@@ -58,6 +59,7 @@ export class JsonRequest{
 				// reset retries and call error_func
 				self.tries = 0
 				func()
+                self._finally_func(null)
 			}
 		}
         return this
@@ -66,7 +68,7 @@ export class JsonRequest{
     onload(func){
         // set the load functions
 		const self = this
-        this.xhr.onload = function(){
+        this.xhr.onload = () => {
 			// form response
 			const response = {}
 	
@@ -77,7 +79,7 @@ export class JsonRequest{
 			response.headers = self.xhr
 				.getAllResponseHeaders()
 				.split('\r\n')
-				.reduce(function(result, current){
+				.reduce((result, current) => {
 					let kv = current.split(': ')
 					result[kv[0]] = kv[1];
 					return result;
@@ -88,8 +90,15 @@ export class JsonRequest{
 			func(response)
 			// reset the number of tries. just incase it has meen tampered with
 			self.tries = 0
+            self._finally_func(response)
 		}
         return this
+    }
+
+    finally(func){
+        // function to be called once after the client has stopped working
+        // regardless of success or faliure
+        this._finally_func = func
     }
 
 	log(response){

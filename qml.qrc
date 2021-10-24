@@ -79,5 +79,7 @@
         <file>uix/screens/home/offlinesync.qml</file>
         <file>uix/components/delegates/SyncedDeviceListItem.qml</file>
         <file>uix/screens/home/download_manager.qml</file>
+        <file>uix/components/core/Api.qml</file>
+        <file>uix/components/controls/Busy.qml</file>
     </qresource>
 </RCC>

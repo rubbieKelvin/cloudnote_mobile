@@ -12,6 +12,7 @@ QT += androidextras
 include(lib/qtstatusbar/src/statusbar.pri)
 
 SOURCES += \
+        lib/cxx/cxx.cpp \
         main.cpp
 
 RESOURCES += qml.qrc
@@ -41,3 +42,7 @@ DISTFILES += \
 	android/res/values/libs.xml
 
 ANDROID_PACKAGE_SOURCE_DIR = $$PWD/android
+
+HEADERS += \
+	lib/cxx/cxx.h \
+	lib/cxx/core.h

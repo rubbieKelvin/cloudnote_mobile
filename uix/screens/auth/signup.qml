@@ -53,17 +53,20 @@ AppContainers.Page {
                     spacing: 10
 
                     AppControls.TextField{
+                        id: fname_
                         label: qsTr("First Name")
                         Layout.fillWidth: true
                     }
 
                     AppControls.TextField{
+                        id: lname_
                         label: qsTr("Last Name")
                         Layout.fillWidth: true
                     }
                 }
 
                 AppControls.TextField{
+                    id: email_
                     label: qsTr("Email Address")
                     Layout.fillWidth: true
                     leftButton.visible: true
@@ -73,6 +76,7 @@ AppContainers.Page {
                 }
 
                 AppControls.TextField{
+                    id: pword_
                     property bool textShown: false
                     Layout.fillWidth: true
                     label: "Password"
@@ -126,10 +130,43 @@ AppContainers.Page {
                 Layout.fillWidth: true
                 backgroundColor: thememanager.accent
                 foregroundColor: "white"
-                text: "SignUp"
+                text: busy ? "" : "SignUp"
+                property bool busy: false
+
+                AppControls.Busy{
+                    anchors.centerIn: parent
+                    running: parent.busy
+                    budColor: parent.foregroundColor
+                }
 
                 onClicked: {
-                    mainstack.push(Routes.EXPLORE)
+                    busy = true
+                    const fname = fname_.field.text.trim()
+                    const lname = lname_.field.text.trim()
+                    const email = email_.field.text.trim()
+                    const pword = pword_.field.text
+                    
+                    api.auth.createUser(fname, lname, email, pword)
+                    .onload((response) => {
+                        if (response.status===201){
+                            // save user state
+                            sm.user.setCurrent(
+                                fname,
+                                lname,
+                                email,
+                                response.data.token
+                            )
+
+                            // go home
+                            mainstack.push(Routes.EXPLORE)
+                        }else{
+                            console.error("error signing user up");
+                        }
+                    }).onerror(() => {
+                                            
+                    }).finally(() => {
+                        busy = false
+                    })
                 }
             }
         }

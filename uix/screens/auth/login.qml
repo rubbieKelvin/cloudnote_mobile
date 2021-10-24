@@ -50,6 +50,7 @@ AppContainers.Page {
                 Layout.fillHeight: true
 
                 AppControls.TextField{
+                    id: email_
                     label: qsTr("Email Address")
                     Layout.fillWidth: true
                     leftButton.visible: true
@@ -59,6 +60,7 @@ AppContainers.Page {
                 }
 
                 AppControls.TextField{
+                    id: pword_
                     property bool textShown: false
                     Layout.fillWidth: true
                     label: "Password"
@@ -112,10 +114,44 @@ AppContainers.Page {
                 Layout.fillWidth: true
                 backgroundColor: thememanager.accent
                 foregroundColor: "white"
-                text: "Login"
+                text: busy ? "":"Login"
+                property bool busy: false
+
+                AppControls.Busy{
+                    running: parent.busy
+                    budColor: parent.foregroundColor
+                    anchors.centerIn: parent
+                }
 
                 onClicked: {
-                    mainstack.replace(Routes.EXPLORE)
+                    busy = true
+                    const email = email_.field.text.trim()
+                    const pword = pword_.field.text
+
+                    api.auth.loginUser(email, pword).onload(response => {
+                        if (response.status == 200){
+                            console.debug("user logged in")
+
+                            // save user data
+                            sm.user.setCurrent(
+                                response.data.user.first_name,
+                                response.data.user.last_name,
+                                email,
+                                response.data.token
+                            )
+
+                            // goto home page
+                            mainstack.replace(Routes.EXPLORE)
+                        }else{
+                            console.debug("invalid credentials")
+                            // invalid user
+                        }
+                    }).onerror(() => {
+                        console.debug("cant log user in")
+                    }).finally(() => {
+                        busy = false
+                    })
+
                 }
             }
         }

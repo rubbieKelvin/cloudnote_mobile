@@ -6,10 +6,11 @@ QtObject{
     id: root
 
     readonly property string settingsFilename: "cloudnote.cfg"
+    readonly property string usercredentialFilename: "u-cred.json"
 
     readonly property QtObject runtime: QtObject{
         readonly property bool debug: true
-        readonly property string initialScreen: Routes.EXPLORE // the first screen that shows up when debug=true
+        readonly property string initialScreen: Routes.AUTHSPLASH // the first screen that shows up when debug=true
     }
 
     readonly property QtObject navigation: QtObject{
@@ -31,5 +32,23 @@ QtObject{
     readonly property Settings offlinesyncsettings: Settings{
         category: "offlinesync"
         fileName: root.settingsFilename
+    }
+
+    readonly property QtObject user: QtObject{
+        property string first_name: ""
+        property string last_name: ""
+        property string email: ""
+        property bool isLoggedIn: false
+
+        function setCurrent(first_name, last_name, email, token){
+            const data = {
+                first_name,
+                last_name,
+                email,
+                token
+            }
+
+            cxx.write(usercredentialFilename, JSON.stringify(data));
+        }
     }
 }
