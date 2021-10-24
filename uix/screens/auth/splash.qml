@@ -109,7 +109,7 @@ AppContainers.Page{
                 console.debug("checking token validity")
                 data_obj = JSON.parse(data);
 
-                api.auth.getUser(data_obj.token).onload((response)=>{
+                api.auth.getUser(data_obj.token, 5).onload((response)=>{
                     if (response.status===200){
                         // valid token
                         console.debug("token is valid")

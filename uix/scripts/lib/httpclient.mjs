@@ -28,12 +28,17 @@ export class JsonRequest{
         this.retry = options.retry || 0
         this.tries = 0 // number of tries already made
 
+        this.xhr = this.createXhr()
+
+    }
+
+    createXhr(oldxhr){
         // create xhr
         const _xhr = new XMLHttpRequest()
-        this.xhr = _xhr
-        this.xhr.open(this.method, this.url)
-        this.xhr.responseType = this.responseType
-        this.xhr.withCredentials = true
+        // this.xhr = _xhr
+        _xhr.open(this.method, this.url)
+        _xhr.responseType = this.responseType
+        _xhr.withCredentials = true
 
         // set headers
         Object.entries(this.headers).forEach((kv) => {
@@ -41,7 +46,15 @@ export class JsonRequest{
         })
 
         // calls the server
-        this.xhr.send(this.body)
+        _xhr.send(this.body)
+
+        // try reconnecting events
+        if (oldxhr){
+            _xhr.onload = oldxhr.onload
+            _xhr.onerror = oldxhr.onerror
+        }
+
+        return _xhr
     }
 
     abort(){
@@ -54,7 +67,12 @@ export class JsonRequest{
         this.xhr.onerror = function(){
 			if (self.tries < self.retry){
 				self.tries += 1
-				self.xhr.send(self.body)
+                console.debug(`retrying: (${self.tries}/${self.retry})`)
+				// self.xhr.send(self.body)
+                
+                const _xhr = self.createXhr(self.xhr)
+                self.xhr = _xhr
+
 			}else{
 				// reset retries and call error_func
 				self.tries = 0

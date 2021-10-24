@@ -3,6 +3,7 @@ import "qrc:/uix/scripts/lib/httpclient.mjs" as HttpClient
 
 QtObject{
     id: root
+    // readonly property string baseurl: "http://192.168.43.154:8000"
     readonly property string baseurl: "http://localhost:8000"
 
     readonly property QtObject endpoints: QtObject{
@@ -24,8 +25,9 @@ QtObject{
             });
         }
 
-        function getUser(token){
+        function getUser(token, retries){
             return new HttpClient.JsonRequest(endpoints.auth_user, {
+                retry: retries || 0,
                 method: "GET",
                 headers: {
                     Authorization: `Token ${token}`
