@@ -15,16 +15,26 @@ Rectangle{
     height: col.height + 2
     color: thememanager.background
 
-    property var model: [
-        {text: "Export"},
-        {text: "Rename"},
-        {text: "Duplicate"},
-        {text: "Download"},
-        {text: "Turn off Sync"},
-        {text: "Delete", color: thememanager.red},
-    ]
     property alias bottomStroke: bottomStroke
+    property alias title: title
+    property alias descr: description
+    property bool isAutoPlaylist: false
     property string imageSource: AppMain.randomDummyImage()
+
+    function getContextMenuModel(){
+        if (isAutoPlaylist) return [
+            {text: "Download"},
+            {text: "Turn off Sync"},
+        ]
+        return [
+            {text: "Export"},
+            {text: "Rename"},
+            {text: "Duplicate"},
+            {text: "Download"},
+            {text: "Turn off Sync"},
+            {text: "Delete", color: thememanager.red},
+        ]
+    }
 
     signal clicked
 
@@ -62,12 +72,14 @@ Rectangle{
                 Layout.fillHeight: false
 
                 Label{
+                    id: title
                     text: "Playlist Name"
                     color: thememanager.text
                     Layout.fillWidth: true
                 }
 
                 Label{
+                    id: description
                     text: "playlist description"
                     color: thememanager.textUnimportant
                     font.pixelSize: FontConstants.SUBTEXT
@@ -105,7 +117,7 @@ Rectangle{
                                 spacing: 1
 
                                 Repeater{
-                                    model: root.model
+                                    model: root.getContextMenuModel()
 
                                     Rectangle{
                                         color: thememanager.background

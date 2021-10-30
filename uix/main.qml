@@ -14,7 +14,7 @@ import "qrc:/uix/components/appbars/" as AppBars
 
 ApplicationWindow {
     id: application
-    
+
     // portrait
     width: 340
     height: 610

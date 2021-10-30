@@ -131,6 +131,8 @@ AppContainers.Page{
                     sm.user.email = data_obj.email
                     sm.user.isLoggedIn = true
                     mainstack.push(Routes.EXPLORE)
+                }).finally(() => {
+                    sm.user.token = data_obj.token
                 })
             } catch (error) {
                 // the data has been corrupted

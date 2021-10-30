@@ -25,7 +25,6 @@
         <file>uix/scripts/lib/httpclient.mjs</file>
         <file>uix/components/containers/Page.qml</file>
         <file>uix/components/containers/StackView.qml</file>
-        <file>uix/scripts/constants/network.mjs</file>
         <file>uix/components/interface/ThemeManager.qml</file>
         <file>uix/screens/auth/signup.qml</file>
         <file>uix/scripts/constants/routes.js</file>
@@ -81,5 +80,7 @@
         <file>uix/screens/home/download_manager.qml</file>
         <file>uix/components/core/Api.qml</file>
         <file>uix/components/controls/Busy.qml</file>
+        <file>uix/scripts/lib/differ.mjs</file>
+        <file>uix/screens/debug/Empty.qml</file>
     </qresource>
 </RCC>

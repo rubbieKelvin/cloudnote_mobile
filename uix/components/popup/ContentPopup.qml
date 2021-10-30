@@ -6,8 +6,6 @@ import QtGraphicalEffects 1.3
 Popup{
     id: root
     padding: 0
-    dim: false
-    modal: true
     closePolicy: Popup.CloseOnEscape | Popup.CloseOnPressOutside
     property Component popupContent
     background: Rectangle{

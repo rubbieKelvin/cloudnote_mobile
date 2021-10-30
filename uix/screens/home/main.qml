@@ -220,10 +220,13 @@ AppContainers.Page{
             height: 1
             Layout.fillWidth: true
             color: thememanager.stroke
+            visible: mpw.visible
         }
 
         AppControls.MediaPlayerWidget{
+            id: mpw
             Layout.fillWidth: true
+            visible: sm.audioPlayer.currentlyPlaying > 0
         }
 
         Rectangle{

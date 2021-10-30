@@ -1,4 +1,5 @@
 import QtQuick 2.15
+import "qrc:/uix/scripts/lib/differ.mjs" as Differ
 import "qrc:/uix/scripts/lib/httpclient.mjs" as HttpClient
 
 QtObject{
@@ -10,6 +11,8 @@ QtObject{
         readonly property string auth_signup: `${baseurl}/a/auth/users/`
         readonly property string auth_user: `${baseurl}/a/auth/users/me/`
         readonly property string auth_login: `${baseurl}/a/auth/token/login/`
+
+        readonly property string music_get_playlist: `${baseurl}/a/music/playlists/`
     }
 
     readonly property QtObject auth: QtObject{
@@ -42,6 +45,25 @@ QtObject{
                     email: email,
                     password: password
                 })
+            })
+        }
+    }
+
+    readonly property QtObject music: QtObject{
+        function fetchPlaylist(){
+            sm.fetchingStatuses.playlist = true
+
+            return new HttpClient.JsonRequest(endpoints.music_get_playlist, {
+                method: "GET",
+                headers: {
+                    Authorization: `Token ${sm.user.token}`
+                }
+            }).onload(response => {
+                if (response.status === 200){
+                    Differ.sortDiffrence(sm.playlistModel, response.data, (item)=>item.id)
+                }
+            }).finally(() => {
+                sm.fetchingStatuses.playlist = false
             })
         }
     }

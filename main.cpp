@@ -10,6 +10,7 @@
 
 // my lib
 #include "lib/cxx/cxx.h"
+#include "lib/api/restlib.h"
 #include "lib/qtstatusbar/src/statusbar.h"
 
 
@@ -47,6 +48,7 @@ int main(int argc, char *argv[]){
 	const QUrl url(QStringLiteral("qrc:/uix/main.qml"));
 
     qmlRegisterType<StatusBar>("StuffsByRubbie", 0, 1, "StatusBar");
+	qmlRegisterType<RestClient>("StuffsByRubbie", 0, 1, "RestClient");
 	
 	QObject::connect(
 		&engine,

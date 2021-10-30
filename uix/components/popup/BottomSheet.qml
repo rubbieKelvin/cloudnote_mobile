@@ -10,11 +10,15 @@ Popup{
     dim: true
     parent: Overlay.overlay
     
+    property bool fillScreen: false
+    property int fillOffset: 25
     property string title: qsTr("Bottom Sheet")
     property Component sheetContent
 
+    height: fillScreen ? application.height-fillOffset : col.height
+
     enter: Transition {
-        NumberAnimation { property: "y"; from: application.height; to: application.height-col.height}
+        NumberAnimation { property: "y"; from: application.height; to: fillScreen ? application.height-root.height : application.height-col.height}
     }
 
     exit: Transition {
