@@ -142,6 +142,14 @@ Page{
         Item {
             Layout.fillHeight: true
         }
+
+        ProgressBar{
+            id: pb
+            Layout.preferredHeight: 5
+            Layout.fillWidth: true
+            from: 0
+            to: 1
+        }
     }
 
 
@@ -162,6 +170,17 @@ Page{
 
         onError: {
             console.log("errorBody: "+JSON.stringify(body))
+        }
+
+        onDownloadProgress: {
+            if (bytesTotal != -1){
+                pb.indeterminate = false
+                const ratio = bytesReceived/bytesTotal;
+                console.log("download: "+bytesReceived+"/"+bytesTotal);
+                pb.value = ratio;
+            }else{
+                pb.indeterminate = true
+            }
         }
     }
 }

@@ -114,7 +114,8 @@ void RestClient::setBody(QJSValue body){
 
 void RestClient::get(){
     QNetworkRequest request = this->getNetworkRequest();
-    this->manager.get(request);
+    QNetworkReply* reply = this->manager.get(request);
+    this->connectReplySlots(reply);
     this->connect(&this->manager, &QNetworkAccessManager::finished, this, &RestClient::requestComplete);
 }
 
@@ -125,13 +126,15 @@ void RestClient::post(){
     if (bodyType == "object"){
         request.setHeader(QNetworkRequest::ContentTypeHeader, "application/json");
         QJsonDocument body (this->body.toJsonObject());
-        manager.post(request, body.toJson());
+        QNetworkReply* reply = manager.post(request, body.toJson());
+        this->connectReplySlots(reply);
 
     }else if (bodyType == "json"){
         request.setHeader(QNetworkRequest::ContentTypeHeader, "application/json");
         QVariant data = this->evaluateJsonBody(this->body);
         QJsonDocument body (data.toJsonObject());
-        manager.post(request, body.toJson());
+        QNetworkReply* reply = manager.post(request, body.toJson());
+        this->connectReplySlots(reply);
 
     }else if (bodyType == "formdata"){
         // request.setHeader(QNetworkRequest::ContentTypeHeader, "multipart/form-data");
@@ -139,15 +142,19 @@ void RestClient::post(){
         // ignoring the vscode error at manager.post
         QNetworkReply* reply = manager.post(request, multiPart);
         multiPart->setParent(reply);
-    }else if (bodyType == "none"){
-        manager.post(request, QByteArray());
-	}
+        this->connectReplySlots(reply);
 
+    }else if (bodyType == "none"){
+        request.setHeader(QNetworkRequest::ContentTypeHeader, "application/json");
+        QNetworkReply* reply = manager.post(request, QByteArray());
+        this->connectReplySlots(reply);
+	}
     
     this->connect(&this->manager, &QNetworkAccessManager::finished, this, &RestClient::requestComplete);
 }
 
 void RestClient::requestComplete(QNetworkReply* response){
+
     QByteArray responseContent = response->readAll();
     QJsonDocument body = QJsonDocument::fromJson(responseContent);
     QVariantMap result = QVariantMap();
@@ -406,4 +413,10 @@ QString RestClient::urlToFilename(){
 
 void RestClient::clearBody(){
 	this->body = QVariant();
+}
+
+
+void RestClient::connectReplySlots(QNetworkReply* reply){
+    this->connect(reply, &QNetworkReply::uploadProgress, this, &RestClient::uploadProgress);
+    this->connect(reply, &QNetworkReply::downloadProgress, this, &RestClient::downloadProgress);
 }

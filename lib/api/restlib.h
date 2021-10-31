@@ -58,6 +58,7 @@ private:
 	QString urlToFilename();
 	void doSaveResponse(QVariant);
 	QVariant doGetOfflineResponse();
+	void connectReplySlots(QNetworkReply*);
 
 	// verbs
 	void get();
