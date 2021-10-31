@@ -7,10 +7,53 @@
 #include <QNetworkRequest>
 #include <QHttpMultiPart>
 #include <QMimeDatabase>
+#include <QStandardPaths>
+#include <iostream>
+#include <string>
 #include "restlib.h"
 
-RestClient::RestClient(QObject *parent) : QObject(parent){}
 
+namespace rest_lib_cxx {
+    std::string printables {"01lmnrstuvw23>?@|}~\n456ohijkxyzABCefP%&'(DEFGHpqUVWXYZ!\"#$789abcd)*+,-.gIJQRSTKLM[\\]^_`{NO/:;<=\t "};
+
+    std::string code (std::string word, unsigned int key, bool reverse){
+        // this function can encode or decode a string
+        std::string result;
+        std::string chars = printables;
+
+        for (unsigned int i {0}; i<word.length(); i+=1){
+            // flip
+            if (reverse)
+                chars = chars.substr(chars.size()-key) + chars.substr(0, chars.size()-key);
+                // std::cout << chars << std::endl;
+            else
+                chars = chars.substr(key) + chars.substr(0, key);
+
+            // get the index of the character in chars at i
+            long unsigned int index {chars.find(word[i])};
+            if (index == std::string::npos){
+                result += word[i];
+                continue;
+            }
+            // add the character at the index $index or printable to result
+            result += printables[index];
+        }
+        return result;
+    }
+
+    std::string encode (std::string word, unsigned int key) {
+        return code(word, key, false);
+    }
+
+    std::string decode (std::string word, unsigned int key) {
+        return code(word, key, true);
+    }
+}
+
+
+RestClient::RestClient(QObject *parent) : QObject(parent){
+
+}
 
 QNetworkRequest RestClient::getNetworkRequest(){
     QNetworkRequest request;
@@ -96,7 +139,9 @@ void RestClient::post(){
         // ignoring the vscode error at manager.post
         QNetworkReply* reply = manager.post(request, multiPart);
         multiPart->setParent(reply);
-    }
+    }else if (bodyType == "none"){
+        manager.post(request, QByteArray());
+	}
 
     
     this->connect(&this->manager, &QNetworkAccessManager::finished, this, &RestClient::requestComplete);
@@ -112,7 +157,7 @@ void RestClient::requestComplete(QNetworkReply* response){
     result["status"] = response->attribute(QNetworkRequest::HttpStatusCodeAttribute);
 
     if (response->error() == QNetworkReply::NoError){
-
+        this->tryCount = 0;
         QVariantMap headerMap = QVariantMap();
 
         QList<QPair<QByteArray, QByteArray>> headers = response->rawHeaderPairs();
@@ -126,22 +171,42 @@ void RestClient::requestComplete(QNetworkReply* response){
 
         result["headers"] = headerMap;
 
+        // save if set
+        if (this->saveOffine){
+            this->doSaveResponse(result);
+        }
+
         // emit signals
         emit this->loaded(result);
         emit this->finally(result);
+
     }else{
         if (this->tryCount<this->retry){
             this->tryCount += 1;
+            qDebug() << "retrying(" << this->tryCount << "/" << this->retry << ")";
             emit this->requestRetry(this->tryCount);
-            this->call();
+
+            response->deleteLater();
+            this->disconnect(&manager, &QNetworkAccessManager::finished, this, &RestClient::requestComplete);
+
+            return this->call();
+
         }else{
             result["errorString"] = response->errorString();
             result["errorCode"] = response->error();
 
             this->tryCount=0;
             
-            emit this->error(result);
-            emit this->finally(result);
+            if (response->error() == QNetworkReply::ConnectionRefusedError && this->saveOffine){
+				QVariantMap offlineResponse = this->doGetOfflineResponse().toMap();
+				offlineResponse["offline"] = true;
+				emit this->loaded(offlineResponse);
+				emit this->finally(offlineResponse);
+			}else{
+				emit this->error(result);
+				emit this->finally(result);
+			}
+
         }
     }
 
@@ -160,6 +225,7 @@ void RestClient::call(){
 
 void RestClient::setRetry(qint64 count){
     this->retry = count;
+	emit this->retryChanged(count);
 }
 
 qint64 RestClient::getRetry(){
@@ -250,6 +316,10 @@ QHttpMultiPart* RestClient::evaluateFormDataBody(QVariant body){
 
 
 QString RestClient::checkBodyType(QVariant body){
+	if ((!body.isValid()) || body.isNull()){
+		return "none";
+	}
+
     if (body.canConvert<QVariantMap>()){
         QVariantMap dict = body.toMap();
 
@@ -274,4 +344,66 @@ QVariant RestClient::multiPartFile(QString name, QString filename){
     result["type"] = "file";
     result["content"] = filename;
     return result;
+}
+
+
+bool RestClient::getSaveOffline(){
+	return this->saveOffine;
+}
+
+void RestClient::setSaveOffline(bool value){
+	this->saveOffine = value;
+}
+
+void RestClient::doSaveResponse(QVariant body){
+	QJsonDocument doc(body.toJsonObject());
+	QString data(doc.toJson(QJsonDocument::Compact));
+
+	QString encoded = QString::fromStdString(
+		rest_lib_cxx::encode(data.toStdString(), this->url.length())
+	);
+
+	QFile *file = new QFile(this->urlToFilename());
+	if (file->open(QIODevice::WriteOnly)){
+		QTextStream stream(file);
+		stream << encoded;
+		file->close();
+	}
+}
+
+QVariant RestClient::doGetOfflineResponse(){
+	QString filename = this->urlToFilename();
+	QFile file(filename);
+
+	if (file.exists() && file.open(QIODevice::ReadOnly)){
+		QTextStream stream(&file);
+		std::string data = rest_lib_cxx::decode(stream.readAll().toStdString(), this->url.length());
+		file.close();
+
+		QJsonDocument doc = QJsonDocument::fromJson(QByteArray::fromStdString(data));
+		return doc.toVariant();
+	}
+
+	return QVariant();
+}
+
+QString RestClient::urlToFilename(){
+	QByteArray b64 = QByteArray::fromStdString(
+		this->url.toStdString()
+	).toBase64(
+		QByteArray::Base64UrlEncoding |
+		QByteArray::OmitTrailingEquals
+	);
+
+	QString filepath = QDir::cleanPath(
+		QStandardPaths::writableLocation(QStandardPaths::AppDataLocation) +
+		QDir::separator() + QString(b64) + ".response"
+	);
+
+	qDebug() << this->url << "->" << filepath;
+	return filepath;
+}
+
+void RestClient::clearBody(){
+	this->body = QVariant();
 }
