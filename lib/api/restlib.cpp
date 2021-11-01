@@ -1,4 +1,5 @@
 #include <QJSValue>
+#include <QDir>
 #include <QDebug>
 #include <QByteArray>
 #include <QtNetwork>
@@ -10,6 +11,7 @@
 #include <QStandardPaths>
 #include <iostream>
 #include <string>
+#include <Qt>
 #include "restlib.h"
 
 
@@ -52,13 +54,29 @@ namespace rest_lib_cxx {
 
 
 RestClient::RestClient(QObject *parent) : QObject(parent){
+	this->responsePath = QDir::cleanPath(
+		QStandardPaths::writableLocation(QStandardPaths::AppDataLocation) +
+		QDir::separator() + "offlineResponse"
+	);
 
+	this->downloadPath = QDir::cleanPath(
+		QStandardPaths::writableLocation(QStandardPaths::AppDataLocation) +
+		QDir::separator() + "downloads"
+	);
+
+	// create download ond offline response path
+	QDir().mkdir(this->downloadPath);
+	QDir().mkdir(this->responsePath);
+
+	// connect finally to logResponse
+	this->connect(this, &RestClient::finally, this, &RestClient::logResponse);
 }
 
 QNetworkRequest RestClient::getNetworkRequest(){
     QNetworkRequest request;
 
     request.setUrl(QUrl(this->url));
+	request.setHeader(QNetworkRequest::UserAgentHeader, "CloudNote/Mobile");
 
     // load headers
     if (this->headers.canConvert<QVariantMap>()){
@@ -155,11 +173,9 @@ void RestClient::post(){
 
 void RestClient::requestComplete(QNetworkReply* response){
 
-    QByteArray responseContent = response->readAll();
-    QJsonDocument body = QJsonDocument::fromJson(responseContent);
     QVariantMap result = QVariantMap();
 
-    result["body"] = body.toVariant();
+    result["body"] = this->processResponseBody(response);
     result["error"] = QVariant();
     result["status"] = response->attribute(QNetworkRequest::HttpStatusCodeAttribute);
 
@@ -204,7 +220,7 @@ void RestClient::requestComplete(QNetworkReply* response){
 
             this->tryCount=0;
             
-            if (response->error() == QNetworkReply::ConnectionRefusedError && this->saveOffine){
+			if (response->error() == QNetworkReply::ConnectionRefusedError && this->saveOffine && this->hasOfflineResponse()){
 				QVariantMap offlineResponse = this->doGetOfflineResponse().toMap();
 				offlineResponse["offline"] = true;
 				emit this->loaded(offlineResponse);
@@ -213,7 +229,6 @@ void RestClient::requestComplete(QNetworkReply* response){
 				emit this->error(result);
 				emit this->finally(result);
 			}
-
         }
     }
 
@@ -402,11 +417,7 @@ QString RestClient::urlToFilename(){
 		QByteArray::OmitTrailingEquals
 	);
 
-	QString filepath = QDir::cleanPath(
-		QStandardPaths::writableLocation(QStandardPaths::AppDataLocation) +
-		QDir::separator() + QString(b64) + ".response"
-	);
-
+	QString filepath = QDir::cleanPath(this->responsePath + QDir::separator() + QString(b64));
 	qDebug() << this->url << "->" << filepath;
 	return filepath;
 }
@@ -419,4 +430,105 @@ void RestClient::clearBody(){
 void RestClient::connectReplySlots(QNetworkReply* reply){
     this->connect(reply, &QNetworkReply::uploadProgress, this, &RestClient::uploadProgress);
     this->connect(reply, &QNetworkReply::downloadProgress, this, &RestClient::downloadProgress);
+}
+
+QVariant RestClient::processResponseBody(QNetworkReply* response){
+    QByteArray responseContent = response->readAll();
+	QString contentDisposition = response->header(QNetworkRequest::ContentDispositionHeader).toString();
+
+	if (!contentDisposition.isEmpty() && contentDisposition.contains("attachment;")){
+		// we have to save the file
+		QVariantMap contentDispositionData;
+		QStringList contentDispositionList = contentDisposition.split(";");
+
+		for (int i=0; i<contentDispositionList.count(); i+=1){
+			QString data = contentDispositionList.at(i).trimmed();
+			if (! data.isEmpty()){
+				QStringList pair = data.split("=");
+				if (pair.count() == 1){
+					contentDispositionData[pair.at(0)] = QVariant();
+				}else if (pair.count() > 1){
+					contentDispositionData[pair.at(0)] = pair.at(1).trimmed();
+				}
+			}
+		}
+
+		// try to write file to device
+		if (contentDispositionData.contains("filename") && contentDispositionData.value("filename").isValid()){
+			QString filename (contentDispositionData.value("filename").toString().remove("\""));
+			filename = QDir::cleanPath(this->downloadPath + QDir::separator() + filename);
+			contentDispositionData["filename"] = filename;
+
+			// save file
+			qDebug() << "downloaded:" << filename;
+			QFile file (filename);
+
+			if (file.open(QIODevice::WriteOnly)){
+				QDataStream stream(&file);
+				stream << responseContent;
+				file.close();
+			}
+		}
+
+		return contentDispositionData;
+	}
+    
+	QJsonDocument body = QJsonDocument::fromJson(responseContent);
+	return body.toVariant();
+}
+
+bool RestClient::hasOfflineResponse(){
+	QString filename = this->urlToFilename();
+	return QFile(filename).exists();
+}
+
+
+void RestClient::logResponse(QVariant response){
+	if (this->doLogResponse){
+		if (response.canConvert<QVariantMap>()){
+			QVariantMap body = response.toMap();
+			QMapIterator<QString, QVariant> iter(body);
+
+			qDebug() << Qt::endl <<"[START] RESPONSE-LOG("<< this->url+" ["+this->method.toUpper()+"]" << ") ===================================";
+
+			while (iter.hasNext()) {
+				iter.next();
+				QString key = iter.key();
+				QVariant value = iter.value();
+
+				if (value.canConvert<QVariantMap>()){
+					QJsonDocument doc (value.toJsonObject());
+					qDebug() << key << ":\t" << doc.toJson(QJsonDocument::Compact);
+				}else if (value.canConvert<QVariantList>()){
+					QJsonDocument doc (value.toJsonArray());
+					qDebug() << key << ":\t" << doc.toJson(QJsonDocument::Compact);
+				}else if (value.canConvert<QString>()){
+					qDebug() << key << ":\t" << value.toString();
+				}else{
+					qDebug() << key << ":\t" << value;
+				}
+			}
+
+			qDebug() << "[END] RESPONSE-LOG ===================================" << Qt::endl;
+		}
+	}
+}
+
+
+void RestClient::addVariable(QString key, QJSValue value){
+	// this doest have anything to do with the request or the response
+	// all this does is store a key-value pair that can be used later in the instance
+	this->variables[key] = value.toVariant();
+}
+
+QVariant RestClient::getVariable(QString key){
+	if (this->variables.contains(key)){
+		return this->variables.value(key);
+	}
+	return QVariant();
+}
+
+
+QString RestClient::getBaseUrl(){
+	return this->baseurl;
 }

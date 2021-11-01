@@ -20,6 +20,7 @@ Page{
 
             TextField{
                 id: url_field
+                text: "/a/music/audio/17/download/"
                 placeholderText: "url"
                 Layout.fillWidth: true
             }

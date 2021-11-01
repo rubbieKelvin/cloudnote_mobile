@@ -56,10 +56,6 @@ ApplicationWindow {
         id: sm
     }
 
-    AppCore.Api{
-        id: api
-    }
-
     Component.onCompleted: {
         // just got to splash screen
         mainstack.push(

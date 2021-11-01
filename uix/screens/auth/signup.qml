@@ -1,15 +1,16 @@
 import QtQuick 2.15
 import QtQuick.Controls 2.15
 import QtQuick.Layouts 1.15
-
+import StuffsByRubbie 0.1
 import "qrc:/uix/components/appbars/" as AppBars
-import "qrc:/uix/scripts/api/auth.mjs" as AuthApi
 import "qrc:/uix/components/containers/" as AppContainers
 import "qrc:/uix/scripts/constants/fonts.mjs" as FontConstants
 import "qrc:/uix/components/controls/" as AppControls
 import "qrc:/uix/scripts/lib/svg.js" as Svg
 import "qrc:/uix/scripts/constants/routes.js" as Routes
 import "qrc:/uix/scripts/frozen/icon.js" as Icons
+import "qrc:/uix/scripts/constants/endpoints.js" as Endpoints
+
 
 AppContainers.Page {
     id: root
@@ -126,6 +127,7 @@ AppContainers.Page {
             }
 
             AppControls.Button{
+				id: signUpButton
                 Layout.preferredHeight: 50
                 Layout.fillWidth: true
                 backgroundColor: thememanager.accent
@@ -139,34 +141,55 @@ AppContainers.Page {
                     budColor: parent.foregroundColor
                 }
 
+				RestClient{
+					id: signupUserApi
+					method: "post"
+					url: Endpoints.AUTH_SIGNUP
+
+					onLoaded: {
+						const body = response.body
+						if (response.status === 201){
+							// save user to state
+							sm.user.setCurrent(
+								body.first_name,
+								body.last_name,
+								body.email,
+								body.token
+                            )
+
+							// go home
+							mainstack.replace(Routes.EXPLORE)
+						}else{
+							console.debug("error signing up")
+						}
+					}
+
+					onFinally: {
+						signUpButton.busy = false
+					}
+
+					onError: {
+						console.debug("error signing up")
+					}
+				}
+
                 onClicked: {
                     busy = true
                     const fname = fname_.field.text.trim()
                     const lname = lname_.field.text.trim()
                     const email = email_.field.text.trim()
                     const pword = pword_.field.text
-                    
-                    api.auth.createUser(fname, lname, email, pword)
-                    .onload((response) => {
-                        if (response.status===201){
-                            // save user state
-                            sm.user.setCurrent(
-                                fname,
-                                lname,
-                                email,
-                                response.data.token
-                            )
 
-                            // go home
-                            mainstack.push(Routes.EXPLORE)
-                        }else{
-                            console.error("error signing user up");
-                        }
-                    }).onerror(() => {
-                                            
-                    }).finally(() => {
-                        busy = false
-                    })
+					signupUserApi.setBody(
+						signupUserApi.createJsonBody({
+							email: email,
+							password: pword,
+                            first_name: fname,
+                            last_name: lname
+						})
+					)
+
+					signupUserApi.call()
                 }
             }
         }

@@ -78,9 +78,11 @@
         <file>uix/screens/home/offlinesync.qml</file>
         <file>uix/components/delegates/SyncedDeviceListItem.qml</file>
         <file>uix/screens/home/download_manager.qml</file>
-        <file>uix/components/core/Api.qml</file>
         <file>uix/components/controls/Busy.qml</file>
         <file>uix/scripts/lib/differ.mjs</file>
         <file>uix/screens/debug/Empty.qml</file>
+        <file>uix/screens/debug/Empty2.qml</file>
+        <file>uix/scripts/constants/endpoints.js</file>
+        <file>uix/components/controls/PullToRefresh.qml</file>
     </qresource>
 </RCC>

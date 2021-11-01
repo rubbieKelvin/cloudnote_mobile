@@ -1,12 +1,15 @@
 import QtQuick 2.15
 import QtQuick.Controls 2.15
 import QtQuick.Layouts 1.13
+import StuffsByRubbie 0.1
 
 import "qrc:/uix/scripts/lib/svg.js" as Svg
 import "qrc:/uix/components/popup/" as AppPopups
 import "qrc:/uix/scripts/frozen/icon.js" as Icons
+import "qrc:/uix/scripts/lib/differ.mjs" as Differ
 import "qrc:/uix/components/controls" as AppControls
 import "qrc:/uix/components/delegates" as AppDelegates
+import "qrc:/uix/scripts/constants/endpoints.js" as Endpoints
 import "qrc:/uix/scripts/constants/fonts.mjs" as FontConstants
 
 
@@ -97,16 +100,21 @@ Base {
             ListView{
                 id: play_list_view
                 clip: true
+				visible: sm.playlistModel.count > 0
                 model: sm.playlistModel
                 delegate: AppDelegates.PlayListItemDelegate{
                     width: play_list_view.width
-                    imageSource: ""
-                    title.text: name
-                    descr.text: description
-                    isAutoPlaylist: auto
                     bottomStroke.visible: index !== (play_list_view.count-1)
 
                     onClicked: goInPlaylistPage()
+
+					Component.onCompleted: {
+						const modelData = sm.playlistModel.get(index)
+						title.text = modelData.name
+						descr.text = modelData.description
+						isAutoPlaylist = modelData.auto
+						imageSource = modelData.playlistArt ? getPlaylistApi.BASEURL+modelData.playlistArt : ""
+					}
                 }
                 boundsMovement: Flickable.StopAtBounds
                 boundsBehavior: Flickable.StopAtBounds
@@ -118,11 +126,89 @@ Base {
                 footer: Item {height: 15}
             }
 
-            Component.onCompleted: {
-                if (sm.playlistModel.count === 0){
-                    api.music.fetchPlaylist()
+			Item{
+				// show if there's no item
+				id: emptyState
+				visible: !play_list_view.visible
+                Layout.fillHeight: true
+                Layout.fillWidth: true
+
+                ColumnLayout{
+                    anchors.centerIn: parent
+
+                    Label{
+                        text: "Your playlist is currently empty"
+                        Layout.fillHeight: true
+                        Layout.fillWidth: true
+						font.pixelSize: FontConstants.HEADING
+						color: thememanager.text
+                    }
+
+                    RowLayout{
+                        spacing: 10
+                        Layout.fillWidth: true
+
+                        AppControls.Button{
+							Layout.preferredHeight: 40
+							enabled: !sm.fetchingStatuses.playlist
+                            Layout.fillWidth: true
+                            text: "Reload"
+							onClicked: getPlaylistApi.doCall()
+							borderRadius: height
+							borderColor: thememanager.text
+							foregroundColor: thememanager.text
+							backgroundColor: "transparent"
+							borderWidth: 1
+                        }
+
+                        AppControls.Button{
+							Layout.preferredHeight: 40
+                            Layout.fillWidth: true
+                            text: "Create new"
+							borderRadius: height
+							borderWidth: 1
+							borderColor: thememanager.accent
+							foregroundColor: thememanager.accent
+                            onClicked: bottomsheet.open()
+							backgroundColor: "transparent"
+                        }
+                    }
                 }
-            }
+			}
+
+			RestClient{
+				id: getPlaylistApi
+                method: "get"
+				retry: Number(10)
+				url: Endpoints.MUSIC_PLAYLISTS
+				saveOffline: true
+
+				function doCall(){
+					if (sm.playlistModel.count === 0){
+						sm.fetchingStatuses.playlist = true
+						setHeader({Authorization: `Token ${sm.user.token}`})
+						call()
+					}
+				}
+
+				Component.onCompleted: doCall()
+
+				onLoaded: {
+                    const body = response.body;
+                    if (response.status === 200){
+						Differ.sortDiffrence(sm.playlistModel, body, item=>item.id);
+                    }
+				}
+
+				onError: {
+
+				}
+
+				onFinally: {
+					sm.fetchingStatuses.playlist = false
+				}
+			}
+
         }
     }
 

@@ -8,6 +8,7 @@
 class RestClient : public QObject{
 	Q_OBJECT
 
+	Q_PROPERTY(QString BASEURL READ getBaseUrl)
 	Q_PROPERTY(qint64 tryCount READ getTryCount)
 	Q_PROPERTY(qint64 retry READ getRetry WRITE setRetry NOTIFY retryChanged)
 	Q_PROPERTY(QString url READ getUrl WRITE setUrl NOTIFY urlChanged)
@@ -18,13 +19,15 @@ public:
 	explicit RestClient(QObject *parent=nullptr);
 	// properties
 	const QString baseurl="http://localhost:8000";
-	
+//	const QString baseurl = "http://192.168.43.154:8000";
+
 	// getters
 	QString getUrl();
 	qint64 getRetry();
 	QString getMethod();
 	qint64 getTryCount();
 	bool getSaveOffline();
+	QString getBaseUrl();
 
 	// setters
 	void setRetry(qint64);
@@ -43,6 +46,12 @@ private:
 	QString method = "GET";
 	QVariant body;
 	QNetworkAccessManager manager;
+	bool doLogResponse = true;
+	QVariantMap variables;
+
+	// paths
+	QString responsePath;
+	QString downloadPath;
 
 	// TODO: test save
 	// saving and reading offline response will help
@@ -59,6 +68,8 @@ private:
 	void doSaveResponse(QVariant);
 	QVariant doGetOfflineResponse();
 	void connectReplySlots(QNetworkReply*);
+	bool hasOfflineResponse();
+	void logResponse(QVariant);
 
 	// verbs
 	void get();
@@ -75,14 +86,17 @@ public slots:
 	QVariant multiPartText(QString, QString);
 	QVariant multiPartFile(QString, QString);
 	void clearBody();
+	QVariant processResponseBody(QNetworkReply*);
+	void addVariable(QString, QJSValue);
+	QVariant getVariable(QString);
 
 signals:
 	void requestRetry(qint64);
 	void methodChanged(QString method);
 	void urlChanged(QString url);
 	void retryChanged(qint64 retry);
-	void error(QVariant body);
-	void loaded(QVariant body);
+	void error(QVariant error);
+	void loaded(QVariant response);
 	void finally(QVariant body);
 
 	// TODO: add this feature

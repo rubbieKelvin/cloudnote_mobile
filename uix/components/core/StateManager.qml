@@ -41,7 +41,7 @@ QtObject{
 
     readonly property QtObject runtime: QtObject{
         readonly property bool debug: true
-        readonly property string initialScreen: Routes.EMPTY_SCREEN // Routes.AUTHSPLASH // the first screen that shows up when debug=true
+        readonly property string initialScreen: Routes.AUTHSPLASH // the first screen that shows up when debug=true
     }
 
     readonly property QtObject navigation: QtObject{
@@ -63,9 +63,20 @@ QtObject{
                 token
             }
 
+			user.first_name = first_name
+			user.last_name = last_name
+			user.email = email
             user.token = token
             cxx.write(usercredentialFilename, JSON.stringify(data));
         }
+
+		function clear(){
+			user.first_name = ""
+			user.last_name = ""
+			user.email = ""
+			user.token = ""
+			cxx.write(usercredentialFilename, "{}");
+		}
     }
 
     readonly property QtObject audioPlayer: QtObject{

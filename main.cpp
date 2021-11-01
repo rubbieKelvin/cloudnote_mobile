@@ -11,6 +11,7 @@
 // my lib
 #include "lib/cxx/cxx.h"
 #include "lib/api/restlib.h"
+#include "lib/cloudnote/cloudnotemanager.h"
 #include "lib/qtstatusbar/src/statusbar.h"
 
 
@@ -26,20 +27,37 @@ int main(int argc, char *argv[]){
 
 	}
 
-// collect permissions
-
-
 	QGuiApplication app(argc, argv);
 
-	app.setApplicationName("CloudNote");
-    app.setOrganizationName("stuffsbyrubbie");
-    app.setOrganizationDomain("com.stuffsbyrubbie.cloudenote");
+	QDir root = QDir(QStandardPaths::writableLocation(QStandardPaths::AppDataLocation));
+	root.cdUp();
+	QDir().mkdir(root.path());
+	QDir().mkdir(QDir::cleanPath(root.path()+QDir::separator()+"stuffsbyrubbie"));
 
-	QQmlApplicationEngine engine;
+	app.setApplicationName("CloudNote");
+	app.setOrganizationName("stuffsbyrubbie");
+	app.setOrganizationDomain("com.stuffsbyrubbie.cloudenote");
+
 	Cxx cxx;
+	CloudnoteManager cm;
+	QQmlApplicationEngine engine;
+
+	QString appDataRoot = QStandardPaths::writableLocation(QStandardPaths::AppDataLocation);
+	if (!QDir().exists(appDataRoot)){
+		// check if parent folder exists
+		QDir parent = QDir(appDataRoot);
+		parent.cdUp();
+
+		if (!parent.exists()){
+			qDebug() << "creating root directory" << parent;
+			QDir().mkdir(parent.path());
+		}
+		qDebug() << "creating appDataRoot" << appDataRoot;
+		QDir().mkdir(appDataRoot);
+	}
 
 	cxx.key = 13;
-	cxx.root = QStandardPaths::writableLocation(QStandardPaths::AppDataLocation);
+	cxx.root = QDir::cleanPath(appDataRoot + QDir::separator() + "rubbbie-crypt-files");
 
 	if (!QDir().exists(cxx.root)){
 		QDir().mkdir(cxx.root);
@@ -61,6 +79,7 @@ int main(int argc, char *argv[]){
 		},
 		Qt::QueuedConnection);
 
+	engine.rootContext()->setContextProperty("cm", &cm);
 	engine.rootContext()->setContextProperty("cxx", &cxx);
 
 	engine.load(url);

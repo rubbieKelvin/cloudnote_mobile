@@ -1,11 +1,14 @@
 import QtQuick 2.15
 import QtQuick.Controls 2.15
 import QtQuick.Layouts 1.15
+import StuffsByRubbie 0.1
 
+import "qrc:/uix/components/popup/" as AppPopup
 import "qrc:/uix/components/sections/" as AppSections
 import "qrc:/uix/components/controls/" as AppControls
 import "qrc:/uix/scripts/constants/fonts.mjs" as FontConstants
 import "qrc:/uix/scripts/constants/routes.js" as Routes
+import "qrc:/uix/scripts/constants/endpoints.js" as Endpoints
 
 
 BaseView {
@@ -108,6 +111,7 @@ BaseView {
                     Layout.fillWidth: true
                     title: "Logout"
                     subtitle: "remove your account from this device"
+					onClicked: logoutPopup.open()
                 }
 
             }
@@ -117,7 +121,7 @@ BaseView {
                 Layout.fillHeight: true
                 spacing: 0
 
-                Item{Layout.fillHeight: true}
+				Item{Layout.preferredHeight: 20}
 
                 Label{
                     text: "cloudnote.v1.0"
@@ -142,4 +146,71 @@ BaseView {
         }
     }
 
+	AppPopup.ContentPopup{
+		id: logoutPopup
+		dim: true
+		modal: true
+		parent: Overlay.overlay
+		anchors.centerIn: parent
+		popupContent: Component{
+			ColumnLayout{
+				spacing: 20
+
+				ProgressBar{
+					id: pb
+					indeterminate: true
+					visible: false
+				}
+
+				Label{
+					text: "Are you sure you want to logout?"
+					font.pixelSize: FontConstants.HEADING
+					color: thememanager.text
+					Layout.margins: 10
+				}
+
+				RowLayout{
+					spacing: 20
+					Layout.margins: 10
+
+					AppControls.Button{
+						text: "Cancel"
+						Layout.fillWidth: true
+						Layout.preferredHeight: 45
+						onClicked: logoutPopup.close()
+					}
+
+					AppControls.Button{
+						text: "Logout"
+						Layout.fillWidth: true
+						Layout.preferredHeight: 45
+						onClicked: {
+							logoutApi.setHeader({
+								Authorization: `Token ${sm.user.token}`
+							})
+							pb.visible = true
+							logoutApi.call()
+						}
+
+						RestClient{
+							id: logoutApi
+							url: Endpoints.AUTH_LOGOUT
+							method: "post"
+
+							onLoaded: {
+								// delete the token
+								sm.user.clear()
+								mainstack.replace(Routes.AUTHSPLASH)
+
+							}
+
+							onFinally: {
+								pb.visible = false
+							}
+						}
+					}
+				}
+			}
+		}
+	}
 }

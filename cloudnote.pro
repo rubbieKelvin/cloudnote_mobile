@@ -1,4 +1,4 @@
-QT += quick network quickcontrols2 svg core qml
+QT += quick network quickcontrols2 svg core qml multimedia multimediawidgets
 CONFIG += c++11
 
 # You can make your code fail to compile if it uses deprecated APIs.
@@ -13,6 +13,7 @@ include(lib/qtstatusbar/src/statusbar.pri)
 
 SOURCES += \
         lib/api/restlib.cpp \
+        lib/cloudnote/cloudnotemanager.cpp \
         lib/cxx/cxx.cpp \
         main.cpp
 
@@ -46,5 +47,6 @@ ANDROID_PACKAGE_SOURCE_DIR = $$PWD/android
 
 HEADERS += \
 	lib/api/restlib.h \
+	lib/cloudnote/cloudnotemanager.h \
 	lib/cxx/cxx.h \
 	lib/cxx/core.h

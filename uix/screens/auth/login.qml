@@ -3,13 +3,14 @@ import QtQuick.Controls 2.15
 import QtQuick.Layouts 1.15
 
 import "qrc:/uix/components/appbars/" as AppBars
-import "qrc:/uix/scripts/api/auth.mjs" as AuthApi
 import "qrc:/uix/components/containers/" as AppContainers
 import "qrc:/uix/scripts/constants/fonts.mjs" as FontConstants
 import "qrc:/uix/components/controls/" as AppControls
 import "qrc:/uix/scripts/lib/svg.js" as Svg
 import "qrc:/uix/scripts/constants/routes.js" as Routes
 import "qrc:/uix/scripts/frozen/icon.js" as Icons
+import "qrc:/uix/scripts/constants/endpoints.js" as Endpoints
+import StuffsByRubbie 0.1
 
 AppContainers.Page {
     id: root
@@ -110,6 +111,7 @@ AppContainers.Page {
             }
 
             AppControls.Button{
+                id: loginButton
                 Layout.preferredHeight: 50
                 Layout.fillWidth: true
                 backgroundColor: thememanager.accent
@@ -123,35 +125,53 @@ AppContainers.Page {
                     anchors.centerIn: parent
                 }
 
+				RestClient{
+					id: loginApi
+                    method: "post"
+                    url: Endpoints.AUTH_LOGIN
+
+                    onLoaded: {
+						if (response.status===200){
+							console.debug("user logged in")
+                            const data = response.body
+                            
+							// save user data
+							sm.user.setCurrent(
+                                data.user.first_name,
+                                data.user.last_name,
+                                data.user.email,
+                                data.token
+                            )
+
+                            // go home
+                            mainstack.replace(Routes.EXPLORE)
+						}else{
+                            console.debug("cant login")
+                        }
+                    }
+
+                    onError: {
+						console.debug(`cant login: ${error.errorCode}`)
+                    }
+
+                    onFinally: {
+                        loginButton.busy = false
+                    }
+				}
+
                 onClicked: {
                     busy = true
                     const email = email_.field.text.trim()
                     const pword = pword_.field.text
 
-                    api.auth.loginUser(email, pword).onload(response => {
-                        if (response.status == 200){
-                            console.debug("user logged in")
-
-                            // save user data
-                            sm.user.setCurrent(
-                                response.data.user.first_name,
-                                response.data.user.last_name,
-                                email,
-                                response.data.token
-                            )
-
-                            // goto home page
-                            mainstack.replace(Routes.EXPLORE)
-                        }else{
-                            console.debug("invalid credentials")
-                            // invalid user
-                        }
-                    }).onerror(() => {
-                        console.debug("cant log user in")
-                    }).finally(() => {
-                        busy = false
-                    })
-
+                    loginApi.setBody(
+                        loginApi.createJsonBody({
+                            email: email,
+                            password: pword
+                        })
+                    )
+                    
+                    loginApi.call()
                 }
             }
         }
