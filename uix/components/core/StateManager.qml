@@ -45,7 +45,7 @@ QtObject{
     }
 
     readonly property QtObject navigation: QtObject{
-        property string clickedPlaylistResource: ""
+        property int clickedPlaylistResource: 0
     }
 
     readonly property QtObject user: QtObject{
@@ -77,9 +77,26 @@ QtObject{
 			user.token = ""
 			cxx.write(usercredentialFilename, "{}");
 		}
+
+		onTokenChanged: {
+			downloadmanager.setAuthToken(token)
+		}
     }
 
     readonly property QtObject audioPlayer: QtObject{
         property int currentlyPlaying: -1
+        // this should be set when a song from a playlist is played
+        property var currentPlayListData: null
+        property string audioPath: ""
+        property bool downloadingCurrent: false
     }
+
+	readonly property list<Connections> conns: [
+		Connections{
+			target: downloadmanager
+			function onDownloadStarted(client){
+
+			}
+		}
+	]
 }

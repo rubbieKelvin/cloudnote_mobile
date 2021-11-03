@@ -226,7 +226,7 @@ AppContainers.Page{
         AppControls.MediaPlayerWidget{
             id: mpw
             Layout.fillWidth: true
-            visible: sm.audioPlayer.currentlyPlaying > 0
+            visible: sm.audioPlayer.currentlyPlaying >= 0
         }
 
         Rectangle{
@@ -244,7 +244,7 @@ AppContainers.Page{
             onClicked: {
                 search_field.focus = false
                 if (homeview.currentIndex === index) return
-                homeview.currentIndex = index
+				homeview.currentIndex = index
             }
         }
     }

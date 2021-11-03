@@ -31,6 +31,26 @@ AppContainers.Page{
         }
     }
 
+    Component.onCompleted: {
+		const audioData = sm.audioPlayer.currentPlayListData.audios[sm.audioPlayer.currentlyPlaying]
+		coverart_image.source = audioData.coverArt ? downloadmanager.cleanurl(audioData.coverArt) : ""
+        media_controls.audioData = audioData
+
+		const result = downloadmanager.download(audioData);
+		console.log(`result: ${result}`)
+
+//		if (result===0){
+//			// we already downloaded this
+//			// just get the path
+//			sm.audioPlayer.audioPath = downloadmanager.filepathFromAudioData(audioData)
+//		}else if (result === -1){
+//			// there was an error reading audioData
+//			mainstack.pop()
+//		}else if (result === 1){
+//			// were downloading current audio
+//		}
+    }
+
     ColumnLayout{
         anchors.fill: parent
         anchors.bottomMargin: (rl.flow === rl.portraitLayout) ? 50 : 24
@@ -54,6 +74,7 @@ AppContainers.Page{
                 Layout.fillHeight: true
 
                 AppControls.RoundImage{
+                    id: coverart_image
                     radius: 8
                     anchors.centerIn: parent
                     source: AppMain.randomDummyImage()
@@ -63,6 +84,7 @@ AppContainers.Page{
             }
 
             AppControls.MediaPlayerControl{
+                id: media_controls
                 Layout.fillWidth: true
                 Layout.fillHeight: (rl.flow === rl.portraitLayout) ? false : true
                 Layout.maximumWidth: Math.min(application.height, application.width)

@@ -59,7 +59,7 @@ Base {
         }*/
 
         ColumnLayout{
-            spacing: 10
+			spacing: 5
             Layout.fillHeight: true
             Layout.fillWidth: true
 
@@ -93,37 +93,44 @@ Base {
             ProgressBar{
                 Layout.fillWidth: true
                 Layout.preferredHeight: 2
-                visible: sm.fetchingStatuses.playlist
-                indeterminate: visible
+				opacity: sm.fetchingStatuses.playlist ? 1 : 0
+				indeterminate: opacity==1
             }
 
-            ListView{
+			AppControls.PullToRefresh{
                 id: play_list_view
-                clip: true
 				visible: sm.playlistModel.count > 0
                 model: sm.playlistModel
+				slingshotThreshold: 100
+				reloadIndicatorSource: Svg.fromString(Icons.ICON_COOLICONS_ARROW_SHORT_DOWN, {color: thememanager.accent})
                 delegate: AppDelegates.PlayListItemDelegate{
                     width: play_list_view.width
                     bottomStroke.visible: index !== (play_list_view.count-1)
 
-                    onClicked: goInPlaylistPage()
+                    onClicked: {
+						const modelData = sm.playlistModel.get(index)
+                        sm.navigation.clickedPlaylistResource = modelData.id
+                        goInPlaylistPage()
+                    }
 
 					Component.onCompleted: {
 						const modelData = sm.playlistModel.get(index)
 						title.text = modelData.name
 						descr.text = modelData.description
 						isAutoPlaylist = modelData.auto
-						imageSource = modelData.playlistArt ? getPlaylistApi.BASEURL+modelData.playlistArt : ""
+						imageSource = modelData.playlistArt ? downloadmanager.cleanurl(modelData.playlistArt) : ""
 					}
-                }
-                boundsMovement: Flickable.StopAtBounds
-                boundsBehavior: Flickable.StopAtBounds
+				}
                 Layout.fillHeight: true
                 Layout.leftMargin: 15
                 Layout.rightMargin: 15
                 Layout.bottomMargin: 5
                 Layout.fillWidth: true
                 footer: Item {height: 15}
+				onTriggered: {
+					console.log("pull triggered")
+					getPlaylistApi.doCall()
+				}
             }
 
 			Item{
@@ -184,11 +191,9 @@ Base {
 				saveOffline: true
 
 				function doCall(){
-					if (sm.playlistModel.count === 0){
-						sm.fetchingStatuses.playlist = true
-						setHeader({Authorization: `Token ${sm.user.token}`})
-						call()
-					}
+					sm.fetchingStatuses.playlist = true
+					setHeader({Authorization: `Token ${sm.user.token}`})
+					call()
 				}
 
 				Component.onCompleted: doCall()
@@ -196,7 +201,7 @@ Base {
 				onLoaded: {
                     const body = response.body;
                     if (response.status === 200){
-						Differ.sortDiffrence(sm.playlistModel, body, item=>item.id);
+						Differ.sortDiffrence(sm.playlistModel, body, item=>item.id, true);
                     }
 				}
 

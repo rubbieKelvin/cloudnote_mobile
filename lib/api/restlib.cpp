@@ -119,7 +119,7 @@ void RestClient::setMethod(QString method){
 }
 
 QString RestClient::getMethod(){
-    return this->method;
+	return this->method;
 }
 
 QString RestClient::getUrl(){
@@ -238,11 +238,14 @@ void RestClient::requestComplete(QNetworkReply* response){
 
 
 void RestClient::call(){
-    if (this->method=="GET"){
+	qDebug() << "RestClient::call <<" << this->url;
+	if (this->method.toUpper()=="GET"){
         this->get();
-    }else if (this->method=="POST"){
+	}else if (this->method.toUpper()=="POST"){
         this->post();
-    }
+	}else{
+		qDebug() << "[RestClient] invalid type \"" + this->method + "\"";
+	}
 }
 
 void RestClient::setRetry(qint64 count){
@@ -531,4 +534,25 @@ QVariant RestClient::getVariable(QString key){
 
 QString RestClient::getBaseUrl(){
 	return this->baseurl;
+}
+
+
+void RestClient::reset(){
+	this->responsePath = QDir::cleanPath(
+		QStandardPaths::writableLocation(QStandardPaths::AppDataLocation) +
+		QDir::separator() + "offlineResponse"
+	);
+
+	this->downloadPath = QDir::cleanPath(
+		QStandardPaths::writableLocation(QStandardPaths::AppDataLocation) +
+		QDir::separator() + "downloads"
+	);
+
+	this->url = "";
+	this->method = "GET";
+	this->headers = QVariantMap();
+	this->retry = 0;
+	this->tryCount = 0;
+	this->variables = QVariantMap();
+	this->body = QVariant();
 }

@@ -34,7 +34,7 @@ ColumnLayout{
             width: 300
             onClicked: {
                 // go to library...
-                sm.navigation.clickedPlaylistResource = "<resource-id>"
+                sm.navigation.clickedPlaylistResource = 10000
                 homeview.currentIndex = 1
             }
         }

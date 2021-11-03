@@ -5,6 +5,8 @@
 #include <QObject>
 #include <QtNetwork>
 
+#define API_BASEURL "http://localhost:8000"
+
 class RestClient : public QObject{
 	Q_OBJECT
 
@@ -18,8 +20,10 @@ class RestClient : public QObject{
 public:
 	explicit RestClient(QObject *parent=nullptr);
 	// properties
-	const QString baseurl="http://localhost:8000";
-//	const QString baseurl = "http://192.168.43.154:8000";
+	const QString baseurl=API_BASEURL;
+	QVariant headers;
+	QVariant body;
+	void reset();
 
 	// getters
 	QString getUrl();
@@ -42,9 +46,7 @@ private:
 	qint64 retry = 0;
 	qint64 tryCount = 0;
 	QString url;
-	QVariant headers;
 	QString method = "GET";
-	QVariant body;
 	QNetworkAccessManager manager;
 	bool doLogResponse = true;
 	QVariantMap variables;
@@ -91,7 +93,7 @@ public slots:
 	QVariant getVariable(QString);
 
 signals:
-	void requestRetry(qint64);
+	void requestRetry(qint64 count);
 	void methodChanged(QString method);
 	void urlChanged(QString url);
 	void retryChanged(qint64 retry);

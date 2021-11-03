@@ -19,7 +19,7 @@ Rectangle{
     property alias title: title
     property alias descr: description
     property bool isAutoPlaylist: false
-    property string imageSource: AppMain.randomDummyImage()
+    property string imageSource: ''//AppMain.randomDummyImage()
 
     function getContextMenuModel(){
         if (isAutoPlaylist) return [

@@ -9,6 +9,7 @@ import "qrc:/uix/scripts/constants/fonts.mjs" as FontConstants
 ColumnLayout{
     id: root
     spacing: 25
+    property var audioData: ({})
 
     ColumnLayout{
         spacing: 0
@@ -16,14 +17,14 @@ ColumnLayout{
         Layout.fillWidth: true
 
         T.Label{
-            text: "Song Name"
+            text: audioData.title
             Layout.fillWidth: true
             color: thememanager.text
             font.pixelSize: FontConstants.LARGE
         }
 
         T.Label{
-            text: "Artist Name"
+            text: audioData.artist
             Layout.fillWidth: true
             color: thememanager.placeholder
             Layout.fillHeight: true

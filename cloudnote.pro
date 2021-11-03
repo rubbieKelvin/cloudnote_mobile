@@ -15,6 +15,7 @@ SOURCES += \
         lib/api/restlib.cpp \
         lib/cloudnote/cloudnotemanager.cpp \
         lib/cxx/cxx.cpp \
+        lib/download_manager/downloadmanager.cpp \
         main.cpp
 
 RESOURCES += qml.qrc
@@ -49,4 +50,5 @@ HEADERS += \
 	lib/api/restlib.h \
 	lib/cloudnote/cloudnotemanager.h \
 	lib/cxx/cxx.h \
-	lib/cxx/core.h
+	lib/cxx/core.h \
+	lib/download_manager/downloadmanager.h

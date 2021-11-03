@@ -13,11 +13,10 @@ BaseView {
 
         onVisibleChanged: {
             if (visible) {
-                if (sm.navigation.clickedPlaylistResource.length===0){
+                if (sm.navigation.clickedPlaylistResource===0){
                     library_stack.push("qrc:/uix/screens/home/main-views/library-views/All.qml")
                 }else{
                     library_stack.push("qrc:/uix/screens/home/main-views/library-views/One.qml")
-                    sm.navigation.clickedPlaylistResource=""
                 }
             }
         }

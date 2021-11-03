@@ -13,6 +13,7 @@
 #include "lib/api/restlib.h"
 #include "lib/cloudnote/cloudnotemanager.h"
 #include "lib/qtstatusbar/src/statusbar.h"
+#include "lib/download_manager/downloadmanager.h"
 
 
 int main(int argc, char *argv[]){
@@ -39,6 +40,7 @@ int main(int argc, char *argv[]){
 	app.setOrganizationDomain("com.stuffsbyrubbie.cloudenote");
 
 	Cxx cxx;
+	DownloadManager dm;
 	CloudnoteManager cm;
 	QQmlApplicationEngine engine;
 
@@ -81,6 +83,7 @@ int main(int argc, char *argv[]){
 
 	engine.rootContext()->setContextProperty("cm", &cm);
 	engine.rootContext()->setContextProperty("cxx", &cxx);
+	engine.rootContext()->setContextProperty("downloadmanager", &dm);
 
 	engine.load(url);
 	return app.exec();
