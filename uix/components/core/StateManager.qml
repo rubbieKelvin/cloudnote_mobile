@@ -12,43 +12,51 @@ QtObject{
 
 
     // LIST MODELS
-    readonly property ListModel playlistModel: ListModel{}
+	property ListModel playlistModel: ListModel{}
+
+	function newModel(name){
+		const res = Qt.createQmlObject(
+			"import QtQuick 2.15; import QtQuick.Controls 2.15; ListModel{}",
+			root,
+			name || "dynamic-snippet-model")
+		return res
+    }
 
 
     // SETTINGS
-    readonly property Settings uisettings: Settings{
+	property Settings uisettings: Settings{
         category: "ui"
         fileName: root.settingsFilename
         property int theme: 0
     }
 
-    readonly property Settings datasavingsettings: Settings{
+	property Settings datasavingsettings: Settings{
         category: "datasaving"
         fileName: root.settingsFilename
         property bool autoDownloadPlaylists: true
     }
 
-    readonly property Settings offlinesyncsettings: Settings{
+	property Settings offlinesyncsettings: Settings{
         category: "offlinesync"
         fileName: root.settingsFilename
     }
 
 
     // OBJETCS
-    readonly property QtObject fetchingStatuses: QtObject{
+    property QtObject fetchingStatuses: QtObject{
         property bool playlist: false
     }
 
-    readonly property QtObject runtime: QtObject{
+    property QtObject runtime: QtObject{
         readonly property bool debug: true
         readonly property string initialScreen: Routes.AUTHSPLASH // the first screen that shows up when debug=true
     }
 
-    readonly property QtObject navigation: QtObject{
+    property QtObject navigation: QtObject{
         property int clickedPlaylistResource: 0
     }
 
-    readonly property QtObject user: QtObject{
+    property QtObject user: QtObject{
         property string first_name: ""
         property string last_name: ""
         property string email: ""
@@ -83,7 +91,7 @@ QtObject{
 		}
     }
 
-    readonly property QtObject audioPlayer: QtObject{
+    property QtObject audioPlayer: QtObject{
         property int currentlyPlaying: -1
         // this should be set when a song from a playlist is played
         property var currentPlayListData: null

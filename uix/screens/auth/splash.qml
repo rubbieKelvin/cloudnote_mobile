@@ -15,11 +15,11 @@ AppContainers.Page{
 		id: getUserApi
 		url: Endpoints.AUTH_USER
 		method: "GET"
-		retry: Number(10)
+		retry: Number(3)
 
 		onFinally: {
 			const token = getVariable("token")
-			sm.user.token = token
+			sm.user.token = token || ""
 		}
 
 		onLoaded: {
@@ -39,7 +39,7 @@ AppContainers.Page{
 
         onError: {
             // cant verify token
-			if (error.errorCode===1){
+			if (isNetworkError(error.errorCode)){
 				// due to internet connection error
 				// at this point all we'll do is continue with the previuos data and pretend its valid
 				console.debug("cant validate token")

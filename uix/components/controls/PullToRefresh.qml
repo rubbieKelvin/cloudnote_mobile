@@ -1,5 +1,7 @@
 import QtQuick 2.15
 import QtQuick.Controls 2.15
+import "qrc:/uix/scripts/lib/svg.js" as Svg
+import "qrc:/uix/scripts/frozen/icon.js" as Icons
 
 ListView{
 	id: root
@@ -22,7 +24,6 @@ ListView{
 		property int lastShoot: 0
 	}
 	signal triggered
-	property string reloadIndicatorSource: ""
 	property int slingshotThreshold: 130
 
 	Rectangle{
@@ -36,7 +37,7 @@ ListView{
 
 		Image {
 			anchors.centerIn: parent
-			source: reloadIndicatorSource
+			source: Svg.fromString(Icons.ICON_COOLICONS_ARROW_SHORT_DOWN, {color: thememanager.accent})
 		}
 	}
 }

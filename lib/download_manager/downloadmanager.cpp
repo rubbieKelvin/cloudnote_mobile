@@ -90,7 +90,7 @@ bool DownloadManager::inQueue(QVariantMap audioData){
 }
 
 void DownloadManager::downloadNext(){
-	if (!queue.isEmpty() && this->currentDownload==nullptr){
+	if (!(queue.size()==0) && this->currentDownload==nullptr){
 
 		client.reset();
 		this->disconnect(&client);
@@ -113,7 +113,7 @@ void DownloadManager::downloadNext(){
 			emit this->downloadComplete(audioData);
 		});
 		this->connect(&client, &RestClient::finally, this, [this](){
-			queue.removeLast();
+			if (queue.size()>0) queue.removeLast();
 			this->currentDownload = nullptr;
 			this->downloadNext();
 		});

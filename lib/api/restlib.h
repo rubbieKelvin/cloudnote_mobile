@@ -4,8 +4,17 @@
 #include <QJSValue>
 #include <QObject>
 #include <QtNetwork>
+#include <QDebug>
 
-#define API_BASEURL "http://localhost:8000"
+#ifdef QT_DEBUG
+	#if defined(Q_OS_ANDROID)
+		#define API_BASEURL "http://192.168.43.154:8000"
+	# else
+		#define API_BASEURL "http://localhost:8000"
+	#endif
+#else
+	#define API_BASEURL "https://rubbie-cloudnote.herokuapp.com"
+#endif
 
 class RestClient : public QObject{
 	Q_OBJECT
@@ -68,7 +77,6 @@ private:
 	QString checkBodyType(QVariant);
 	QString urlToFilename();
 	void doSaveResponse(QVariant);
-	QVariant doGetOfflineResponse();
 	void connectReplySlots(QNetworkReply*);
 	bool hasOfflineResponse();
 	void logResponse(QVariant);
@@ -91,6 +99,8 @@ public slots:
 	QVariant processResponseBody(QNetworkReply*);
 	void addVariable(QString, QJSValue);
 	QVariant getVariable(QString);
+	bool isNetworkError(qint64);
+	QVariant doGetOfflineResponse();
 
 signals:
 	void requestRetry(qint64 count);

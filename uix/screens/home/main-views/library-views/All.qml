@@ -102,7 +102,6 @@ Base {
 				visible: sm.playlistModel.count > 0
                 model: sm.playlistModel
 				slingshotThreshold: 100
-				reloadIndicatorSource: Svg.fromString(Icons.ICON_COOLICONS_ARROW_SHORT_DOWN, {color: thememanager.accent})
                 delegate: AppDelegates.PlayListItemDelegate{
                     width: play_list_view.width
                     bottomStroke.visible: index !== (play_list_view.count-1)
@@ -186,7 +185,7 @@ Base {
 			RestClient{
 				id: getPlaylistApi
                 method: "get"
-				retry: Number(10)
+				retry: Number(3)
 				url: Endpoints.MUSIC_PLAYLISTS
 				saveOffline: true
 

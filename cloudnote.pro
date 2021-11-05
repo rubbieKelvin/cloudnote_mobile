@@ -12,6 +12,7 @@ QT += androidextras
 include(lib/qtstatusbar/src/statusbar.pri)
 
 SOURCES += \
+        lib/api/imagefilesystemcache.cpp \
         lib/api/restlib.cpp \
         lib/cloudnote/cloudnotemanager.cpp \
         lib/cxx/cxx.cpp \
@@ -47,6 +48,7 @@ DISTFILES += \
 ANDROID_PACKAGE_SOURCE_DIR = $$PWD/android
 
 HEADERS += \
+	lib/api/imagefilesystemcache.h \
 	lib/api/restlib.h \
 	lib/cloudnote/cloudnotemanager.h \
 	lib/cxx/cxx.h \

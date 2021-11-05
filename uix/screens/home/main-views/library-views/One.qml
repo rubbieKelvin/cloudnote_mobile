@@ -25,13 +25,23 @@ Base {
         id: list_view
         y: 2
         clip: true
-		model: ListModel{
-			id: audio_model
+		model: ListModel{}
+
+		Component.onCompleted: {
+			const response = getPlaylistApi.doGetOfflineResponse()
+			if (response!==undefined || response!==null){
+				const body = response.body
+				if (response.status === 200){
+					getPlaylistApi.addVariable("body", body)
+					root.title = `${body.name} - ${body.audios.length} songs`
+					Differ.sortDiffrence(list_view.model, body.audios, item=>item.id, true);
+				}
+			}
 		}
 
         delegate: AppDelegates.PlayListItemDelegate{
             width: list_view.width
-            bottomStroke.visible: index !== (list_view.count-1)
+			bottomStroke.visible: index !== (list_view.count-1)
 			isAutoPlaylist: false
 
             onClicked: {
@@ -42,9 +52,9 @@ Base {
             }
 
             Component.onCompleted: {
-                const modelData = audio_model.get(index)
-                title.text = modelData.title
-                descr.text = modelData.artist
+				const modelData = list_view.model.get(index)
+				title.text = modelData.title || "Untitled"
+				descr.text = modelData.artist || "Unknown Artist"
 				imageSource = modelData.coverArt ? downloadmanager.cleanurl(modelData.coverArt) : ""
             }
         }
@@ -56,14 +66,14 @@ Base {
         footer: Item {height: 15}
 
         onTriggered: {
-
+			getPlaylistApi.doGetPlaylistContent()
         }
     }
 
     RestClient{
         id: getPlaylistApi
         method: "get"
-		retry: Number(10)
+		retry: Number(3)
 		saveOffline: true
 		property bool loading: false
 
@@ -81,12 +91,12 @@ Base {
             doGetPlaylistContent()
         }
 
-        onLoaded: {
+		onLoaded: {
 			const body = response.body
-			addVariable("body", body)
-			root.title = `${body.name} - ${body.audios.length} songs`
-            if (response.status === 200){
-				Differ.sortDiffrence(audio_model, body.audios, item=>item.id, true);
+			if (response.status === 200){
+				addVariable("body", body)
+				root.title = `${body.name} - ${body.audios.length} songs`
+				Differ.sortDiffrence(list_view.model, body.audios, item=>item.id, true);
             }
         }
 

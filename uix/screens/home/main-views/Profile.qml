@@ -197,14 +197,13 @@ BaseView {
 							url: Endpoints.AUTH_LOGOUT
 							method: "post"
 
-							onLoaded: {
-								// delete the token
-								sm.user.clear()
-								mainstack.replace(Routes.AUTHSPLASH)
-
-							}
-
 							onFinally: {
+								// delete the token
+								// not caring for success or faliur if online
+								if (! isNetworkError(body.error || -1)){
+									sm.user.clear()
+									mainstack.replace(Routes.AUTHSPLASH)
+								}
 								pb.visible = false
 							}
 						}

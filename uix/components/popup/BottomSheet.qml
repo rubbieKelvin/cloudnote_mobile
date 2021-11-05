@@ -11,7 +11,7 @@ Popup{
     parent: Overlay.overlay
     
     property bool fillScreen: false
-    property int fillOffset: 25
+	property int fillOffset: 90
     property string title: qsTr("Bottom Sheet")
     property Component sheetContent
 

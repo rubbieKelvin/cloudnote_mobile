@@ -556,3 +556,11 @@ void RestClient::reset(){
 	this->variables = QVariantMap();
 	this->body = QVariant();
 }
+
+bool RestClient::isNetworkError(qint64 err){
+	return (
+		err==1 ||
+		err==99 ||
+		err==403
+	);
+}
